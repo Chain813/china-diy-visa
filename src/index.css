@@ -48,7 +48,7 @@ body {
   color: var(--text-main);
   font-family: 'Noto Sans SC', 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body, header, footer, .hairline-card, .muted-panel, input, button {
@@ -308,4 +308,15 @@ html[data-theme="dark"] .toast-banner {
 }
 ::-webkit-scrollbar-thumb {
   background: #C9C3B8;
+}
+html[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: #3A444F;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-view-enter,
+  .animate-view-exit,
+  .animate-tab-swap {
+    animation: none !important;
+  }
 }
