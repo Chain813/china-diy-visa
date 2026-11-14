@@ -598,4 +598,87 @@ describe('GlobeView interactions and lifecycle', () => {
 
     expect(() => unmount()).not.toThrow();
   });
+
+  it('settles flyToCountry and restores auto-spin on focusRegion when cancelled before the first animation frame', async () => {
+    const mockCtx = createMockCanvasContext();
+    vi.spyOn(HTMLCanvasElement.prototype, 'getContext').mockReturnValue(mockCtx);
+    stubAtlasFetch();
+
+    // 1. flyToCountry immediately cancelled via unmount before first d3.timer frame
+    const refA = createRef<GlobeViewHandle>();
+    const firstView = render(
+      <GlobeView
+        ref={refA}
+        activeCategory="all"
+        searchQuery=""
+        filteredCountries={COUNTRIES_DATA}
+        theme="light"
+        isSpinning={true}
+        isTransitioning={false}
+        onCountryClick={vi.fn()}
+      />
+    );
+
+    await waitFor(() => {
+      expect(screen.queryByText('正在加载全球矢量地图数据...')).not.toBeInTheDocument();
+    });
+
+    const jpn = findCountryByCode('JPN')!;
+    let flyUnmountPromise!: Promise<void>;
+    act(() => {
+      flyUnmountPromise = refA.current!.flyToCountry(jpn);
+      firstView.unmount();
+    });
+
+    const unmountResult = await Promise.race([
+      flyUnmountPromise.then(() => 'SETTLED'),
+      sleep(150).then(() => 'HUNG'),
+    ]);
+    expect(unmountResult).toBe('SETTLED');
+
+    // 2. flyToCountry immediately cancelled via reset() + focusRegion immediately cancelled via interrupt()
+    const refB = createRef<GlobeViewHandle>();
+    const secondView = render(
+      <GlobeView
+        ref={refB}
+        activeCategory="all"
+        searchQuery=""
+        filteredCountries={COUNTRIES_DATA}
+        theme="light"
+        isSpinning={true}
+        isTransitioning={false}
+        onCountryClick={vi.fn()}
+      />
+    );
+
+    await waitFor(() => {
+      expect(screen.queryByText('正在加载全球矢量地图数据...')).not.toBeInTheDocument();
+    });
+
+    let flyResetPromise!: Promise<void>;
+    act(() => {
+      flyResetPromise = refB.current!.flyToCountry(jpn);
+    });
+    fireEvent.click(screen.getByRole('button', { name: '重置视角' }));
+
+    const resetResult = await Promise.race([
+      flyResetPromise.then(() => 'SETTLED'),
+      sleep(150).then(() => 'HUNG'),
+    ]);
+    expect(resetResult).toBe('SETTLED');
+    expect(screen.getByText('1.0x')).toBeInTheDocument();
+
+    // Direct interrupt('globe-motion') immediately after focusRegion triggers d3 'cancel' (not 'interrupt')
+    const canvas = secondView.container.querySelector('canvas')!;
+    fireEvent.click(screen.getByRole('button', { name: '欧洲' }));
+    d3.select(canvas).interrupt('globe-motion');
+
+    const drawsAfterCancel = mockCtx.clearRect.mock.calls.length;
+    await act(async () => {
+      await sleep(70);
+    });
+    expect(mockCtx.clearRect.mock.calls.length).toBeGreaterThan(drawsAfterCancel);
+
+    expect(() => secondView.unmount()).not.toThrow();
+  });
 });

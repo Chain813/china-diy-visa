@@ -262,7 +262,8 @@ export const GlobeCanvas = forwardRef<GlobeCanvasHandle, GlobeCanvasProps>(funct
           redrawGlobe();
         })
         .on('end', handleComplete)
-        .on('interrupt', handleComplete);
+        .on('interrupt', handleComplete)
+        .on('cancel', handleComplete);
     },
     [redrawGlobe, stopAutoSpin, syncAutoSpin]
   );
@@ -294,7 +295,9 @@ export const GlobeCanvas = forwardRef<GlobeCanvasHandle, GlobeCanvasProps>(funct
         const finish = () => {
           if (settled) return;
           settled = true;
-          latestPropsRef.current.onZoomChange(zoomRef.current);
+          if (!isUnmountedRef.current) {
+            latestPropsRef.current.onZoomChange(zoomRef.current);
+          }
           resolve();
         };
 
@@ -319,7 +322,8 @@ export const GlobeCanvas = forwardRef<GlobeCanvasHandle, GlobeCanvasProps>(funct
             }
           })
           .on('end', finish)
-          .on('interrupt', finish);
+          .on('interrupt', finish)
+          .on('cancel', finish);
       });
     },
     [redrawGlobe, stopAutoSpin]
