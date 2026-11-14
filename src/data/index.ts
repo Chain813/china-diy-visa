@@ -1,4 +1,5 @@
 import type { CategoryId, CountryData, PathwayCategoryId, SubVisaItem } from '../types/visa';
+import { PATHWAY_IDS } from './categories';
 import { ASIA_PACIFIC_COUNTRIES } from './regions/asia-pacific';
 import { EUROPE_COUNTRIES } from './regions/europe';
 import { AMERICAS_COUNTRIES } from './regions/americas';
@@ -15,6 +16,10 @@ const BY_CODE = new Map<string, CountryData>(
   COUNTRIES_DATA.map((c) => [c.code.toUpperCase(), c])
 );
 const BY_ID = new Map<string, CountryData>(COUNTRIES_DATA.map((c) => [c.id, c]));
+
+export function isPathwayCategoryId(value: string): value is PathwayCategoryId {
+  return (PATHWAY_IDS as string[]).includes(value);
+}
 
 /** Find a country by its 3-letter ISO alpha-3 code (case-insensitive). */
 export function findCountryByCode(code: string | undefined): CountryData | undefined {
@@ -42,12 +47,16 @@ function matchesSubVisas(subVisas: SubVisaItem[], query: string): boolean {
 /** Filter countries by active visa category and search query across metadata and pathway details. */
 export function filterCountries(activeCategory: CategoryId, searchQuery: string): CountryData[] {
   const q = searchQuery.trim().toLowerCase();
+  const specificCategory =
+    activeCategory !== 'all' && isPathwayCategoryId(activeCategory) ? activeCategory : null;
 
   return COUNTRIES_DATA.filter((country) => {
     const pathwayList =
-      activeCategory === 'all' ? null : country.pathways[activeCategory as PathwayCategoryId];
+      specificCategory && Object.hasOwn(country.pathways, specificCategory)
+        ? country.pathways[specificCategory]
+        : null;
 
-    if (pathwayList !== null && pathwayList.length === 0) {
+    if (activeCategory !== 'all' && (!pathwayList || pathwayList.length === 0)) {
       return false;
     }
     if (!q) {

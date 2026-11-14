@@ -13,10 +13,4 @@ export const PATHWAY_CATEGORIES = CATEGORIES.filter(
   (c): c is CategoryMeta & { id: PathwayCategoryId } => c.id !== 'all'
 );
 
-export const PATHWAY_IDS: PathwayCategoryId[] = [
-  'study',
-  'work',
-  'immigration',
-  'tourism',
-  'other',
-];
+export const PATHWAY_IDS: PathwayCategoryId[] = PATHWAY_CATEGORIES.map((c) => c.id);
