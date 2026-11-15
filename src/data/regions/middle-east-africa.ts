@@ -66,7 +66,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 哈萨克斯坦官方签证门户 或当地使领馆递交留学签证申请。"
+              "detail": "按哈萨克斯坦驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -79,7 +79,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭哈萨克斯坦教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得哈萨克斯坦正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -100,7 +104,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签入境（单次30天） 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向哈萨克斯坦驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -113,7 +117,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向哈萨克斯坦劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得哈萨克斯坦当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -126,7 +134,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 哈萨克斯坦外交部 查询最新永居条例。"
+              "detail": "访问哈萨克斯坦官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -143,7 +151,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向哈萨克斯坦当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在哈萨克斯坦连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -177,7 +189,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签直飞/陆路入境",
+          "submission": "免签入境（单次30天）",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -194,7 +209,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 哈萨克斯坦官方签证门户 官方清单完成填报。"
+              "detail": "按哈萨克斯坦驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -202,7 +217,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭哈萨克斯坦邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得哈萨克斯坦当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -272,7 +291,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 乌兹别克斯坦官方电子签门户 或当地使领馆递交留学签证申请。"
+              "detail": "按乌兹别克斯坦驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -285,7 +304,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭乌兹别克斯坦教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得乌兹别克斯坦正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -306,7 +329,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 直飞或陆路免签 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向乌兹别克斯坦驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -319,7 +342,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向乌兹别克斯坦劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得乌兹别克斯坦当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -332,7 +359,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 乌兹别克斯坦外交部 查询最新永居条例。"
+              "detail": "访问乌兹别克斯坦官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -349,7 +376,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向乌兹别克斯坦当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在乌兹别克斯坦连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -383,7 +414,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时入境",
+          "submission": "直飞或陆路免签",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -400,7 +434,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 乌兹别克斯坦官方电子签门户 官方清单完成填报。"
+              "detail": "按乌兹别克斯坦驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -408,7 +442,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭乌兹别克斯坦邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得乌兹别克斯坦当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -478,7 +516,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 迪拜居留与外国人事务局 (GDRFA) 或当地使领馆递交留学签证申请。"
+              "detail": "按阿联酋驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -491,7 +529,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭阿联酋教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得阿联酋正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -512,7 +554,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签入境 / GDRFA迪拜官网 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向阿联酋驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -525,7 +567,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向阿联酋劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得阿联酋当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -538,7 +584,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 阿联酋联邦身份与移民局 (ICP) 查询最新永居条例。"
+              "detail": "访问阿联酋官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -555,7 +601,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向阿联酋当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在阿联酋连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -589,31 +639,41 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时 / 黄金签 2周",
+          "submission": "免签入境 / GDRFA迪拜官网",
+          "diySupport": "diy"
         }
       ],
       "other": [
         {
           "id": "main",
-          "title": "阿联酋 商务考察 / 探亲访友 / 特殊通道",
-          "fee": "0 元（互免）",
-          "desc": "涵盖赴阿联酋参加展会商务洽谈、探望当地亲友，以及部分国家推出的数字游民/长期旅居或过境便利通道。",
-          "tips": "商务访问须由当地合作企业出具正式抬头纸邀请函；探亲须附邀请人当地合法居留证件复印件。",
+          "title": "迪拜 1 年虚拟远程工作签证 (Virtual Working Program) / 黄金签证",
+          "fee": "约 287–611 USD（含申请、体检与 Emirates ID 卡费，以 GDRFA 官网为准）",
+          "processing": "约 5–10 个工作日",
+          "submission": "远程工作者可在迪拜居留与外国人事务局 (GDRFA Dubai) 或 ICP 官网在线自助提交申请",
+          "diySupport": "diy",
+          "desc": "面向受雇于阿联酋境外公司或拥有自有公司的远程办公人员，只要月收入不低于 3,500 USD（约 2.5 万人民币）即可全程在线 DIY 申请 1 年期迪拜虚拟远程工作居留签证并申领阿联酋身份证 (Emirates ID)，享零个人所得税待遇！",
+          "tips": "申请人须拥有至少 1 年期现行雇佣合同（或持股满 1 年的公司证明）及近 3 个月银行流水；批文下发后入境迪拜完成体检与打指纹即可领卡。",
           "steps": [
             {
-              "title": "准备邀请方或过境佐证材料",
-              "detail": "商务备好邀请函与派遣函；探亲备好亲属关系证明。"
+              "title": "准备远程收入与在职证明材料",
+              "detail": "整理至少 1 年有效期雇佣合同、上月工资单及近 3 个月月入 ≥ 3,500 USD 银行流水。"
             },
             {
-              "title": "核对免签或网申通道提交",
-              "detail": "参考 迪拜居留与外国人事务局 (GDRFA) 官方清单完成填报。"
+              "title": "在 GDRFA Dubai 或 ICP 官网在线提交",
+              "detail": "上传护照、白底照片、在职证明、流水及阿联酋有效医疗保险在线缴费。"
+            },
+            {
+              "title": "获批电子签后抵迪拜体检领卡",
+              "detail": "持电子入境许可赴迪拜完成常规体检与生物识别，约 1 周内签发 Emirates ID。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "当地邀请函及邀请方身份/营业执照复印件",
-            "中方公司派遣函（商务）或亲属关系证明（探亲）",
-            "往返机票及住宿证明"
+            "有效期 6 个月以上中国护照及白底电子照",
+            "至少 1 年有效期的境外雇佣合同或自有企业执照",
+            "近 3 个月月入 ≥ 3,500 USD 的银行流水与工资单",
+            "覆盖阿联酋境内的有效医疗保险单"
           ]
         }
       ]
@@ -684,7 +744,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 卡塔尔 Hayya 官方门户 或当地使领馆递交留学签证申请。"
+              "detail": "按卡塔尔驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -697,7 +757,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭卡塔尔教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得卡塔尔正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -718,7 +782,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签直飞 / Hayya门户 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向卡塔尔驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -731,7 +795,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向卡塔尔劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得卡塔尔当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -744,7 +812,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 卡塔尔内政部签证查询 查询最新永居条例。"
+              "detail": "访问卡塔尔官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -761,7 +829,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向卡塔尔当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在卡塔尔连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -795,7 +867,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时入境",
+          "submission": "免签直飞 / Hayya门户",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -812,7 +887,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 卡塔尔 Hayya 官方门户 官方清单完成填报。"
+              "detail": "按卡塔尔驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -820,7 +895,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭卡塔尔邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得卡塔尔当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -835,12 +914,12 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
       35.24,
       38.96
     ],
-    "badge": "30天e-Visa电子签 / 互免政策",
-    "tierColor": "#4A7B82",
+    "badge": "90天免签（2026新政）",
+    "tierColor": "#789882",
     "labelPriority": false,
-    "processing": "5 分钟在线出签",
-    "submission": "evisa.gov.tr 官方秒批",
-    "summary": "中国普通护照持有者可在官方 evisa.gov.tr 在线申请多次入境电子签（5分钟出PDF），无需任何资产流水！",
+    "processing": "免签直飞入境（最长90天/180天）",
+    "submission": "持有效中国普通护照直接入境（无须贴签/e-Visa）",
+    "summary": "自 2026-01-02 起，土耳其对中国普通护照持有人实行免签入境政策（每180天内累计停留不超过90天），旅游与过境无需再申请 e-Visa！长期留学或工作仍须先向土耳其使领馆申办对应正签。",
     "pitfalls": [
       "【核对护照有效期与空白页】出发前确保中国护照剩余有效期在 6 个月以上且至少有 2 页空白签证页，否则航司会直接拒绝办理登机。",
       "【警惕高价山寨代填/代办网站】所有电子签或入境卡（如 e-Visa / eTA / MDAC）务必认准 .gov 或官方域名入口，切勿在搜索引擎广告位支付高额服务费。",
@@ -849,14 +928,14 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
     ],
     "links": [
       {
-        "title": "土耳其官方电子签 (evisa.gov.tr)",
-        "url": "https://www.evisa.gov.tr/",
-        "desc": "官方签证/入境申请与政策查询入口"
+        "title": "土耳其外交部签证官方信息",
+        "url": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+        "desc": "官方最新免签政策与外国公民签证分类说明"
       },
       {
-        "title": "土耳其外交部签证信息",
-        "url": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
-        "desc": "官方移民局/使领馆/签证中心官网"
+        "title": "土耳其电子签官方平台 (evisa.gov.tr)",
+        "url": "https://www.evisa.gov.tr/",
+        "desc": "非普通护照或特殊免签例外情形核验门户"
       }
     ],
     "jobLinks": [
@@ -890,7 +969,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 土耳其官方电子签 (evisa.gov.tr) 或当地使领馆递交留学签证申请。"
+              "detail": "凭土耳其高校正式录取通知书及资金担保证明，预约土耳其驻华使领馆或指定签证中心递交学生签证。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -903,7 +982,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 15–30 个工作日（使领馆审理）",
+          "submission": "凭土耳其高校正式录取信预约土耳其驻华使领馆或指定签证中心递交学生贴签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得土耳其正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -924,7 +1007,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 evisa.gov.tr 官方秒批 提交贴签或电子签申请。"
+              "detail": "待土耳其雇主向劳动与社会保障部申领工作许可批文后，本人赴土耳其驻华使领馆递交工作贴签申请。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -937,7 +1020,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "劳动部工作许可约 30–60 天 + 使领馆贴签 10–15 工作日",
+          "submission": "雇主向土耳其劳动与社会保障部申领工作许可后，本人赴土耳其驻华使领馆递签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得土耳其当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -950,7 +1037,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 土耳其外交部签证信息 查询最新永居条例。"
+              "detail": "访问土耳其官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -967,65 +1054,72 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向土耳其当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在土耳其连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
         {
           "id": "main",
-          "title": "土耳其 短期旅游/访客通道（30天e-Visa电子签 / 互免政策）",
-          "fee": "60 USD（e-Visa）",
-          "desc": "中国普通护照持有者可在官方 evisa.gov.tr 在线申请多次入境电子签（5分钟出PDF），无需任何资产流水！",
-          "tips": "出发前务必核对护照剩余有效期（通常要求6个月以上）及至少2页空白签证页，并保留往返机票与酒店预订单。",
+          "title": "土耳其 短期旅游/访客免签入境（每180天内累计不超90天）",
+          "fee": "免费（免签入境）",
+          "processing": "免签直飞入境（最长90天/180天）",
+          "submission": "持有效中国普通护照直接入境（无须贴签/e-Visa）",
+          "diySupport": "diy",
+          "desc": "根据 2026-01-02 起生效的免签政策，持有效中国普通护照赴土耳其旅游或过境可免签入境，每 180 天内累计停留不超过 90 天，无需提前在线购买 e-Visa 或贴签。",
+          "tips": "免签仅限短期旅游及过境目的（每 180 天累计不超过 90 天），严禁持免签入境在当地就读或非法务工；入境时建议备妥返程机票、酒店预订单及旅行医疗保险。",
           "steps": [
             {
-              "title": "确认入境方式与官方入口",
-              "detail": "访问 土耳其官方电子签 (evisa.gov.tr) 核对最新免签/电子签/预约要求。"
+              "title": "核对普通护照有效期与免签天数规则",
+              "detail": "确保护照剩余有效期 ≥ 6 个月且近 180 天内累计在土停留未超 90 天。"
             },
             {
-              "title": "准备基础身份与行程材料",
-              "detail": "备齐有效护照、电子照片、行程单、酒店及往返机票预订单（贴签国另附流水与在职证明）。"
+              "title": "备齐返程机票、酒店订单与旅行保险",
+              "detail": "打印英文行程与住宿凭证随身携带以备边检核验。"
             },
             {
-              "title": "在线提交或前往签证中心递交",
-              "detail": "通过 evisa.gov.tr 官方秒批 提交申请并缴费（免签国直接填报入境卡）。"
-            },
-            {
-              "title": "获取批文或直接持护照入境",
-              "detail": "打印电子签/确认函随身携带乘机。"
+              "title": "持有效中国普通护照直飞免签入境",
+              "detail": "无须申请 e-Visa 或贴签，抵达土耳其口岸直接走免签通道盖章入境。"
             }
           ],
           "checklist": [
-            "有效期内中国因私护照（有效期6个月以上）",
+            "有效期内中国普通护照（剩余有效期 6 个月以上）",
             "往返/离境机票预订单",
             "全程酒店预订单（英文版）",
-            "官方在线申请表打印件与白底证件照",
-            "境外旅行医疗保险单（建议购买）"
+            "境外旅行医疗保险单（建议购买）",
+            "在土期间消费资金/信用卡"
           ]
         }
       ],
       "other": [
         {
           "id": "main",
-          "title": "土耳其 商务考察 / 探亲访友 / 特殊通道",
-          "fee": "60 USD（e-Visa）",
-          "desc": "涵盖赴土耳其参加展会商务洽谈、探望当地亲友，以及部分国家推出的数字游民/长期旅居或过境便利通道。",
-          "tips": "商务访问须由当地合作企业出具正式抬头纸邀请函；探亲须附邀请人当地合法居留证件复印件。",
+          "title": "土耳其 短期商务考察 / 探亲访友 / 长期专项签证",
+          "fee": "免费（免签合规短期访问）/ 专项贴签按使领馆规费",
+          "processing": "短期免签即时 / 长期驻派或专项签证约 10–15 工作日",
+          "submission": "90 天/180 天内合规访问可免签入境；涉及带薪服务、记者或长期居留须赴使领馆递签",
+          "diySupport": "advisory",
+          "advisoryNote": "短期商务洽谈或探亲须备齐土方邀请函或亲属关系佐证；若涉及当地现场带薪作业、安装调试或超 90 天停留，须先由土方邀请单位/使领馆按专项签证流程批复。",
+          "desc": "2026-01-02 起普通护照短期访问可依免签规则入境；但若涉及在土境内提供带薪技术服务、采访、长期探亲团聚或超 90 天滞留，仍须向土耳其驻华使领馆申请对应签证。",
+          "tips": "商务拜访建议随身携带土方公司邀请函及中方派遣函；切勿误用免签政策从事受薪或安装调试类工程作业。",
           "steps": [
             {
-              "title": "准备邀请方或过境佐证材料",
-              "detail": "商务备好邀请函与派遣函；探亲备好亲属关系证明。"
+              "title": "区分免签合规访问与使馆专项签证",
+              "detail": "核实赴土目的及停留是否符合 180 天内累计 90 天普通免签范围。"
             },
             {
-              "title": "核对免签或网申通道提交",
-              "detail": "参考 土耳其官方电子签 (evisa.gov.tr) 官方清单完成填报。"
+              "title": "准备邀请函并按需预约土耳其驻华使领馆",
+              "detail": "长期团聚或专项作业须先取得邀请批文后预约使领馆贴签。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "当地邀请函及邀请方身份/营业执照复印件",
-            "中方公司派遣函（商务）或亲属关系证明（探亲）",
-            "往返机票及住宿证明"
+            "有效期内中国普通护照",
+            "土方公司邀请函（商务）或亲属关系证明（探亲）",
+            "中方派遣函与往返机票酒店订单",
+            "土耳其使领馆签证申请表及保险（专项贴签适用）"
           ]
         }
       ]
@@ -1096,7 +1190,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 沙特官方统一签证平台 (ksavisa.sa) 或当地使领馆递交留学签证申请。"
+              "detail": "按沙特阿拉伯驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -1109,7 +1203,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭沙特阿拉伯教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得沙特阿拉伯正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -1130,7 +1228,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 ksavisa.sa 官方电子签 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向沙特阿拉伯驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -1143,7 +1241,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向沙特阿拉伯劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得沙特阿拉伯当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -1156,7 +1258,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 沙特旅游电子签门户 查询最新永居条例。"
+              "detail": "访问沙特阿拉伯官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -1173,7 +1275,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向沙特阿拉伯当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在沙特阿拉伯连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -1207,7 +1313,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "分钟级在线出签",
+          "submission": "ksavisa.sa 官方电子签",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -1224,7 +1333,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 沙特官方统一签证平台 (ksavisa.sa) 官方清单完成填报。"
+              "detail": "按沙特阿拉伯驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -1232,7 +1341,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭沙特阿拉伯邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得沙特阿拉伯当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -1302,7 +1415,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 格鲁吉亚官方电子签门户 或当地使领馆递交留学签证申请。"
+              "detail": "按格鲁吉亚驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -1315,7 +1428,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭格鲁吉亚教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得格鲁吉亚正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -1336,7 +1453,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签入境 / e-Visa官网 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向格鲁吉亚驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -1349,7 +1466,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向格鲁吉亚劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得格鲁吉亚当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -1362,7 +1483,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 格鲁吉亚领事服务官网 查询最新永居条例。"
+              "detail": "访问格鲁吉亚官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -1379,7 +1500,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向格鲁吉亚当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在格鲁吉亚连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -1413,7 +1538,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时入境",
+          "submission": "免签入境 / e-Visa官网",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -1430,7 +1558,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 格鲁吉亚官方电子签门户 官方清单完成填报。"
+              "detail": "按格鲁吉亚驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -1438,7 +1566,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭格鲁吉亚邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得格鲁吉亚当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -1508,7 +1640,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 摩洛哥官方电子签门户 或当地使领馆递交留学签证申请。"
+              "detail": "按摩洛哥驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -1521,7 +1653,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭摩洛哥教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得摩洛哥正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -1542,7 +1678,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签入境（停留90天） 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向摩洛哥驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -1555,7 +1691,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向摩洛哥劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得摩洛哥当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -1568,7 +1708,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 摩洛哥领事服务官网 查询最新永居条例。"
+              "detail": "访问摩洛哥官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -1585,7 +1725,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向摩洛哥当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在摩洛哥连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -1619,7 +1763,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时入境",
+          "submission": "免签入境（停留90天）",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -1636,7 +1783,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 摩洛哥官方电子签门户 官方清单完成填报。"
+              "detail": "按摩洛哥驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -1644,7 +1791,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭摩洛哥邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得摩洛哥当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -1714,7 +1865,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 埃及官方电子签 (visa2egypt) 或当地使领馆递交留学签证申请。"
+              "detail": "按埃及驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -1727,7 +1878,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭埃及教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得埃及正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -1748,7 +1903,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 visa2egypt.gov.eg / 落地签 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向埃及驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -1761,7 +1916,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向埃及劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得埃及当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -1774,7 +1933,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 埃及政府官网 查询最新永居条例。"
+              "detail": "访问埃及官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -1791,7 +1950,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向埃及当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在埃及连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -1825,7 +1988,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "7 工作日 / 机场落地即办",
+          "submission": "visa2egypt.gov.eg / 落地签",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -1842,7 +2008,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 埃及官方电子签 (visa2egypt) 官方清单完成填报。"
+              "detail": "按埃及驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -1850,7 +2016,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭埃及邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得埃及当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -1920,7 +2090,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 肯尼亚官方 eTA 系统 (etakenya.go.ke) 或当地使领馆递交留学签证申请。"
+              "detail": "按肯尼亚驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -1933,7 +2103,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭肯尼亚教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得肯尼亚正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -1954,7 +2128,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 etakenya.go.ke 官方网申 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向肯尼亚驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -1967,7 +2141,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向肯尼亚劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得肯尼亚当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -1980,7 +2158,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 肯尼亚移民局 eTA 指南 查询最新永居条例。"
+              "detail": "访问肯尼亚官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -1997,7 +2175,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向肯尼亚当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在肯尼亚连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -2031,7 +2213,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "3 工作日",
+          "submission": "etakenya.go.ke 官方网申",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -2048,7 +2233,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 肯尼亚官方 eTA 系统 (etakenya.go.ke) 官方清单完成填报。"
+              "detail": "按肯尼亚驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -2056,7 +2241,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭肯尼亚邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得肯尼亚当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -2126,7 +2315,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 南非内政部官方 e-Visa 系统 或当地使领馆递交留学签证申请。"
+              "detail": "按南非驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -2139,7 +2328,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭南非教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得南非正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -2160,7 +2353,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 南非内政部 e-Visa / VFS 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向南非驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -2173,7 +2366,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向南非劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得南非当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -2186,7 +2383,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 VFS 南非签证中心 查询最新永居条例。"
+              "detail": "访问南非官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -2203,7 +2400,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向南非当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在南非连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -2237,7 +2438,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "5–15 工作日",
+          "submission": "南非内政部 e-Visa / VFS",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -2254,7 +2458,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 南非内政部官方 e-Visa 系统 官方清单完成填报。"
+              "detail": "按南非驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -2262,7 +2466,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭南非邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得南非当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -2327,7 +2535,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 毛里求斯护照与移民局官网 或当地使领馆递交留学签证申请。"
+              "detail": "按毛里求斯驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -2340,7 +2548,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭毛里求斯教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得毛里求斯正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -2361,7 +2573,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签直飞（停留60天） 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向毛里求斯驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -2374,7 +2586,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向毛里求斯劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得毛里求斯当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -2387,7 +2603,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 毛里求斯护照与移民局官网 查询最新永居条例。"
+              "detail": "访问毛里求斯官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -2404,7 +2620,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向毛里求斯当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在毛里求斯连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -2438,7 +2658,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时入境",
+          "submission": "免签直飞（停留60天）",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -2455,7 +2678,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 毛里求斯护照与移民局官网 官方清单完成填报。"
+              "detail": "按毛里求斯驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -2463,7 +2686,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭毛里求斯邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得毛里求斯当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -2528,7 +2755,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 亚美尼亚外交部签证官网 或当地使领馆递交留学签证申请。"
+              "detail": "按亚美尼亚驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -2541,7 +2768,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭亚美尼亚教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得亚美尼亚正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -2562,7 +2793,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签直飞/陆路（停留90天） 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向亚美尼亚驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -2575,7 +2806,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向亚美尼亚劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得亚美尼亚当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -2588,7 +2823,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 亚美尼亚外交部签证官网 查询最新永居条例。"
+              "detail": "访问亚美尼亚官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -2605,7 +2840,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向亚美尼亚当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在亚美尼亚连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -2639,7 +2878,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时入境",
+          "submission": "免签直飞/陆路（停留90天）",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -2656,7 +2898,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 亚美尼亚外交部签证官网 官方清单完成填报。"
+              "detail": "按亚美尼亚驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -2664,7 +2906,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭亚美尼亚邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得亚美尼亚当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -2729,7 +2975,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 阿塞拜疆官方 ASAN e-Visa 或当地使领馆递交留学签证申请。"
+              "detail": "按阿塞拜疆驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -2742,7 +2988,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭阿塞拜疆教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得阿塞拜疆正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -2763,7 +3013,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签直飞 / evisa.gov.az 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向阿塞拜疆驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -2776,7 +3026,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向阿塞拜疆劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得阿塞拜疆当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -2789,7 +3043,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 阿塞拜疆官方 ASAN e-Visa 查询最新永居条例。"
+              "detail": "访问阿塞拜疆官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -2806,7 +3060,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向阿塞拜疆当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在阿塞拜疆连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -2840,7 +3098,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时 / e-Visa 3天",
+          "submission": "免签直飞 / evisa.gov.az",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -2857,7 +3118,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 阿塞拜疆官方 ASAN e-Visa 官方清单完成填报。"
+              "detail": "按阿塞拜疆驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -2865,7 +3126,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭阿塞拜疆邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得阿塞拜疆当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -2930,7 +3195,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 阿曼皇家警察官方 e-Visa 或当地使领馆递交留学签证申请。"
+              "detail": "按阿曼驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -2943,7 +3208,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭阿曼教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得阿曼正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -2964,7 +3233,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签直飞 / evisa.rop.gov.om 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向阿曼驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -2977,7 +3246,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向阿曼劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得阿曼当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -2990,7 +3263,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 阿曼皇家警察官方 e-Visa 查询最新永居条例。"
+              "detail": "访问阿曼官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -3007,7 +3280,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向阿曼当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在阿曼连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -3041,7 +3318,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时 / e-Visa 24小时",
+          "submission": "免签直飞 / evisa.rop.gov.om",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -3058,7 +3338,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 阿曼皇家警察官方 e-Visa 官方清单完成填报。"
+              "detail": "按阿曼驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -3066,7 +3346,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭阿曼邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得阿曼当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -3131,7 +3415,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 巴林官方电子签门户 或当地使领馆递交留学签证申请。"
+              "detail": "按巴林驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -3144,7 +3428,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭巴林教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得巴林正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -3165,7 +3453,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 evisa.gov.bh / 机场落地签 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向巴林驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -3178,7 +3466,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向巴林劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得巴林当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -3191,7 +3483,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 巴林官方电子签门户 查询最新永居条例。"
+              "detail": "访问巴林官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -3208,7 +3500,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向巴林当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在巴林连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -3242,7 +3538,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "即时出签 / 落地即办",
+          "submission": "evisa.gov.bh / 机场落地签",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -3259,7 +3558,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 巴林官方电子签门户 官方清单完成填报。"
+              "detail": "按巴林驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -3267,7 +3566,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭巴林邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得巴林当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -3332,7 +3635,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 约旦内政部官方电子签证门户 或当地使领馆递交留学签证申请。"
+              "detail": "按约旦驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -3345,7 +3648,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭约旦教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得约旦正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -3366,7 +3673,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 Jordan Pass / 安曼机场落地 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向约旦驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -3379,7 +3686,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向约旦劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得约旦当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -3392,7 +3703,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 约旦内政部官方电子签证门户 查询最新永居条例。"
+              "detail": "访问约旦官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -3409,7 +3720,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向约旦当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在约旦连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -3443,7 +3758,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "机场落地即办",
+          "submission": "Jordan Pass / 安曼机场落地",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -3460,7 +3778,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 约旦内政部官方电子签证门户 官方清单完成填报。"
+              "detail": "按约旦驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -3468,7 +3786,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭约旦邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得约旦当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -3533,7 +3855,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 伊朗外交部官方电子签门户 或当地使领馆递交留学签证申请。"
+              "detail": "按伊朗驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -3546,7 +3868,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭伊朗教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得伊朗正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -3567,7 +3893,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签入境（护照不盖入境章） 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向伊朗驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -3580,7 +3906,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向伊朗劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得伊朗当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -3593,7 +3923,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 伊朗外交部官方电子签门户 查询最新永居条例。"
+              "detail": "访问伊朗官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -3610,7 +3940,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向伊朗当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在伊朗连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -3644,7 +3978,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时入境",
+          "submission": "免签入境（护照不盖入境章）",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -3661,7 +3998,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 伊朗外交部官方电子签门户 官方清单完成填报。"
+              "detail": "按伊朗驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -3669,7 +4006,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭伊朗邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得伊朗当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -3734,7 +4075,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 科威特内政部官方 e-Visa 或当地使领馆递交留学签证申请。"
+              "detail": "按科威特驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -3747,7 +4088,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭科威特教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得科威特正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -3768,7 +4113,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 kuwaitvisa.moi.gov.kw 官网 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向科威特驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -3781,7 +4126,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向科威特劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得科威特当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -3794,7 +4143,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 科威特内政部官方 e-Visa 查询最新永居条例。"
+              "detail": "访问科威特官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -3811,7 +4160,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向科威特当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在科威特连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -3845,7 +4198,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "1–3 工作日",
+          "submission": "kuwaitvisa.moi.gov.kw 官网",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -3862,7 +4218,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 科威特内政部官方 e-Visa 官方清单完成填报。"
+              "detail": "按科威特驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -3870,7 +4226,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭科威特邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得科威特当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -3935,7 +4295,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 吉尔吉斯斯坦官方 e-Visa 或当地使领馆递交留学签证申请。"
+              "detail": "按吉尔吉斯斯坦驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -3948,7 +4308,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭吉尔吉斯斯坦教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得吉尔吉斯斯坦正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -3969,7 +4333,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 evisa.e-gov.kg 官网 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向吉尔吉斯斯坦驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -3982,7 +4346,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向吉尔吉斯斯坦劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得吉尔吉斯斯坦当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -3995,7 +4363,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 吉尔吉斯斯坦官方 e-Visa 查询最新永居条例。"
+              "detail": "访问吉尔吉斯斯坦官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -4012,7 +4380,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向吉尔吉斯斯坦当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在吉尔吉斯斯坦连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -4046,7 +4418,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "3–5 工作日",
+          "submission": "evisa.e-gov.kg 官网",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -4063,7 +4438,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 吉尔吉斯斯坦官方 e-Visa 官方清单完成填报。"
+              "detail": "按吉尔吉斯斯坦驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -4071,7 +4446,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭吉尔吉斯斯坦邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得吉尔吉斯斯坦当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -4136,7 +4515,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 塔吉克斯坦官方 e-Visa 或当地使领馆递交留学签证申请。"
+              "detail": "按塔吉克斯坦驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -4149,7 +4528,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭塔吉克斯坦教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得塔吉克斯坦正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -4170,7 +4553,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 evisa.tj 官方系统 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向塔吉克斯坦驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -4183,7 +4566,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向塔吉克斯坦劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得塔吉克斯坦当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -4196,7 +4583,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 塔吉克斯坦官方 e-Visa 查询最新永居条例。"
+              "detail": "访问塔吉克斯坦官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -4213,13 +4600,17 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向塔吉克斯坦当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在塔吉克斯坦连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
         {
           "id": "main",
-          "title": "塔吉克斯坦 短期旅游/访客通道（e-Visa 电子签（可选GBAO））",
+          "title": "塔吉克斯坦 短期旅游/访客通道（e-Visa 电子签·可选 GBAO 许可）",
           "fee": "30–50 USD",
           "desc": "帕米尔高原自驾必经国，在 evisa.tj 官网申请时可一并勾选 GBAO 帕米尔边防许可（仅加 20 美元）。",
           "tips": "出发前务必核对护照剩余有效期（通常要求6个月以上）及至少2页空白签证页，并保留往返机票与酒店预订单。",
@@ -4247,7 +4638,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "2–5 工作日",
+          "submission": "evisa.tj 官方系统",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -4264,7 +4658,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 塔吉克斯坦官方 e-Visa 官方清单完成填报。"
+              "detail": "按塔吉克斯坦驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -4272,7 +4666,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭塔吉克斯坦邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得塔吉克斯坦当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -4337,7 +4735,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 突尼斯外交部官网 或当地使领馆递交留学签证申请。"
+              "detail": "按突尼斯驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -4350,7 +4748,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭突尼斯教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得突尼斯正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -4371,7 +4773,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签直飞（停留90天） 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向突尼斯驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -4384,7 +4786,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向突尼斯劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得突尼斯当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -4397,7 +4803,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 突尼斯外交部官网 查询最新永居条例。"
+              "detail": "访问突尼斯官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -4414,7 +4820,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向突尼斯当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在突尼斯连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -4448,7 +4858,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时入境",
+          "submission": "免签直飞（停留90天）",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -4465,7 +4878,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 突尼斯外交部官网 官方清单完成填报。"
+              "detail": "按突尼斯驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -4473,7 +4886,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭突尼斯邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得突尼斯当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -4538,7 +4955,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 坦桑尼亚移民局官方 e-Visa 或当地使领馆递交留学签证申请。"
+              "detail": "按坦桑尼亚驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -4551,7 +4968,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭坦桑尼亚教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得坦桑尼亚正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -4572,7 +4993,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 visa.immigration.go.tz 官网 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向坦桑尼亚驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -4585,7 +5006,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向坦桑尼亚劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得坦桑尼亚当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -4598,7 +5023,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 坦桑尼亚移民局官方 e-Visa 查询最新永居条例。"
+              "detail": "访问坦桑尼亚官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -4615,7 +5040,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向坦桑尼亚当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在坦桑尼亚连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -4649,7 +5078,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "5–10 工作日 / 落地即办",
+          "submission": "visa.immigration.go.tz 官网",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -4666,7 +5098,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 坦桑尼亚移民局官方 e-Visa 官方清单完成填报。"
+              "detail": "按坦桑尼亚驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -4674,7 +5106,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭坦桑尼亚邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得坦桑尼亚当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -4739,7 +5175,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 埃塞俄比亚官方 e-Visa（支持银联/支付宝） 或当地使领馆递交留学签证申请。"
+              "detail": "按埃塞俄比亚驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -4752,7 +5188,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭埃塞俄比亚教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得埃塞俄比亚正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -4773,7 +5213,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 evisa.gov.et 官方系统 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向埃塞俄比亚驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -4786,7 +5226,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向埃塞俄比亚劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得埃塞俄比亚当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -4799,7 +5243,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 埃塞俄比亚官方 e-Visa（支持银联/支付宝） 查询最新永居条例。"
+              "detail": "访问埃塞俄比亚官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -4816,13 +5260,17 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向埃塞俄比亚当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在埃塞俄比亚连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
         {
           "id": "main",
-          "title": "埃塞俄比亚 短期旅游/访客通道（e-Visa（支持支付宝/银联））",
+          "title": "埃塞俄比亚 短期旅游/访客通道（e-Visa·支持支付宝/银联）",
           "fee": "62 USD（30天单次）",
           "desc": "官网直接支持银联、支付宝及微信支付！非洲中转枢纽，转机或入境看火山教堂极方便。",
           "tips": "出发前务必核对护照剩余有效期（通常要求6个月以上）及至少2页空白签证页，并保留往返机票与酒店预订单。",
@@ -4850,7 +5298,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "3 工作日",
+          "submission": "evisa.gov.et 官方系统",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -4867,7 +5318,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 埃塞俄比亚官方 e-Visa（支持银联/支付宝） 官方清单完成填报。"
+              "detail": "按埃塞俄比亚驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -4875,7 +5326,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭埃塞俄比亚邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得埃塞俄比亚当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -4940,7 +5395,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 乌干达官方电子签门户 或当地使领馆递交留学签证申请。"
+              "detail": "按乌干达驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -4953,7 +5408,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭乌干达教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得乌干达正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -4974,7 +5433,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 visas.immigration.go.ug 官网 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向乌干达驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -4987,7 +5446,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向乌干达劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得乌干达当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -5000,7 +5463,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 乌干达官方电子签门户 查询最新永居条例。"
+              "detail": "访问乌干达官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -5017,7 +5480,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向乌干达当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在乌干达连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -5051,7 +5518,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "3–5 工作日",
+          "submission": "visas.immigration.go.ug 官网",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -5068,7 +5538,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 乌干达官方电子签门户 官方清单完成填报。"
+              "detail": "按乌干达驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -5076,7 +5546,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭乌干达邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得乌干达当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -5141,7 +5615,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 卢旺达移民局官网 或当地使领馆递交留学签证申请。"
+              "detail": "按卢旺达驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -5154,7 +5628,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭卢旺达教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得卢旺达正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -5175,7 +5653,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 基加利机场落地 / irembo.gov.rw 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向卢旺达驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -5188,7 +5666,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向卢旺达劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得卢旺达当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -5201,7 +5683,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 卢旺达移民局官网 查询最新永居条例。"
+              "detail": "访问卢旺达官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -5218,7 +5700,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向卢旺达当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在卢旺达连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -5252,7 +5738,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "落地即办 / Irembo网申",
+          "submission": "基加利机场落地 / irembo.gov.rw",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -5269,7 +5758,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 卢旺达移民局官网 官方清单完成填报。"
+              "detail": "按卢旺达驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -5277,7 +5766,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭卢旺达邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得卢旺达当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -5342,7 +5835,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 赞比亚移民局电子服务官网 或当地使领馆递交留学签证申请。"
+              "detail": "按赞比亚驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -5355,7 +5848,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭赞比亚教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得赞比亚正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -5376,7 +5873,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签直飞（停留90天） 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向赞比亚驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -5389,7 +5886,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向赞比亚劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得赞比亚当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -5402,7 +5903,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 赞比亚移民局电子服务官网 查询最新永居条例。"
+              "detail": "访问赞比亚官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -5419,7 +5920,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向赞比亚当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在赞比亚连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -5453,7 +5958,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时入境",
+          "submission": "免签直飞（停留90天）",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -5470,7 +5978,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 赞比亚移民局电子服务官网 官方清单完成填报。"
+              "detail": "按赞比亚驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -5478,7 +5986,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭赞比亚邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得赞比亚当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -5543,7 +6055,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 津巴布韦官方 e-Visa 或当地使领馆递交留学签证申请。"
+              "detail": "按津巴布韦驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -5556,7 +6068,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭津巴布韦教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得津巴布韦正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -5577,7 +6093,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 evisa.gov.zw / 机场落地 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向津巴布韦驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -5590,7 +6106,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向津巴布韦劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得津巴布韦当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -5603,7 +6123,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 津巴布韦官方 e-Visa 查询最新永居条例。"
+              "detail": "访问津巴布韦官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -5620,7 +6140,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向津巴布韦当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在津巴布韦连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -5654,7 +6178,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "机场落地即办",
+          "submission": "evisa.gov.zw / 机场落地",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -5671,7 +6198,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 津巴布韦官方 e-Visa 官方清单完成填报。"
+              "detail": "按津巴布韦驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -5679,7 +6206,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭津巴布韦邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得津巴布韦当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -5744,7 +6275,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 纳米比亚内政部在线电子签 或当地使领馆递交留学签证申请。"
+              "detail": "按纳米比亚驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -5757,7 +6288,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭纳米比亚教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得纳米比亚正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -5778,7 +6313,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 eservices.mhaiss.gov.na 官网 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向纳米比亚驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -5791,7 +6326,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向纳米比亚劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得纳米比亚当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -5804,7 +6343,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 纳米比亚内政部在线电子签 查询最新永居条例。"
+              "detail": "访问纳米比亚官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -5821,7 +6360,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向纳米比亚当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在纳米比亚连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -5855,7 +6398,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "3–5 工作日",
+          "submission": "eservices.mhaiss.gov.na 官网",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -5872,7 +6418,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 纳米比亚内政部在线电子签 官方清单完成填报。"
+              "detail": "按纳米比亚驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -5880,7 +6426,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭纳米比亚邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得纳米比亚当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -5899,7 +6449,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
     "tierColor": "#789882",
     "labelPriority": false,
     "processing": "机场落地即办",
-    "submission": "evisamada-mg.com / 机场落地",
+    "submission": "evisamada.gov.mg / 机场落地",
     "summary": "猴面包树大道与狐猴栖息地，抵达塔那那利佛机场可直接办理 15 天（10欧元）或 30 天（35欧元）落地签。",
     "pitfalls": [
       "【核对护照有效期与空白页】出发前确保中国护照剩余有效期在 6 个月以上且至少有 2 页空白签证页，否则航司会直接拒绝办理登机。",
@@ -5909,9 +6459,9 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
     ],
     "links": [
       {
-        "title": "马达加斯加官方 e-Visa",
-        "url": "https://www.evisamada-mg.com/en/",
-        "desc": "官方签证/入境申请与政策查询入口"
+        "title": "马达加斯加官方 e-Visa (eVisaMada)",
+        "url": "https://evisamada.gov.mg/",
+        "desc": "马达加斯加官方电子签证申请与政策查询入口"
       }
     ],
     "jobLinks": [
@@ -5945,7 +6495,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 马达加斯加官方 e-Visa 或当地使领馆递交留学签证申请。"
+              "detail": "按马达加斯加驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -5958,7 +6508,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭马达加斯加教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得马达加斯加正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -5979,7 +6533,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 evisamada-mg.com / 机场落地 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向马达加斯加驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -5992,7 +6546,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向马达加斯加劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得马达加斯加当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -6005,7 +6563,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 马达加斯加官方 e-Visa 查询最新永居条例。"
+              "detail": "访问马达加斯加官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -6022,7 +6580,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向马达加斯加当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在马达加斯加连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -6043,7 +6605,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "在线提交或前往签证中心递交",
-              "detail": "通过 evisamada-mg.com / 机场落地 提交申请并缴费（免签国直接填报入境卡）。"
+              "detail": "通过 evisamada.gov.mg / 机场落地 提交申请并缴费（免签国直接填报入境卡）。"
             },
             {
               "title": "获取批文或直接持护照入境",
@@ -6056,7 +6618,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "机场落地即办",
+          "submission": "evisamada.gov.mg / 机场落地",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -6073,7 +6638,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 马达加斯加官方 e-Visa 官方清单完成填报。"
+              "detail": "按马达加斯加驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -6081,7 +6646,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭马达加斯加邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得马达加斯加当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -6146,7 +6715,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 博茨瓦纳官方 e-Visa 门户 或当地使领馆递交留学签证申请。"
+              "detail": "按博茨瓦纳驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -6159,7 +6728,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭博茨瓦纳教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得博茨瓦纳正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -6180,7 +6753,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 evisa.gov.bw 官网 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向博茨瓦纳驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -6193,7 +6766,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向博茨瓦纳劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得博茨瓦纳当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -6206,7 +6783,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 博茨瓦纳官方 e-Visa 门户 查询最新永居条例。"
+              "detail": "访问博茨瓦纳官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -6223,7 +6800,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向博茨瓦纳当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在博茨瓦纳连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -6257,7 +6838,10 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "5–10 工作日",
+          "submission": "evisa.gov.bw 官网",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -6274,7 +6858,7 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 博茨瓦纳官方 e-Visa 门户 官方清单完成填报。"
+              "detail": "按博茨瓦纳驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -6282,7 +6866,11 @@ export const MIDDLE_EAST_AFRICA_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭博茨瓦纳邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得博茨瓦纳当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }

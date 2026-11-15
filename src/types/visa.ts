@@ -28,9 +28,9 @@ export interface SubVisaItem {
   id: string;
   title: string;
   fee: string;
-  processing?: string;
-  submission?: string;
-  diySupport?: DiySupportLevel;
+  processing: string;
+  submission: string;
+  diySupport: DiySupportLevel;
   advisoryNote?: string;
   desc: string;
   tips: string;

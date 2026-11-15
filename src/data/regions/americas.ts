@@ -55,213 +55,105 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
     "pathways": {
       "study": [
         {
-          "id": "sub_0",
-          "title": "F-1 学生签证",
-          "fee": "185 USD + 350 USD (SEVIS)",
-          "desc": "【F-1 学生签证】先获得学校 I-20 或 DS-2019 表格并缴纳 SEVIS 费，再填写 DS-160 预约面谈。",
-          "tips": "STEM 专业硕博生建议提前3个月预约面签并备好英文简历与导师研究计划以应对 Check。",
+          "id": "f1-j1",
+          "title": "F-1 学生签证 / J-1 访问学者签证",
+          "fee": "185 USD（签证费）+ 350 USD（SEVIS I-901，部分 J-1 为 220 USD）",
+          "processing": "面谈后 3–10 个工作日（行政审查 Check 另需 4–8 周）",
+          "submission": "缴 SEVIS 费 + CEAC 填报 DS-160 + USTravelDocs 预约使领馆面谈",
+          "diySupport": "diy",
+          "desc": "F-1 适用于赴美攻读高中、本科、硕博及语言项目；J-1 适用于公派或高校资助的访问学者、博士后及交流项目。均须先获学校签发 I-20 或 DS-2019 表格并缴纳 SEVIS 费，再填写 DS-160 预约面谈。",
+          "tips": "STEM 专业硕博生与敏感研究方向建议提前 3 个月预约面签，并随身备好英文简历、发表论文清单与导师研究计划以应对行政审查 (221g Check)。",
           "steps": [
             {
-              "title": "核对学校 I-20 表格",
-              "detail": "确认个人信息与资金数额无误并签名。"
+              "title": "核对学校 I-20 或 DS-2019 表格",
+              "detail": "确认个人信息、项目起止日与资金数额无误并亲笔签名。"
             },
             {
               "title": "缴纳 SEVIS I-901 费用",
-              "detail": "在 fmjfee.com 支付 350 美元并打印收据。"
+              "detail": "在 fmjfee.com 在线支付 350 USD（部分 J-1 为 220 USD）并打印缴费收据。"
             },
             {
-              "title": "填写 DS-160 并预约面谈",
-              "detail": "在 USTravelDocs 缴费抢约面谈时间。"
-            },
-            {
-              "title": "赴使领馆面谈并取回护照",
-              "detail": "通过后约 5 工作日取回贴签护照。"
-            }
-          ],
-          "checklist": [
-            "有效护照",
-            "I-20 原件/打印件",
-            "DS-160 确认页与面谈预约单",
-            "SEVIS 缴费收据",
-            "51×51mm 白底彩照",
-            "Offer、成绩单、英文简历及资金存款证明"
-          ]
-        },
-        {
-          "id": "sub_1",
-          "title": "J-1 访问学者签证",
-          "fee": "185 USD + 350 USD (SEVIS)",
-          "desc": "【J-1 访问学者签证】先获得学校 I-20 或 DS-2019 表格并缴纳 SEVIS 费，再填写 DS-160 预约面谈。",
-          "tips": "STEM 专业硕博生建议提前3个月预约面签并备好英文简历与导师研究计划以应对 Check。",
-          "steps": [
-            {
-              "title": "核对学校 I-20 表格",
-              "detail": "确认个人信息与资金数额无误并签名。"
-            },
-            {
-              "title": "缴纳 SEVIS I-901 费用",
-              "detail": "在 fmjfee.com 支付 350 美元并打印收据。"
-            },
-            {
-              "title": "填写 DS-160 并预约面谈",
-              "detail": "在 USTravelDocs 缴费抢约面谈时间。"
+              "title": "填写 DS-160 并预约使领馆面谈",
+              "detail": "在 CEAC 提交 DS-160，随后登录 USTravelDocs 缴费预约面谈时间。"
             },
             {
               "title": "赴使领馆面谈并取回护照",
-              "detail": "通过后约 5 工作日取回贴签护照。"
+              "detail": "常规通过后约 3–10 个工作日取回贴签护照。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "I-20 原件/打印件",
-            "DS-160 确认页与面谈预约单",
-            "SEVIS 缴费收据",
-            "51×51mm 白底彩照",
-            "Offer、成绩单、英文简历及资金存款证明"
+            "有效期内中国因私护照",
+            "学校签发的 I-20 或 DS-2019 表格及录取信",
+            "DS-160 确认页、面谈预约单与 SEVIS 缴费收据",
+            "51×51mm 白底近照",
+            "成绩单、英文简历、研究计划及家庭存款资金证明"
           ]
         }
       ],
       "work": [
         {
-          "id": "sub_0",
-          "title": "H-1B 专业工作",
-          "fee": "205 USD",
-          "desc": "【H-1B 专业工作】由美国雇主向 USCIS 递交 I-129 获批 I-797 后，凭批准函在国内使领馆面谈贴签。",
-          "tips": "非营利研究机构或高校等 Cap-Exempt 雇主不受每年3月 H-1B 抽签限制。",
+          "id": "h1b-l1-o1",
+          "title": "H-1B 专业工作 / L-1 跨国调派 / O-1 杰出人才",
+          "fee": "205 USD（使领馆贴签费；雇主向 USCIS 另缴 I-129 规费）",
+          "processing": "USCIS I-129 审理 2–6 个月（加急 15 工作日）+ 面谈后 3–10 工作日",
+          "submission": "美国雇主获批 USCIS I-797 后，本人填报 DS-160 赴使领馆面谈贴签",
+          "diySupport": "advisory",
+          "advisoryNote": "H-1B、L-1 与 O-1 均须先由美国雇主或担保机构向美国移民局 (USCIS) 递交 I-129 请愿并获批 I-797 批准函，个人无法跳过雇主直接申办工作签证。",
+          "desc": "H-1B 为美国最主流的专业人士工作签证；L-1 适用于跨国公司内部高管或核心技术人员调派赴美（免抽签且配偶 L-2S 可直接合法工作）；O-1 面向科学、艺术、教育及商业领域杰出人才（无抽签配额限制）。",
+          "tips": "美国高校、非营利研究机构等 Cap-Exempt 雇主不受每年 3 月 H-1B 抽签配额限制，全年随时可办 H-1B；赴面谈务必携带完整 I-129 副本与在职信。",
           "steps": [
             {
-              "title": "雇主获批 USCIS I-797",
-              "detail": "拿到官方 I-797A/B 批准函。"
+              "title": "雇主向 USCIS 递交 I-129 并获批 I-797",
+              "detail": "拿到官方 I-797A/B 批准函及全套 I-129 申请副本。"
             },
             {
-              "title": "在线填写 DS-160",
-              "detail": "准确填入 I-797 Receipt Number。"
+              "title": "在线填写 DS-160 申请表",
+              "detail": "准确填入 I-797 Receipt Number 及美国雇主与岗位信息。"
             },
             {
-              "title": "预约并赴使领馆面谈",
-              "detail": "携带雇佣信、学历与简历完成面谈。"
+              "title": "预约并赴使领馆面谈贴签",
+              "detail": "携带 I-797 批准函、雇佣信、最高学历证明与英文简历完成面谈。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "I-797 批准函及 I-129 副本",
-            "DS-160 确认页与预约信",
-            "雇主在职信/Offer",
-            "最高学历证明与英文简历"
-          ]
-        },
-        {
-          "id": "sub_1",
-          "title": "L-1 跨国调派",
-          "fee": "205 USD",
-          "desc": "【L-1 跨国调派】由美国雇主向 USCIS 递交 I-129 获批 I-797 后，凭批准函在国内使领馆面谈贴签。",
-          "tips": "非营利研究机构或高校等 Cap-Exempt 雇主不受每年3月 H-1B 抽签限制。",
-          "steps": [
-            {
-              "title": "雇主获批 USCIS I-797",
-              "detail": "拿到官方 I-797A/B 批准函。"
-            },
-            {
-              "title": "在线填写 DS-160",
-              "detail": "准确填入 I-797 Receipt Number。"
-            },
-            {
-              "title": "预约并赴使领馆面谈",
-              "detail": "携带雇佣信、学历与简历完成面谈。"
-            }
-          ],
-          "checklist": [
-            "有效护照",
-            "I-797 批准函及 I-129 副本",
-            "DS-160 确认页与预约信",
-            "雇主在职信/Offer",
-            "最高学历证明与英文简历"
-          ]
-        },
-        {
-          "id": "sub_2",
-          "title": "O-1 杰出人才",
-          "fee": "205 USD",
-          "desc": "【O-1 杰出人才】由美国雇主向 USCIS 递交 I-129 获批 I-797 后，凭批准函在国内使领馆面谈贴签。",
-          "tips": "非营利研究机构或高校等 Cap-Exempt 雇主不受每年3月 H-1B 抽签限制。",
-          "steps": [
-            {
-              "title": "雇主获批 USCIS I-797",
-              "detail": "拿到官方 I-797A/B 批准函。"
-            },
-            {
-              "title": "在线填写 DS-160",
-              "detail": "准确填入 I-797 Receipt Number。"
-            },
-            {
-              "title": "预约并赴使领馆面谈",
-              "detail": "携带雇佣信、学历与简历完成面谈。"
-            }
-          ],
-          "checklist": [
-            "有效护照",
-            "I-797 批准函及 I-129 副本",
-            "DS-160 确认页与预约信",
-            "雇主在职信/Offer",
-            "最高学历证明与英文简历"
+            "有效护照与 51×51mm 白底彩照",
+            "USCIS I-797 批准函原件/复印件及 I-129 副本",
+            "DS-160 确认页与 USTravelDocs 面谈预约单",
+            "美国雇主出具的正式在职信/聘用合同",
+            "最高学历学位证书、个人英文简历及过往工资单（如续签）"
           ]
         }
       ],
       "immigration": [
         {
-          "id": "sub_0",
-          "title": "EB-1A 杰出人才",
-          "fee": "345 USD (NVC) + 235 USD (绿卡费)",
-          "desc": "【EB-1A 杰出人才】EB-1A 与 NIW 无需雇主担保，可自行向 USCIS 递交 I-140；排期到后转广州总领馆面签。",
-          "tips": "密切关注每月 Visa Bulletin 排期表；广州面谈前需在指定卫生保健中心体检。",
+          "id": "eb1a-niw",
+          "title": "EB-1A 杰出人才 / NIW 国家利益豁免",
+          "fee": "345 USD (NVC 移民签证费) + 235 USD (USCIS 绿卡制作费；I-140 规费另计)",
+          "processing": "I-140 审理约 4–12 个月（加急 15–45 工作日）+ 排期与广州领馆面签",
+          "submission": "个人可无需雇主担保直接向 USCIS 递交 I-140，排期到后转 NVC 及广州总领馆面签",
+          "diySupport": "diy",
+          "desc": "EB-1A（杰出人才）与 NIW（国家利益豁免）均支持申请人无需美国雇主担保、无需劳工证 (PERM) 直接自行向 USCIS 递交 I-140 移民请愿，是目前科研人员、工程师及行业骨干 DIY 拿美国绿卡的核心通道。",
+          "tips": "务必每月紧盯美国国务院 Visa Bulletin 排期表（Priority Date）；I-140 获批进入 NVC 后转广州总领馆面签，行前须在指定出国卫生保健中心完成密封体检。",
           "steps": [
             {
-              "title": "递交 I-140 移民请愿",
-              "detail": "整理奖项、论文、高薪或行业贡献材料寄交 USCIS。"
+              "title": "准备请愿书并向 USCIS 递交 I-140",
+              "detail": "按标准整理获奖、论文引用、审稿、专利、媒体报道或高薪材料寄交 USCIS（可选加急 PP）。"
             },
             {
-              "title": "转入 NVC 阶段",
-              "detail": "填写 DS-260 并上传无犯罪与出生公证。"
+              "title": "排期临近转入 NVC 国家签证中心",
+              "detail": "缴费后填写 DS-260 在线移民表并上传出生公证、无犯罪公证与婚姻公证。"
             },
             {
-              "title": "指定医院体检并赴广州面谈",
-              "detail": "通过后持移民签证入境激活绿卡。"
+              "title": "指定医院体检并赴广州总领馆面谈",
+              "detail": "面谈通过持移民签证入境美国即激活永久居民身份并等待邮寄绿卡。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "I-797 批准函与广州面谈信",
-            "DS-260 确认页",
-            "出生/无犯罪/婚姻公证书",
-            "密封体检报告"
-          ]
-        },
-        {
-          "id": "sub_1",
-          "title": "NIW 国家利益豁免",
-          "fee": "345 USD (NVC) + 235 USD (绿卡费)",
-          "desc": "【NIW 国家利益豁免】EB-1A 与 NIW 无需雇主担保，可自行向 USCIS 递交 I-140；排期到后转广州总领馆面签。",
-          "tips": "密切关注每月 Visa Bulletin 排期表；广州面谈前需在指定卫生保健中心体检。",
-          "steps": [
-            {
-              "title": "递交 I-140 移民请愿",
-              "detail": "整理奖项、论文、高薪或行业贡献材料寄交 USCIS。"
-            },
-            {
-              "title": "转入 NVC 阶段",
-              "detail": "填写 DS-260 并上传无犯罪与出生公证。"
-            },
-            {
-              "title": "指定医院体检并赴广州面谈",
-              "detail": "通过后持移民签证入境激活绿卡。"
-            }
-          ],
-          "checklist": [
-            "有效护照",
-            "I-797 批准函与广州面谈信",
-            "DS-260 确认页",
-            "出生/无犯罪/婚姻公证书",
-            "密封体检报告"
+            "有效护照与 I-797 I-140 批准函",
+            "DS-260 确认页与广州总领馆移民面谈通知信",
+            "涉外公证处出具的出生、无犯罪及婚姻公证书",
+            "美国指定体检中心密封体检报告",
+            "个人简历、赴美工作/研究计划陈述及资产证明"
           ]
         }
       ],
@@ -292,74 +184,37 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "51×51mm 白底彩照",
             "在职证明与半年银行流水",
             "房产/资产证明与英文行程单"
-          ]
+          ],
+          "processing": "面谈后 3–10 个工作日（48 个月内免面谈代传递约 2–3 周）",
+          "submission": "CEAC 在线填 DS-160 + USTravelDocs 缴费预约使领馆面谈（出行前配 EVUS）",
+          "diySupport": "diy"
         }
       ],
       "other": [
         {
-          "id": "sub_0",
-          "title": "J-1 暑期实习",
-          "fee": "185 USD",
-          "desc": "【J-1 暑期实习】涵盖大学生暑期带薪实习、探望在美亲属及经美转机（美国无免签过境区，转机必办签证）。",
-          "tips": "探亲建议让美方亲属提供邀请函及合法身份复印件（绿卡/I-20/护照）。",
+          "id": "j1-b2-c1",
+          "title": "J-1 暑期实习 / 探亲 B2 / 过境 C-1",
+          "fee": "185 USD（签证费；J-1 另缴 SEVIS 费）",
+          "processing": "面谈后 3–10 个工作日",
+          "submission": "CEAC 在线填 DS-160 + USTravelDocs 缴费预约使领馆面谈",
+          "diySupport": "diy",
+          "desc": "涵盖在读大学生赴美带薪暑期实习 (J-1 Work & Travel)、赴美探望亲友子女 (B2) 以及经美国机场转机前往第三国 (C-1)。特别注意：美国机场不设免签国际中转区，哪怕不出机场也必须提前持有有效美签！",
+          "tips": "探亲 B2 建议由在美亲属提供邀请函、合法身份复印件（绿卡/公民护照/I-20）及在读/在职证明；B1/B2 获批后同样须办理 EVUS 登记方可乘机。",
           "steps": [
             {
-              "title": "确定对应签证代码",
-              "detail": "探亲选 B2；转机选 C1；实习由机构发 DS-2019 选 J1。"
+              "title": "确认对应非移民签证代码",
+              "detail": "探亲选 B2；经美转机选 C-1（通常建议直接申 B1/B2 更实用）；实习由担保机构签发 DS-2019 选 J-1。"
             },
             {
-              "title": "填表预约并携带佐证面谈",
-              "detail": "附邀请信或联程机票。"
+              "title": "CEAC 填 DS-160 并预约面谈",
+              "detail": "携带邀请信、联程机票或 DS-2019 赴使领馆面谈取签。"
             }
           ],
           "checklist": [
-            "有效护照、DS-160、预约单与照片",
-            "美方邀请函及身份复印件 / 转机机票",
-            "亲属关系证明与在职资金证明"
-          ]
-        },
-        {
-          "id": "sub_1",
-          "title": "探亲 B2",
-          "fee": "185 USD",
-          "desc": "【探亲 B2】涵盖大学生暑期带薪实习、探望在美亲属及经美转机（美国无免签过境区，转机必办签证）。",
-          "tips": "探亲建议让美方亲属提供邀请函及合法身份复印件（绿卡/I-20/护照）。",
-          "steps": [
-            {
-              "title": "确定对应签证代码",
-              "detail": "探亲选 B2；转机选 C1；实习由机构发 DS-2019 选 J1。"
-            },
-            {
-              "title": "填表预约并携带佐证面谈",
-              "detail": "附邀请信或联程机票。"
-            }
-          ],
-          "checklist": [
-            "有效护照、DS-160、预约单与照片",
-            "美方邀请函及身份复印件 / 转机机票",
-            "亲属关系证明与在职资金证明"
-          ]
-        },
-        {
-          "id": "sub_2",
-          "title": "过境 C-1",
-          "fee": "185 USD",
-          "desc": "【过境 C-1】涵盖大学生暑期带薪实习、探望在美亲属及经美转机（美国无免签过境区，转机必办签证）。",
-          "tips": "探亲建议让美方亲属提供邀请函及合法身份复印件（绿卡/I-20/护照）。",
-          "steps": [
-            {
-              "title": "确定对应签证代码",
-              "detail": "探亲选 B2；转机选 C1；实习由机构发 DS-2019 选 J1。"
-            },
-            {
-              "title": "填表预约并携带佐证面谈",
-              "detail": "附邀请信或联程机票。"
-            }
-          ],
-          "checklist": [
-            "有效护照、DS-160、预约单与照片",
-            "美方邀请函及身份复印件 / 转机机票",
-            "亲属关系证明与在职资金证明"
+            "有效护照、DS-160 确认页、预约单与 51×51mm 照片",
+            "美方亲属邀请函及合法身份复印件（B2）或联程机票（C-1）",
+            "亲属关系证明及国内在职/退休/资产约束力证明",
+            "担保机构签发的 DS-2019 及 SEVIS 收据（J-1 实习）"
           ]
         }
       ]
@@ -443,7 +298,10 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "GIC 证明与首年学费资金证明",
             "预体检回执",
             "Study Plan 与无犯罪公证"
-          ]
+          ],
+          "processing": "约 4–8 周（含预体检与指纹）",
+          "submission": "IRCC GCKey 全程在线网申 + VFS Global 录指纹（获 OPR 后贴签）",
+          "diySupport": "diy"
         }
       ],
       "work": [
@@ -477,7 +335,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "过往相关工作推荐信、社保与个税记录",
             "无犯罪记录公证件及预体检回执",
             "个人英文简历与学历证书"
-          ]
+          ],
+          "processing": "LMIA 审理 2–5 个月 + 工签网申 4–10 周",
+          "submission": "雇主向 ESDC 获批 LMIA 后，本人在 GCKey 提交 IMM1295 网申并赴 VFS 录指纹",
+          "diySupport": "advisory",
+          "advisoryNote": "封闭式工签须先由加拿大雇主完成 4 周本地招聘公示并向 ESDC 申请获批 LMIA 批文，个人无法跳过雇主直接自助申办。"
         },
         {
           "id": "francophone",
@@ -509,7 +371,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "雇主在 Employer Portal 生成的 A 开头 Offer 编号及合同",
             "无犯罪记录公证及预体检回执",
             "个人法语/英文简历"
-          ]
+          ],
+          "processing": "约 3–8 周（免 LMIA，通常更快）",
+          "submission": "雇主在 IRCC Employer Portal 提交免 LMIA Offer 后，本人 GCKey 网申并赴 VFS 录指纹",
+          "diySupport": "advisory",
+          "advisoryNote": "法语移动通道虽免除 LMIA，仍须先取得魁北克省以外加拿大雇主的正式工作 Offer 及 IRCC Employer Portal 生成的 A 开头 Offer 编号。"
         }
       ],
       "immigration": [
@@ -539,7 +405,10 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "10年工作证明与税单社保",
             "18岁起无犯罪公证",
             "定居资金证明与体检回执"
-          ]
+          ],
+          "processing": "EE 入池获邀 (ITA) 后约 5–6 个月审结 PR",
+          "submission": "IRCC Express Entry 系统自助建档入池，获邀后全程在线提交 PR 电子材料",
+          "diySupport": "diy"
         }
       ],
       "tourism": [
@@ -569,54 +438,38 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "英文在职证明与营业执照",
             "行程单与机酒预订单",
             "美签/发达国家签证页扫描件"
-          ]
+          ],
+          "processing": "约 15–40 天",
+          "submission": "IRCC Portal 在线填表上传 PDF + VFS Global 录指纹并寄护照贴签",
+          "diySupport": "diy"
         }
       ],
       "other": [
         {
-          "id": "sub_0",
-          "title": "Super Visa 父母超级签证",
-          "fee": "100 CAD + 85 CAD",
-          "desc": "【Super Visa 父母超级签证】加拿大公民/PR 父母可办 Super Visa，单次入境最长可连续停留 5 年。",
-          "tips": "Super Visa 强制购买1年期、10万加元保额医疗保险，且子女收入须达 LICO 线。",
+          "id": "supervisa-visit",
+          "title": "Super Visa 父母超级签证 / 探亲访友",
+          "fee": "100 CAD + 85 CAD（指纹）",
+          "processing": "约 15–45 天（含预体检与录指纹）",
+          "submission": "IRCC Portal 在线提交 + VFS Global 录指纹（Super Visa 须完成预体检）",
+          "diySupport": "advisory",
+          "advisoryNote": "父母超级签证 (Super Visa) 与探亲访友签均须由在加亲属/子女（加拿大 PR 或公民）出具正式邀请函、身份证明及达标收入税单 (CRA NOA)，无法无邀请方单独申请。",
+          "desc": "加拿大公民或永久居民 (PR) 的父母及祖父母可申请 Super Visa，单次入境最长可连续停留长达 5 年；短期赴加探望在加留学、工作或定居的亲属走常规探亲 Visitor Visa。",
+          "tips": "Super Visa 强制要求提前购买至少 1 年期、保额不低于 10 万加元的加拿大或认可医疗保险，且邀请子女家庭收入须达到加拿大统计局 LICO 最低门槛。",
           "steps": [
             {
-              "title": "在加子女准备邀请函与 NOA 税单",
-              "detail": "证明收入达标。"
+              "title": "在加亲属准备邀请函与收入证明",
+              "detail": "备好加拿大 PR/公民证明、亲属关系公证及最新 CRA NOA 税单（Super Visa 须达 LICO 线）。"
             },
             {
-              "title": "购买10万加元医疗保险",
-              "detail": "完成预体检后在 IRCC Portal 提交。"
+              "title": "完成预体检/买保险并 IRCC 网申",
+              "detail": "Super Visa 买妥 10 万加元医疗保险并到指定医院预体检后，在 IRCC Portal 提交并赴 VFS 录指纹。"
             }
           ],
           "checklist": [
-            "父母护照与体检回执",
-            "子女邀请函、PR/公民证明与亲属公证",
-            "CRA NOA 税单",
-            "1年期10万加元保单"
-          ]
-        },
-        {
-          "id": "sub_1",
-          "title": "探亲",
-          "fee": "100 CAD + 85 CAD",
-          "desc": "【探亲】加拿大公民/PR 父母可办 Super Visa，单次入境最长可连续停留 5 年。",
-          "tips": "Super Visa 强制购买1年期、10万加元保额医疗保险，且子女收入须达 LICO 线。",
-          "steps": [
-            {
-              "title": "在加子女准备邀请函与 NOA 税单",
-              "detail": "证明收入达标。"
-            },
-            {
-              "title": "购买10万加元医疗保险",
-              "detail": "完成预体检后在 IRCC Portal 提交。"
-            }
-          ],
-          "checklist": [
-            "父母护照与体检回执",
-            "子女邀请函、PR/公民证明与亲属公证",
-            "CRA NOA 税单",
-            "1年期10万加元保单"
+            "申请人有效护照及体检回执（Super Visa 必需）",
+            "在加子女/亲属邀请函、PR 卡/公民证或学工签复印件",
+            "亲属关系公证书与 CRA NOA 完税证明（Super Visa 必需）",
+            "1 年期 10 万加元保额医疗保险单（Super Visa）及国内资产证明"
           ]
         }
       ]
@@ -687,7 +540,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 墨西哥外交部官方预约系统 或当地使领馆递交留学签证申请。"
+              "detail": "按墨西哥驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -700,7 +553,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭墨西哥教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得墨西哥正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -721,7 +578,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 Citas 预约使领馆 / 持美签免签 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向墨西哥驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -734,7 +591,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向墨西哥劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得墨西哥当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -747,7 +608,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 墨西哥国家移民局 (INM) 查询最新永居条例。"
+              "detail": "访问墨西哥官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -764,7 +625,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向墨西哥当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在墨西哥连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -798,7 +663,10 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "5–10 工作日",
+          "submission": "Citas 预约使领馆 / 持美签免签",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -815,7 +683,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 墨西哥外交部官方预约系统 官方清单完成填报。"
+              "detail": "按墨西哥驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -823,7 +691,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭墨西哥邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得墨西哥当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -893,7 +765,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 巴西外交部在线签证填表 (SCI) 或当地使领馆递交留学签证申请。"
+              "detail": "按巴西驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -906,7 +778,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭巴西教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得巴西正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -927,7 +803,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 SCI 填表 + e-consular 预约 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向巴西驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -940,7 +816,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向巴西劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得巴西当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -953,7 +833,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 巴西驻上海总领馆 e-consular 查询最新永居条例。"
+              "detail": "访问巴西官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -970,7 +850,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向巴西当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在巴西连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -1004,31 +888,41 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "5–15 工作日",
+          "submission": "SCI 填表 + e-consular 预约",
+          "diySupport": "diy"
         }
       ],
       "other": [
         {
           "id": "main",
-          "title": "巴西 商务考察 / 探亲访友 / 特殊通道",
-          "fee": "约 800+ RMB",
-          "desc": "涵盖赴巴西参加展会商务洽谈、探望当地亲友，以及部分国家推出的数字游民/长期旅居或过境便利通道。",
-          "tips": "商务访问须由当地合作企业出具正式抬头纸邀请函；探亲须附邀请人当地合法居留证件复印件。",
+          "title": "巴西数字游民签证 (VITEM XIV)",
+          "fee": "约 800+ RMB（对等领事签证费，以领馆 e-consular 实时为准）",
+          "processing": "约 10–20 个工作日",
+          "submission": "在巴西外交部 SCI 系统填表后通过驻华使领馆 e-consular 在线上传预约递交",
+          "diySupport": "diy",
+          "desc": "巴西 VITEM XIV 数字游民签证有效期 1 年（可境内续签 1 年），面向远程服务境外雇主或自雇的专业人士，仅需证明月均收入至少 1,500 USD（或拥有 18,000 USD 银行存款）即可向驻华使领馆自助申请。",
+          "tips": "申请所需的无犯罪记录公证书与出生证明须提前办理外交部海牙认证 (Apostille) 并配葡语或英文翻译。",
           "steps": [
             {
-              "title": "准备邀请方或过境佐证材料",
-              "detail": "商务备好邀请函与派遣函；探亲备好亲属关系证明。"
+              "title": "核对 1,500 USD 月入或 18,000 USD 存款证明",
+              "detail": "备好境外雇佣/远程服务合同、银行流水及海牙认证的无犯罪与出生公证。"
             },
             {
-              "title": "核对免签或网申通道提交",
-              "detail": "参考 巴西外交部在线签证填表 (SCI) 官方清单完成填报。"
+              "title": "SCI 在线填表并打印回执页",
+              "detail": "在 formulario-mre.serpro.gov.br 上传照片签名并生成条形码回执。"
+            },
+            {
+              "title": "通过 e-consular 上传材料预约递签",
+              "detail": "预审通过后赴使领馆递交护照原件贴签，入境巴西后 90 天内赴联邦警察局登记领卡。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "当地邀请函及邀请方身份/营业执照复印件",
-            "中方公司派遣函（商务）或亲属关系证明（探亲）",
-            "往返机票及住宿证明"
+            "有效护照及 SCI 填表条形码回执页",
+            "远程工作合同与月入 ≥ 1,500 USD 流水（或 18,000 USD 存款证明）",
+            "海牙认证的无犯罪记录公证及出生公证（配葡/英文译文）",
+            "覆盖巴西境内的医疗保险单及远程办公声明书"
           ]
         }
       ]
@@ -1059,7 +953,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
     "links": [
       {
         "title": "阿根廷移民局 AVE 电子授权官网",
-        "url": "https://www.migraciones.gob.ar/ave/index.htm",
+        "url": "https://www.argentina.gob.ar/interior/migraciones/ave",
         "desc": "官方签证/入境申请与政策查询入口"
       },
       {
@@ -1099,7 +993,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 阿根廷移民局 AVE 电子授权官网 或当地使领馆递交留学签证申请。"
+              "detail": "按阿根廷驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -1112,7 +1006,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭阿根廷教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得阿根廷正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -1133,7 +1031,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 Migraciones AVE 在线 / 领馆 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向阿根廷驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -1146,7 +1044,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向阿根廷劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得阿根廷当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -1159,7 +1061,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 阿根廷外交部官网 查询最新永居条例。"
+              "detail": "访问阿根廷官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -1176,7 +1078,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向阿根廷当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在阿根廷连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -1210,7 +1116,10 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "10–20 工作日",
+          "submission": "Migraciones AVE 在线 / 领馆",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -1227,7 +1136,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 阿根廷移民局 AVE 电子授权官网 官方清单完成填报。"
+              "detail": "按阿根廷驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -1235,7 +1144,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭阿根廷邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得阿根廷当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -1305,7 +1218,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 智利外交部官方在线签证系统 或当地使领馆递交留学签证申请。"
+              "detail": "按智利驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -1318,7 +1231,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭智利教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得智利正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -1339,7 +1256,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 SAC 在线填表 / 持美加签免签 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向智利驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -1352,7 +1269,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向智利劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得智利当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -1365,7 +1286,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 智利国家移民局官网 查询最新永居条例。"
+              "detail": "访问智利官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -1382,7 +1303,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向智利当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在智利连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -1416,7 +1341,10 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "2–3 周",
+          "submission": "SAC 在线填表 / 持美加签免签",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -1433,7 +1361,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 智利外交部官方在线签证系统 官方清单完成填报。"
+              "detail": "按智利驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -1441,7 +1369,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭智利邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得智利当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -1511,7 +1443,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 秘鲁外交部官方门户 或当地使领馆递交留学签证申请。"
+              "detail": "按秘鲁驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -1524,7 +1456,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭秘鲁教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得秘鲁正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -1545,7 +1481,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 领馆预约 / 持发达国家签免签 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向秘鲁驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -1558,7 +1494,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向秘鲁劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得秘鲁当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -1571,7 +1511,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 秘鲁移民局官网 查询最新永居条例。"
+              "detail": "访问秘鲁官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -1588,7 +1528,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向秘鲁当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在秘鲁连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -1622,7 +1566,10 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "5–10 工作日",
+          "submission": "领馆预约 / 持发达国家签免签",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -1639,7 +1586,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 秘鲁外交部官方门户 官方清单完成填报。"
+              "detail": "按秘鲁驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -1647,7 +1594,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭秘鲁邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得秘鲁当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -1712,7 +1663,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 哥伦比亚外交部在线签证申请 或当地使领馆递交留学签证申请。"
+              "detail": "按哥伦比亚驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -1725,7 +1676,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭哥伦比亚教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得哥伦比亚正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -1746,7 +1701,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 Cancillería 全在线系统 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向哥伦比亚驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -1759,7 +1714,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向哥伦比亚劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得哥伦比亚当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -1772,7 +1731,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 哥伦比亚外交部在线签证申请 查询最新永居条例。"
+              "detail": "访问哥伦比亚官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -1789,7 +1748,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向哥伦比亚当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在哥伦比亚连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -1823,31 +1786,41 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "5–10 工作日",
+          "submission": "Cancillería 全在线系统",
+          "diySupport": "diy"
         }
       ],
       "other": [
         {
           "id": "main",
-          "title": "哥伦比亚 商务考察 / 探亲访友 / 特殊通道",
-          "fee": "约 52–100 USD（免签除外）",
-          "desc": "涵盖赴哥伦比亚参加展会商务洽谈、探望当地亲友，以及部分国家推出的数字游民/长期旅居或过境便利通道。",
-          "tips": "商务访问须由当地合作企业出具正式抬头纸邀请函；探亲须附邀请人当地合法居留证件复印件。",
+          "title": "哥伦比亚数字游民电子签 (Visa V Nómadas Digitales)",
+          "fee": "54 USD（审理费）+ 177 USD（批签发证费）",
+          "processing": "约 5–15 个工作日",
+          "submission": "通过哥伦比亚外交部 (Cancillería) 全在线系统自助填报上传全部材料",
+          "diySupport": "diy",
+          "desc": "哥伦比亚数字游民 Visa V 支持最长 2 年有效期，且收入门槛极具亲和力：只需证明过去 3 个月平均月收入不低于哥伦比亚法定最低工资的 3 倍（约 1,000–1,200 USD/月）即可全程网上自助申办电子签！",
+          "tips": "全部文件均须转为英文或西班牙语 PDF 上传，电子签获批后直接邮件下发 e-Visa，入境后在当地 Migración 登记领取 Cédula de Extranjería 外国人身份证。",
           "steps": [
             {
-              "title": "准备邀请方或过境佐证材料",
-              "detail": "商务备好邀请函与派遣函；探亲备好亲属关系证明。"
+              "title": "备齐远程工作证明与 3 个月流水",
+              "detail": "由境外雇主出具允许赴哥伦比亚远程办公的英文/西语证明函，并附近 3 个月银行流水。"
             },
             {
-              "title": "核对免签或网申通道提交",
-              "detail": "参考 哥伦比亚外交部在线签证申请 官方清单完成填报。"
+              "title": "购买医疗保险并在 Cancillería 官网填表",
+              "detail": "登录 tramitesmre.cancilleria.gov.co 填写 Visa V 数字游民申请并上传 PDF 缴费。"
+            },
+            {
+              "title": "邮件查收电子签证并在入境后登记",
+              "detail": "约 1–3 周出签，入境哥伦比亚 15 天内在线及现场登记领取外国人身份证。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "当地邀请函及邀请方身份/营业执照复印件",
-            "中方公司派遣函（商务）或亲属关系证明（探亲）",
-            "往返机票及住宿证明"
+            "有效护照首页扫描件与白底电子照片",
+            "境外雇主出具的远程办公许可证明（英文/西语）",
+            "近 3 个月月入达标的银行对账单",
+            "覆盖哥伦比亚全境的紧急医疗与遣返保险单"
           ]
         }
       ]
@@ -1913,7 +1886,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 巴拿马国家移民局官网 或当地使领馆递交留学签证申请。"
+              "detail": "按巴拿马驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -1926,7 +1899,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭巴拿马教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得巴拿马正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -1947,7 +1924,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 有条件免签 / 巴拿马移民局 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向巴拿马驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -1960,7 +1937,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向巴拿马劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得巴拿马当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -1973,7 +1954,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 巴拿马国家移民局官网 查询最新永居条例。"
+              "detail": "访问巴拿马官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -1990,7 +1971,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向巴拿马当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在巴拿马连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -2024,7 +2009,10 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "免签 / 领馆 10 天",
+          "submission": "有条件免签 / 巴拿马移民局",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -2041,7 +2029,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 巴拿马国家移民局官网 官方清单完成填报。"
+              "detail": "按巴拿马驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -2049,7 +2037,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭巴拿马邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得巴拿马当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -2114,7 +2106,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 哥斯达黎加移民局官网 或当地使领馆递交留学签证申请。"
+              "detail": "按哥斯达黎加驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -2127,7 +2119,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭哥斯达黎加教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得哥斯达黎加正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -2148,7 +2144,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 有条件免签 / 移民局 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向哥斯达黎加驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -2161,7 +2157,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向哥斯达黎加劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得哥斯达黎加当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -2174,7 +2174,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 哥斯达黎加移民局官网 查询最新永居条例。"
+              "detail": "访问哥斯达黎加官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -2191,7 +2191,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向哥斯达黎加当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在哥斯达黎加连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -2225,31 +2229,42 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "免签 / 领馆 10 天",
+          "submission": "有条件免签 / 移民局",
+          "diySupport": "diy"
         }
       ],
       "other": [
         {
           "id": "main",
-          "title": "哥斯达黎加 商务考察 / 探亲访友 / 特殊通道",
-          "fee": "0 元（有条件免签）/ 领馆签",
-          "desc": "涵盖赴哥斯达黎加参加展会商务洽谈、探望当地亲友，以及部分国家推出的数字游民/长期旅居或过境便利通道。",
-          "tips": "商务访问须由当地合作企业出具正式抬头纸邀请函；探亲须附邀请人当地合法居留证件复印件。",
+          "title": "哥斯达黎加数字游民居留 (Estancia para Nómadas Digitales)",
+          "fee": "100 USD（在线申请费）+ 居留登记费约 90 USD",
+          "processing": "约 15 天（移民局线上快速审批）",
+          "submission": "通过哥斯达黎加移民局 Tramite Ya 平台全在线上传材料提交申请",
+          "diySupport": "diy",
+          "desc": "哥斯达黎加为远程工作者提供 1 年期（可续签 1 年）数字游民居留，要求证明过去一年稳定月收入不低于 3,000 USD（携带家庭成员为 4,000 USD），不仅可免征当地所得税，还可免税进口个人工作电脑设备！",
+          "tips": "使用英文或中文银行流水及无犯罪证明时，须按官方要求随附海牙认证或官方西班牙语翻译件；持有效美/加/申根多次签亦可先免签入境 30 天考察。",
           "steps": [
             {
-              "title": "准备邀请方或过境佐证材料",
-              "detail": "商务备好邀请函与派遣函；探亲备好亲属关系证明。"
+              "title": "整理近 12 个月 ≥ 3,000 USD/月银行流水",
+              "detail": "由银行开具英文对账单及收入来源证明（合同或自由职业服务协议）。"
             },
             {
-              "title": "核对免签或网申通道提交",
-              "detail": "参考 哥斯达黎加移民局官网 官方清单完成填报。"
+              "title": "注册移民局 Tramite Ya 系统在线提交",
+              "detail": "上传护照、流水、声明书及缴费 100 USD 回执，常规约 15 天内线上批复。"
+            },
+            {
+              "title": "购买医疗保险并抵哥完成居留登记",
+              "detail": "批复后 3 个月内入境完成保险提交与 DIMEX 卡制证。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "当地邀请函及邀请方身份/营业执照复印件",
-            "中方公司派遣函（商务）或亲属关系证明（探亲）",
-            "往返机票及住宿证明"
+            "有效护照个人信息页及入境记录页",
+            "近 12 个月月均 ≥ 3,000 USD 的银行流水对账单",
+            "远程工作合同或境外公司/自由职业证明",
+            "海牙认证无犯罪公证（及西班牙语翻译）",
+            "覆盖哥斯达黎加全年的 50,000 USD 保额医疗保险"
           ]
         }
       ]
@@ -2315,7 +2330,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 厄瓜多尔外交部官方签证网 或当地使领馆递交留学签证申请。"
+              "detail": "按厄瓜多尔驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -2328,7 +2343,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭厄瓜多尔教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得厄瓜多尔正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -2349,7 +2368,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 servicioconsular.cancilleria.gob.ec 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向厄瓜多尔驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -2362,7 +2381,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向厄瓜多尔劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得厄瓜多尔当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -2375,7 +2398,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 厄瓜多尔外交部官方签证网 查询最新永居条例。"
+              "detail": "访问厄瓜多尔官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -2392,7 +2415,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向厄瓜多尔当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在厄瓜多尔连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -2426,7 +2453,10 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "10–15 工作日",
+          "submission": "servicioconsular.cancilleria.gob.ec",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -2443,7 +2473,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 厄瓜多尔外交部官方签证网 官方清单完成填报。"
+              "detail": "按厄瓜多尔驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -2451,7 +2481,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭厄瓜多尔邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得厄瓜多尔当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -2516,7 +2550,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 巴哈马移民局官网 或当地使领馆递交留学签证申请。"
+              "detail": "按巴哈马驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -2529,7 +2563,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭巴哈马教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得巴哈马正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -2550,7 +2588,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签直飞（停留30天） 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向巴哈马驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -2563,7 +2601,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向巴哈马劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得巴哈马当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -2576,7 +2618,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 巴哈马移民局官网 查询最新永居条例。"
+              "detail": "访问巴哈马官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -2593,7 +2635,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向巴哈马当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在巴哈马连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -2627,7 +2673,10 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时入境",
+          "submission": "免签直飞（停留30天）",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -2644,7 +2693,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 巴哈马移民局官网 官方清单完成填报。"
+              "detail": "按巴哈马驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -2652,7 +2701,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭巴哈马邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得巴哈马当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -2717,7 +2770,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 古巴官方 D'Viajeros 电子入境表 或当地使领馆递交留学签证申请。"
+              "detail": "按古巴驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -2730,7 +2783,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭古巴教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得古巴正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -2751,7 +2808,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签直飞 + D'Viajeros 入境卡 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向古巴驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -2764,7 +2821,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向古巴劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得古巴当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -2777,7 +2838,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 古巴官方 D'Viajeros 电子入境表 查询最新永居条例。"
+              "detail": "访问古巴官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -2794,13 +2855,17 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向古巴当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在古巴连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
         {
           "id": "main",
-          "title": "古巴 短期旅游/访客通道（对华免签入境（90天））",
+          "title": "古巴 短期旅游/访客通道（对华免签入境 90 天）",
           "fee": "0 元（免签）",
           "desc": "古巴对中国普通护照免签长达 90 天！出发前 7 天内务必在官网免费填报 D'Viajeros 生成入境二维码。",
           "tips": "出发前务必核对护照剩余有效期（通常要求6个月以上）及至少2页空白签证页，并保留往返机票与酒店预订单。",
@@ -2828,7 +2893,10 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时入境",
+          "submission": "免签直飞 + D'Viajeros 入境卡",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -2845,7 +2913,7 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 古巴官方 D'Viajeros 电子入境表 官方清单完成填报。"
+              "detail": "按古巴驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -2853,7 +2921,11 @@ export const AMERICAS_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭古巴邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得古巴当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }

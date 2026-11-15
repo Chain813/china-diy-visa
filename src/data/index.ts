@@ -1,82 +1,118 @@
-import type { CategoryId, CountryData, PathwayCategoryId, SubVisaItem } from '../types/visa';
+import type {
+  CategoryId,
+  CountryData,
+  CountrySummary,
+  PathwayCategoryId,
+  RegionId,
+} from '../types/visa';
 import { PATHWAY_IDS } from './categories';
-import { ASIA_PACIFIC_COUNTRIES } from './regions/asia-pacific';
-import { EUROPE_COUNTRIES } from './regions/europe';
-import { AMERICAS_COUNTRIES } from './regions/americas';
-import { MIDDLE_EAST_AFRICA_COUNTRIES } from './regions/middle-east-africa';
+import { COUNTRY_DIRECTORY } from './directory';
 
-export const COUNTRIES_DATA: CountryData[] = [
-  ...ASIA_PACIFIC_COUNTRIES,
-  ...EUROPE_COUNTRIES,
-  ...AMERICAS_COUNTRIES,
-  ...MIDDLE_EAST_AFRICA_COUNTRIES,
+export { COUNTRY_DIRECTORY } from './directory';
+
+const REGION_LOADERS: Record<RegionId, () => Promise<CountryData[]>> = {
+  'asia-pacific': () =>
+    import('./regions/asia-pacific').then((mod) => mod.ASIA_PACIFIC_COUNTRIES),
+  europe: () => import('./regions/europe').then((mod) => mod.EUROPE_COUNTRIES),
+  americas: () => import('./regions/americas').then((mod) => mod.AMERICAS_COUNTRIES),
+  'middle-east-africa': () =>
+    import('./regions/middle-east-africa').then((mod) => mod.MIDDLE_EAST_AFRICA_COUNTRIES),
+};
+
+const REGION_IDS: readonly RegionId[] = [
+  'asia-pacific',
+  'europe',
+  'americas',
+  'middle-east-africa',
 ];
 
-const BY_CODE = new Map<string, CountryData>(
-  COUNTRIES_DATA.map((c) => [c.code.toUpperCase(), c])
+const SUMMARY_BY_CODE = new Map<string, CountrySummary>(
+  COUNTRY_DIRECTORY.map((country) => [country.code.toUpperCase(), country])
 );
-const BY_ID = new Map<string, CountryData>(COUNTRIES_DATA.map((c) => [c.id, c]));
 
-export function isPathwayCategoryId(value: string): value is PathwayCategoryId {
-  return (PATHWAY_IDS as string[]).includes(value);
+const SUMMARY_BY_ID = new Map<string, CountrySummary>(
+  COUNTRY_DIRECTORY.map((country) => [country.id, country])
+);
+
+interface RegionChunkCache {
+  list: CountryData[];
+  byCode: Map<string, CountryData>;
 }
 
-/** Find a country by its 3-letter ISO alpha-3 code (case-insensitive). */
-export function findCountryByCode(code: string | undefined): CountryData | undefined {
+const regionCache = new Map<RegionId, Promise<RegionChunkCache>>();
+
+/** Type guard checking whether a string is one of the 5 visa pathway category IDs. */
+export function isPathwayCategoryId(value: string): value is PathwayCategoryId {
+  return (PATHWAY_IDS as readonly string[]).includes(value);
+}
+
+/** Find a lightweight country summary by its 3-letter ISO alpha-3 code (case-insensitive). */
+export function findSummaryByCode(code: string | undefined): CountrySummary | undefined {
   const normalized = code?.trim().toUpperCase();
   if (!normalized) return undefined;
-  return BY_CODE.get(normalized);
+  return SUMMARY_BY_CODE.get(normalized);
 }
 
-/** Find a country by its 3-digit ISO numeric id (zero-padded to 3 digits). */
-export function findCountryById(id: string | undefined): CountryData | undefined {
+/** Find a lightweight country summary by its 3-digit ISO numeric id (zero-padded to 3 digits). */
+export function findSummaryById(id: string | undefined): CountrySummary | undefined {
   const normalized = id?.trim();
   if (!normalized) return undefined;
-  return BY_ID.get(normalized.padStart(3, '0'));
+  return SUMMARY_BY_ID.get(normalized.padStart(3, '0'));
 }
 
-function matchesSubVisas(subVisas: SubVisaItem[], query: string): boolean {
-  return subVisas.some(
-    (sv) =>
-      sv.title.toLowerCase().includes(query) ||
-      sv.desc.toLowerCase().includes(query) ||
-      sv.tips.toLowerCase().includes(query)
-  );
-}
+/** Filter lightweight country summaries by strict DIY category support and search query. */
+export function filterCountrySummaries(
+  activeCategory: CategoryId,
+  searchQuery: string
+): CountrySummary[] {
+  if (activeCategory !== 'all' && !isPathwayCategoryId(activeCategory)) {
+    return [];
+  }
 
-/** Filter countries by active visa category and search query across metadata and pathway details. */
-export function filterCountries(activeCategory: CategoryId, searchQuery: string): CountryData[] {
   const q = searchQuery.trim().toLowerCase();
-  const specificCategory =
-    activeCategory !== 'all' && isPathwayCategoryId(activeCategory) ? activeCategory : null;
+  const specificCategory = activeCategory === 'all' ? null : activeCategory;
 
-  return COUNTRIES_DATA.filter((country) => {
-    const pathwayList =
-      specificCategory && Object.hasOwn(country.pathways, specificCategory)
-        ? country.pathways[specificCategory]
-        : null;
-
-    if (activeCategory !== 'all' && (!pathwayList || pathwayList.length === 0)) {
+  return COUNTRY_DIRECTORY.filter((summary) => {
+    if (specificCategory && !summary.diyCategories.includes(specificCategory)) {
       return false;
     }
-    if (!q) {
-      return true;
-    }
-
-    const baseMatch =
-      country.nameZh.toLowerCase().includes(q) ||
-      country.nameEn.toLowerCase().includes(q) ||
-      country.code.toLowerCase().includes(q) ||
-      country.badge.toLowerCase().includes(q) ||
-      country.region.toLowerCase().includes(q);
-    if (baseMatch) {
-      return true;
-    }
-
-    if (pathwayList !== null) {
-      return matchesSubVisas(pathwayList, q);
-    }
-
-    return Object.values(country.pathways).some((subVisas) => matchesSubVisas(subVisas, q));
+    return !q || summary.searchText.includes(q);
   });
+}
+
+function loadRegion(regionId: RegionId): Promise<RegionChunkCache> {
+  const existing = regionCache.get(regionId);
+  if (existing) return existing;
+
+  const pending = REGION_LOADERS[regionId]()
+    .then((list) => ({
+      list,
+      byCode: new Map(list.map((country) => [country.code.toUpperCase(), country])),
+    }))
+    .catch((err) => {
+      if (regionCache.get(regionId) === pending) {
+        regionCache.delete(regionId);
+      }
+      throw err;
+    });
+
+  regionCache.set(regionId, pending);
+  return pending;
+}
+
+/** Lazily load full country details for a 3-letter ISO code by importing only its region module. */
+export async function loadCountryByCode(
+  code: string | undefined
+): Promise<CountryData | undefined> {
+  const summary = findSummaryByCode(code);
+  if (!summary) return undefined;
+
+  const chunk = await loadRegion(summary.regionId);
+  return chunk.byCode.get(summary.code.toUpperCase());
+}
+
+/** Lazily load all 102 countries by dynamically importing all 4 region modules in parallel. */
+export async function loadAllCountries(): Promise<CountryData[]> {
+  const chunks = await Promise.all(REGION_IDS.map((regionId) => loadRegion(regionId)));
+  return chunks.flatMap((chunk) => chunk.list);
 }

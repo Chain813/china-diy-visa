@@ -81,64 +81,41 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "28天存款证明及流水",
             "语言成绩与毕业证（如适用）",
             "ATAS 证书（部分理工科）"
-          ]
+          ],
+          "processing": "标准约 15 个工作日（支持 5 日/次日加急）",
+          "submission": "凭学校 CAS 在 GOV.UK 在线缴费 + VFS Global 上传材料及录指纹",
+          "diySupport": "diy"
         }
       ],
       "work": [
         {
-          "id": "sub_0",
-          "title": "Skilled Worker 技术工签",
-          "fee": "769–1,519 GBP + 1,035 GBP/年 IHS",
-          "desc": "【Skilled Worker 技术工签】需获持牌雇主签发 CoS 担保证书且满足薪资与英语 B1 要求；Global Talent 无需雇主担保。",
-          "tips": "特定受监管行业需提供国内无犯罪记录证明公证件。",
+          "id": "skilled-global-talent",
+          "title": "Skilled Worker 技术工签 / Global Talent",
+          "fee": "769–1,519 GBP + 1,035 GBP/年 IHS 医疗附加费",
+          "processing": "标准约 15 个工作日（支持 5 日/次日加急）",
+          "submission": "GOV.UK 在线提交缴费 + VFS Global 上传材料录指纹（Global Talent 须先取背书）",
+          "diySupport": "diy",
+          "desc": "Skilled Worker 需取得具备 Sponsor Licence 的英国雇主签发 CoS 担保证书并满足对应岗位最低年薪与英语 B1 要求；Global Talent 面向科技、学术研究及文化艺术领军/潜力人才，获权威机构背书后无需雇主担保即可自由受雇或创业。",
+          "tips": "教育、医疗及社工等受监管岗位须提前提供国内无犯罪记录公证件；满 5 年合法工作居留后均可申请英国永居 (ILR)。",
           "steps": [
             {
-              "title": "雇主分配 CoS 担保证书",
-              "detail": "核对 SOC 代码与年薪。"
+              "title": "获取雇主 CoS 编号或 Global Talent 背书",
+              "detail": "Skilled Worker 核对 SOC 代码与年薪门槛；Global Talent 先向 Tech Nation/Royal Society 等机构申领 Endorsement。"
             },
             {
-              "title": "GOV.UK 网申并缴纳 IHS",
-              "detail": "关联 CoS 编号。"
+              "title": "GOV.UK 在线填表并缴纳签证费与 IHS",
+              "detail": "关联 CoS 或背书编号，在线全额支付 1,035 GBP/年医疗附加费。"
             },
             {
-              "title": "VFS 录指纹等待下签",
-              "detail": "标准约 3 周。"
+              "title": "VFS 预约上传材料并录指纹",
+              "detail": "无需面谈，标准约 3 周下发 eVisa 电子签。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "CoS 编号及担保详情",
-            "英语 UKVI 证明",
-            "TB 肺结核报告",
-            "无犯罪证明（特定职业）"
-          ]
-        },
-        {
-          "id": "sub_1",
-          "title": "Global Talent",
-          "fee": "769–1,519 GBP + 1,035 GBP/年 IHS",
-          "desc": "【Global Talent】需获持牌雇主签发 CoS 担保证书且满足薪资与英语 B1 要求；Global Talent 无需雇主担保。",
-          "tips": "特定受监管行业需提供国内无犯罪记录证明公证件。",
-          "steps": [
-            {
-              "title": "雇主分配 CoS 担保证书",
-              "detail": "核对 SOC 代码与年薪。"
-            },
-            {
-              "title": "GOV.UK 网申并缴纳 IHS",
-              "detail": "关联 CoS 编号。"
-            },
-            {
-              "title": "VFS 录指纹等待下签",
-              "detail": "标准约 3 周。"
-            }
-          ],
-          "checklist": [
-            "有效护照",
-            "CoS 编号及担保详情",
-            "英语 UKVI 证明",
-            "TB 肺结核报告",
-            "无犯罪证明（特定职业）"
+            "有效护照及肺结核 (TB) 检测报告",
+            "雇主 CoS 担保证书编号或 Global Talent 背书批准函",
+            "UKVI 雅思 B1 以上英语成绩（或英国/英语国家学位证明）",
+            "无犯罪记录公证及英文翻译（受监管岗位适用）"
           ]
         }
       ],
@@ -169,7 +146,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "英语 B1 证明",
             "5年出入境清单与雇主支持信",
             "近3个月工资单与流水"
-          ]
+          ],
+          "processing": "标准最长 6 个月（支持 5 日/1 日加急）",
+          "submission": "英国境内 GOV.UK 在线递交 SET(O)/SET(LR) 并预约 UKVCAS 录指纹",
+          "diySupport": "diy"
         }
       ],
       "tourism": [
@@ -199,56 +179,37 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "中英文在职证明与营业执照翻译",
             "近6个月工资流水（重点标注）",
             "英文行程单、机酒订单与资产翻译"
-          ]
+          ],
+          "processing": "标准约 15 个工作日",
+          "submission": "GOV.UK 在线英文填表缴费 + VFS Global 上传翻译件并录指纹",
+          "diySupport": "diy"
         }
       ],
       "other": [
         {
-          "id": "sub_0",
-          "title": "探亲访友",
-          "fee": "127 GBP / 880 GBP (PSW)",
-          "desc": "【探亲访友】探亲走 Standard Visitor 并附在英亲友邀请与住址证明；英国本硕毕业生可境内直申 2–3 年 PSW。",
-          "tips": "探亲须提供邀请人 eVisa Share Code 及英国水电账单或租房合同。",
+          "id": "visit-psw",
+          "title": "探亲访友 / 毕业生工签 (PSW)",
+          "fee": "127 GBP（访客探亲）/ 880 GBP + 1,035 GBP/年 IHS（PSW）",
+          "processing": "探亲约 15 个工作日 / PSW 境内约 8 周",
+          "submission": "探亲走 GOV.UK + VFS Global / PSW 由英国毕业生手机 App 扫护照境内网申",
+          "diySupport": "diy",
+          "desc": "赴英探望子女或亲友走 Standard Visitor 通道并附邀请方 eVisa Share Code 与住址证明；在英国完成合资格本科或硕博学位后可在学生签到期前境内直接网申 2 年（博士 3 年）Graduate Route (PSW) 无担保开放工签。",
+          "tips": "探亲切记让在英亲友提供最新英国水电账单/市政税账单及 eVisa Share Code；PSW 须等待学校向 UKVI 正式通报完成学业后方可在英国境内提交。",
           "steps": [
             {
-              "title": "明确探亲或境内 PSW 通道",
-              "detail": "毕业生用手机 App 扫护照境内网申。"
+              "title": "确认探亲或境内 PSW 申请路径",
+              "detail": "探亲向在英亲友索取邀请函与住址账单；PSW 确认学校已向 UKVI 上报毕业结果且当前在英境内。"
             },
             {
-              "title": "上传邀请方身份或毕业证明",
-              "detail": "录指纹等待电子批复。"
+              "title": "GOV.UK 在线提交并完成身份核验",
+              "detail": "探亲赴 VFS 录指纹；PSW 使用 UK Immigration: ID Check 手机 App 扫芯片护照直接在线递交。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "在英亲友邀请函与 eVisa Share Code",
-            "英国住址账单/租房合同",
-            "亲属关系证明及翻译",
-            "银行流水"
-          ]
-        },
-        {
-          "id": "sub_1",
-          "title": "毕业生工签 (PSW)",
-          "fee": "127 GBP / 880 GBP (PSW)",
-          "desc": "【毕业生工签 (PSW)】探亲走 Standard Visitor 并附在英亲友邀请与住址证明；英国本硕毕业生可境内直申 2–3 年 PSW。",
-          "tips": "探亲须提供邀请人 eVisa Share Code 及英国水电账单或租房合同。",
-          "steps": [
-            {
-              "title": "明确探亲或境内 PSW 通道",
-              "detail": "毕业生用手机 App 扫护照境内网申。"
-            },
-            {
-              "title": "上传邀请方身份或毕业证明",
-              "detail": "录指纹等待电子批复。"
-            }
-          ],
-          "checklist": [
-            "有效护照",
-            "在英亲友邀请函与 eVisa Share Code",
-            "英国住址账单/租房合同",
-            "亲属关系证明及翻译",
-            "银行流水"
+            "有效护照（或 BRP/eVisa 账户信息）",
+            "在英亲友邀请函、eVisa Share Code 及英国住址账单（探亲）",
+            "亲属关系公证英文翻译及工资流水（探亲）",
+            "CAS 编号及学校完成学业确认邮件（PSW）"
           ]
         }
       ]
@@ -332,7 +293,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "德国大学录取通知书",
             "自保金冻结证明",
             "医疗保险与德文/英文动机信"
-          ]
+          ],
+          "processing": "APS 审核排期 + 使领馆审理约 4–8 周",
+          "submission": "先过北京 APS 审核部，后经 digital.diplo.de 预审并赴使领馆/TLS 录指纹",
+          "diySupport": "diy"
         }
       ],
       "work": [
@@ -366,7 +330,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "Anabin 学校与学位 H+ 截图（或 ZAB 认证书）",
             "本科及以上学位证书与英文简历",
             "入境医疗保险证明"
-          ]
+          ],
+          "processing": "在线预审 + 递签后约 2–4 周",
+          "submission": "digital.diplo.de 在线预审 + 驻华使领馆核验原件录指纹",
+          "diySupport": "advisory",
+          "advisoryNote": "欧盟蓝卡须先获得德国雇主出具符合当年法定薪资门槛的正式劳动合同及《雇佣关系声明》，无雇主 Offer 无法直接自助申请（无 Offer 求职可查看“德国机会卡 Chancenkarte”）。"
         },
         {
           "id": "chancenkarte",
@@ -398,7 +366,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "德语 A1+ 或 英语 B2 语言证书（积分制必需）",
             "德国自保金账户 (Sperrkonto) 冻结证明",
             "覆盖1年的旅行/居留医疗保险单"
-          ]
+          ],
+          "processing": "在线预审 + 递签后约 4–8 周",
+          "submission": "digital.diplo.de/chancenkarte 全程在线预审 + 使领馆录指纹",
+          "diySupport": "diy"
         },
         {
           "id": "ausbildung",
@@ -430,64 +401,43 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "歌德/TELC 德语 B1 或 B2 证书",
             "高中/中专/大专毕业证公证翻译件",
             "如津贴低于最低标准需少量补充自保金"
-          ]
+          ],
+          "processing": "约 4–8 周（含联邦劳动局预批）",
+          "submission": "取得企业培训合同后经 digital.diplo.de 预审并赴使领馆递签",
+          "diySupport": "advisory",
+          "advisoryNote": "双元制带薪职业培训须先取得德国企业签署的正式培训合同 (Ausbildungsvertrag) 及职业学校名额与联邦劳动局预批，无法无企业培训合同直接申办签证。"
         }
       ],
       "immigration": [
         {
-          "id": "sub_0",
-          "title": "德国永居",
-          "fee": "113–147 EUR",
-          "desc": "【德国永居】蓝卡交养老保险满 27 个月（德语 B1 仅需 21 个月！）即可申永居；入籍年限已缩至 5 年。",
-          "tips": "保持连续养老保险缴纳与合法租房面积达标。",
+          "id": "pr-citizenship",
+          "title": "德国永居 (Niederlassungserlaubnis) / 5年入籍新政",
+          "fee": "113–147 EUR（永居）/ 255 EUR（入籍）",
+          "processing": "约 2–6 个月（视各州外管局排期）",
+          "submission": "向居住地德国外国人管理局 (Ausländerbehörde) 在线或窗口预约递交",
+          "diySupport": "diy",
+          "desc": "持欧盟蓝卡缴纳德国法定养老保险满 27 个月（德语达 B1 仅需 21 个月！）即可申请德国永久居留；普通工作居留通常满 36 个月（德国高校毕业生满 24 个月）可申永居。德国最新国籍法已将常规入籍年限缩短至 5 年且允许保留原国籍制度（须注意中国国籍法不承认双国籍规定）。",
+          "tips": "保持连续德国法定养老保险缴纳、足够人均居住面积的合法租房合同，并提前考取德语 B1 及入籍生活常识测试 (Leben in Deutschland)。",
           "steps": [
             {
-              "title": "累计养老保险缴纳月数",
-              "detail": "蓝卡21/27个月，普通工签36个月。"
+              "title": "累计法定养老保险缴纳月数",
+              "detail": "蓝卡 21/27 个月，德国高校毕业生 24 个月，普通工签 36 个月，入籍常规 5 年。"
             },
             {
               "title": "考取德语 B1 与生活知识测试",
-              "detail": "取得合格证书。"
+              "detail": "取得歌德/TELC 德语 B1 证书及 Leben in Deutschland 合格证明。"
             },
             {
-              "title": "向当地外管局递交申请",
-              "detail": "提交税单、工资单与租房合同。"
+              "title": "向当地外管局预约递交材料",
+              "detail": "提交养老保险记录、近 6 个月工资单、税单与租房合同审核制卡。"
             }
           ],
           "checklist": [
-            "护照与居留卡",
-            "养老保险缴纳记录",
-            "近6个月工资单与在职证明",
-            "租房合同",
-            "德语 B1 与 Leben in Deutschland 证书"
-          ]
-        },
-        {
-          "id": "sub_1",
-          "title": "5年入籍新政",
-          "fee": "113–147 EUR",
-          "desc": "【5年入籍新政】蓝卡交养老保险满 27 个月（德语 B1 仅需 21 个月！）即可申永居；入籍年限已缩至 5 年。",
-          "tips": "保持连续养老保险缴纳与合法租房面积达标。",
-          "steps": [
-            {
-              "title": "累计养老保险缴纳月数",
-              "detail": "蓝卡21/27个月，普通工签36个月。"
-            },
-            {
-              "title": "考取德语 B1 与生活知识测试",
-              "detail": "取得合格证书。"
-            },
-            {
-              "title": "向当地外管局递交申请",
-              "detail": "提交税单、工资单与租房合同。"
-            }
-          ],
-          "checklist": [
-            "护照与居留卡",
-            "养老保险缴纳记录",
-            "近6个月工资单与在职证明",
-            "租房合同",
-            "德语 B1 与 Leben in Deutschland 证书"
+            "有效护照与当前德国居留卡 (eAT)",
+            "德国法定养老保险缴纳记录 (Rentenversicherungsverlauf)",
+            "近 6 个月工资单、在职证明与完税凭证",
+            "租房合同及房东居住证明 (Wohnungsgeberbestätigung)",
+            "德语 B1 证书与 Leben in Deutschland 考试证明"
           ]
         }
       ],
@@ -514,54 +464,38 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "3万欧申根保险单",
             "近6个月银行盖章流水",
             "英文在职证明、营业执照与机酒行程"
-          ]
+          ],
+          "processing": "约 10–15 个自然日",
+          "submission": "VIDEX 在线填表 + 中智德签 (TLScontact) 递交录指纹",
+          "diySupport": "diy"
         }
       ],
       "other": [
         {
-          "id": "sub_0",
-          "title": "家庭团聚",
-          "fee": "75 EUR / 90 EUR",
-          "desc": "【家庭团聚】配偶子女团聚可在 digital.diplo.de 预审；蓝卡持有者的配偶可完全豁免德语 A1 要求！",
-          "tips": "结婚证/出生证公证需办理外交部海牙认证 (Apostille)。",
+          "id": "family-business",
+          "title": "家庭团聚 / 商务申根签",
+          "fee": "75 EUR（家庭团聚长签）/ 90 EUR + TLS服务费（商务短签）",
+          "processing": "商务约 10–15 天 / 家庭团聚约 4–12 周",
+          "submission": "商务走 VIDEX + TLScontact / 家庭团聚经 digital.diplo.de 在线预审后使领馆递交",
+          "diySupport": "advisory",
+          "advisoryNote": "家庭团聚须先由在德配偶或亲属提供合法居留卡、收入与住房证明并完成结婚/出生证海牙认证；商务签须德方邀请企业出具正式商务邀请函。",
+          "desc": "家庭团聚 D 签适用于配偶或未成年子女赴德与持工作/蓝卡/留学居留的家属团聚（蓝卡持有者的配偶可完全豁免德语 A1 要求！）；短期商务考察参展走 C 类商务申根签。",
+          "tips": "中国签发的结婚证与出生医学证明公证件须办理中国外交部海牙认证 (Apostille)，无需再跑德国使馆双认证。",
           "steps": [
             {
-              "title": "办理海牙认证公证件",
-              "detail": "准备婚姻或出生证明。"
+              "title": "办理海牙认证公证或索取商务邀请函",
+              "detail": "团聚备齐海牙认证结婚/出生公证及德方收入住房证明；商务备好德方抬头纸邀请函。"
             },
             {
-              "title": "digital.diplo.de 上传预审并递签",
-              "detail": "核验原件后贴发入境 D 签。"
+              "title": "在线填表/预审并递交原件录指纹",
+              "detail": "团聚在 digital.diplo.de 上传预审后赴使领馆核验贴 D 签；商务走 VIDEX + TLScontact。"
             }
           ],
           "checklist": [
-            "护照与申请表",
-            "海牙认证结婚/出生公证",
-            "德方配偶居留卡与住址收入证明",
-            "德语 A1（蓝卡配偶豁免）"
-          ]
-        },
-        {
-          "id": "sub_1",
-          "title": "商务申根签",
-          "fee": "75 EUR / 90 EUR",
-          "desc": "【商务申根签】配偶子女团聚可在 digital.diplo.de 预审；蓝卡持有者的配偶可完全豁免德语 A1 要求！",
-          "tips": "结婚证/出生证公证需办理外交部海牙认证 (Apostille)。",
-          "steps": [
-            {
-              "title": "办理海牙认证公证件",
-              "detail": "准备婚姻或出生证明。"
-            },
-            {
-              "title": "digital.diplo.de 上传预审并递签",
-              "detail": "核验原件后贴发入境 D 签。"
-            }
-          ],
-          "checklist": [
-            "护照与申请表",
-            "海牙认证结婚/出生公证",
-            "德方配偶居留卡与住址收入证明",
-            "德语 A1（蓝卡配偶豁免）"
+            "有效护照与签名申请表",
+            "海牙认证结婚证/出生证公证（团聚）或德方邀请函（商务）",
+            "在德配偶居留卡、租房合同与工资单（团聚）或中方派遣函（商务）",
+            "德语 A1 证书（蓝卡配偶豁免）及覆盖赴德期间的医疗保险"
           ]
         }
       ]
@@ -641,102 +575,66 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "法国高校录取信",
             "7,380 EUR 存款证明",
             "住宿证明"
-          ]
+          ],
+          "processing": "EEF 面谈 + 使领馆审理约 2–4 周",
+          "submission": "先完成法国高教署 Etudes en France 面谈，再在 France-Visas 填表赴 TLScontact 递签",
+          "diySupport": "diy"
         }
       ],
       "work": [
         {
-          "id": "sub_0",
-          "title": "Passeport Talent 人才居留",
-          "fee": "99 EUR",
-          "desc": "【Passeport Talent 人才居留】高薪或硕士以上受聘可申最长4年人才居留（配偶直接获合法工作权）；普通工签需先办工作许可。",
-          "tips": "法国硕士毕业可先申 1 年 RECE 求职居留。",
+          "id": "talent-work",
+          "title": "Passeport Talent 人才居留 / 普通工签",
+          "fee": "99 EUR（长期签证费）+ 抵法印花税 225 EUR",
+          "processing": "工作许可审批 + 使领馆审理约 3–8 周",
+          "submission": "雇主备妥高薪合同或工作许可后，本人在 France-Visas 填表并赴 TLScontact 递交",
+          "diySupport": "advisory",
+          "advisoryNote": "法国人才护照 (Passeport Talent) 与普通工作签证均须先由法国雇主出具达标劳动合同或向法国内政部/劳工平台申领工作许可 (Autorisation de travail)，个人无法无雇主直接自助申办。",
+          "desc": "法国硕士以上毕业生、高薪技术人员或企业高管可申请最长 4 年的 Passeport Talent 人才护照（免劳动力市场测试，且配偶直接获得法国合法工作权）；常规岗位须由雇主先申请工作许可。",
+          "tips": "在法取得硕士及以上学位的留学生可先自助申请 1 年期 RECE 求职/创业居留，找到达标工作后无缝衔接人才居留或工签。",
           "steps": [
             {
-              "title": "雇主申请工作许可/准备高薪合同",
-              "detail": "确认人才居留资格。"
+              "title": "雇主申领工作许可或签署人才合同",
+              "detail": "普通工签由雇主线上申请 Autorisation de travail；高薪人才护照直接备妥达标合同。"
             },
             {
-              "title": "France-Visas 填表并赴 TLS 递交",
-              "detail": "携带合同与学历公证。"
+              "title": "France-Visas 填表并赴中智法签递交",
+              "detail": "预约 TLScontact 提交护照、工作许可/合同及学历证明，抵法后线上完成居留登记。"
             }
           ],
           "checklist": [
-            "护照与申请表",
-            "工作许可或人才护照证明",
-            "正式劳动合同",
-            "学历公证与简历"
-          ]
-        },
-        {
-          "id": "sub_1",
-          "title": "工签",
-          "fee": "99 EUR",
-          "desc": "【工签】高薪或硕士以上受聘可申最长4年人才居留（配偶直接获合法工作权）；普通工签需先办工作许可。",
-          "tips": "法国硕士毕业可先申 1 年 RECE 求职居留。",
-          "steps": [
-            {
-              "title": "雇主申请工作许可/准备高薪合同",
-              "detail": "确认人才居留资格。"
-            },
-            {
-              "title": "France-Visas 填表并赴 TLS 递交",
-              "detail": "携带合同与学历公证。"
-            }
-          ],
-          "checklist": [
-            "护照与申请表",
-            "工作许可或人才护照证明",
-            "正式劳动合同",
-            "学历公证与简历"
+            "有效护照与 France-Visas 申请表",
+            "法国雇主正式劳动合同（及工作许可批文如适用）",
+            "最高学历学位公证翻译及个人法/英文简历",
+            "无犯罪证明（如特定岗位要求）及住宿/机票证明"
           ]
         }
       ],
       "immigration": [
         {
-          "id": "sub_0",
-          "title": "十年长居卡",
-          "fee": "225 EUR",
-          "desc": "【十年长居卡】连续合法居住纳税满 5 年（法国硕士毕业仅需工作满 2 年即可入籍！）且法语达标即可申请。",
-          "tips": "务必保留每年法国个人所得税税单 (Avis d'imposition)。",
+          "id": "resident-citizenship",
+          "title": "十年长居卡 (Carte de résident) / 法国入籍",
+          "fee": "225 EUR（十年长居印花税）/ 55 EUR（入籍申请印花税）",
+          "processing": "约 6–18 个月（警察局及内政部审核）",
+          "submission": "通过 ANEF 在线平台或居住地警察局 (Préfecture) 预约递交",
+          "diySupport": "diy",
+          "desc": "在法连续合法工作居住并稳定纳税满 5 年可申请 10 年长期居留卡或法国国籍；在法国高校完成至少 2 年高等教育并取得硕士文凭者，合法居住缩短至 2 年即可直接申请入籍！",
+          "tips": "每年务必规范申报个人所得税并完整保存税单 (Avis d’imposition)；入籍目前要求法语口语与书面均达到 B1/B2 级别并通过共和国公民面谈。",
           "steps": [
             {
-              "title": "考取法语 DELF B1/B2",
-              "detail": "整理近3–5年报税单。"
+              "title": "考取法语 DELF B1/B2 并整理税单",
+              "detail": "汇总近 3–5 年全部法国个人所得税税单 (Avis d’imposition) 与工资单。"
             },
             {
-              "title": "向警察局 (Préfecture) 递交",
-              "detail": "线上预约交材料。"
+              "title": "通过 ANEF 平台或警察局提交申请",
+              "detail": "线上上传完整资料后参加警察局核验或入籍公民面谈。"
             }
           ],
           "checklist": [
-            "护照与居留卡",
-            "历年法国税单",
-            "法语 B1/B2 证书",
-            "工资单与住址账单"
-          ]
-        },
-        {
-          "id": "sub_1",
-          "title": "法国入籍",
-          "fee": "225 EUR",
-          "desc": "【法国入籍】连续合法居住纳税满 5 年（法国硕士毕业仅需工作满 2 年即可入籍！）且法语达标即可申请。",
-          "tips": "务必保留每年法国个人所得税税单 (Avis d'imposition)。",
-          "steps": [
-            {
-              "title": "考取法语 DELF B1/B2",
-              "detail": "整理近3–5年报税单。"
-            },
-            {
-              "title": "向警察局 (Préfecture) 递交",
-              "detail": "线上预约交材料。"
-            }
-          ],
-          "checklist": [
-            "护照与居留卡",
-            "历年法国税单",
-            "法语 B1/B2 证书",
-            "工资单与住址账单"
+            "有效护照与历年法国居留卡 (Titre de séjour)",
+            "近 3–5 年法国税务局个人所得税税单 (Avis d’imposition)",
+            "法语 DELF B1/B2 或 TCF 合格证书",
+            "近 3 个月工资单、在职证明及水电住址账单"
           ]
         }
       ],
@@ -763,54 +661,38 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "3万欧申根保险",
             "近6个月工资流水",
             "英文在职证明、营业执照与行程"
-          ]
+          ],
+          "processing": "约 5–15 个工作日",
+          "submission": "France-Visas 在线填表 + 中智法签 (TLScontact) 录指纹递交",
+          "diySupport": "diy"
         }
       ],
       "other": [
         {
-          "id": "sub_0",
-          "title": "探亲访友",
-          "fee": "90 EUR",
-          "desc": "【探亲访友】借住亲友家需法方去市政府开《接待证明》原件；住酒店按普通旅游签办理即可。",
-          "tips": "商务签需法方正式邀请函。",
+          "id": "visit-business",
+          "title": "探亲访友 / 商务申根签",
+          "fee": "90 EUR + TLScontact 服务费",
+          "processing": "约 5–15 个工作日",
+          "submission": "France-Visas 在线填表后赴中智法签 TLScontact 录指纹递交",
+          "diySupport": "advisory",
+          "advisoryNote": "赴法探亲访友若借住亲友家须由法方前往当地市政府开具《接待证明》(Attestation d’accueil) 原件；商务签须由法方企业出具正式邀请函。",
+          "desc": "适用于赴法探望直系亲属/朋友或开展商务拜访、参展签约；若探亲期间入住酒店且自行承担费用，可按常规短期旅游方式准备酒店订单。",
+          "tips": "借住法方亲友家务必提前让对方去当地市政府 (Mairie) 办理带防伪贴纸的《接待证明》原件并寄回国内；商务签注意中方派遣函须写明费用承担方。",
           "steps": [
             {
-              "title": "确认住宿方式（酒店免接待证明）",
-              "detail": "备齐邀请函或关系证明。"
+              "title": "备齐接待证明原件或商务邀请函",
+              "detail": "住亲友家须法方寄回市政府原件；住酒店免接待证明；商务由法方发邀请函。"
             },
             {
-              "title": "TLScontact 递签",
-              "detail": "等待出签。"
+              "title": "France-Visas 填表并赴 TLScontact 递签",
+              "detail": "提交在职、流水、保险与关系/派遣证明，约 5–15 工作日出签。"
             }
           ],
           "checklist": [
-            "护照、申请表与保险",
-            "市政府接待证明原件或酒店订单",
-            "邀请人身份证明",
-            "流水与在职证明"
-          ]
-        },
-        {
-          "id": "sub_1",
-          "title": "商务申根签",
-          "fee": "90 EUR",
-          "desc": "【商务申根签】借住亲友家需法方去市政府开《接待证明》原件；住酒店按普通旅游签办理即可。",
-          "tips": "商务签需法方正式邀请函。",
-          "steps": [
-            {
-              "title": "确认住宿方式（酒店免接待证明）",
-              "detail": "备齐邀请函或关系证明。"
-            },
-            {
-              "title": "TLScontact 递签",
-              "detail": "等待出签。"
-            }
-          ],
-          "checklist": [
-            "护照、申请表与保险",
-            "市政府接待证明原件或酒店订单",
-            "邀请人身份证明",
-            "流水与在职证明"
+            "有效护照、France-Visas 申请表与 30,000 欧申根保险",
+            "法方市政府《接待证明》原件或酒店预订单",
+            "法方邀请函及邀请人护照/居留卡复印件",
+            "亲属关系证明（探亲）或中方公司派遣函及流水（商务）"
           ]
         }
       ]
@@ -890,7 +772,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "录取信与学费凭证",
             "1万欧存款证明及流水",
             "医疗保险"
-          ]
+          ],
+          "processing": "约 4–8 周",
+          "submission": "凭录取与缴费收据在 AVATS 在线填表后赴 VFS 爱尔兰签证中心递交",
+          "diySupport": "diy"
         }
       ],
       "work": [
@@ -924,7 +809,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "正式劳动合同",
             "本科及以上学位证书英文翻译/海牙认证",
             "无犯罪记录证明海牙认证"
-          ]
+          ],
+          "processing": "DETE 许可约 2–4 周 + 入境 D 签约 4–8 周",
+          "submission": "DETE Employment Permits Online 申领电子许可 + AVATS 填报 D 签赴 VFS 递交",
+          "diySupport": "diy"
         },
         {
           "id": "gep",
@@ -956,54 +844,38 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "双方签署的正式雇佣合同",
             "技能资格证书/厨师证/驾照或过往工作证明英文翻译件",
             "无犯罪记录证明海牙认证"
-          ]
+          ],
+          "processing": "28 天招聘测试 + DETE 许可 3–6 周 + 入境 D 签约 4–8 周",
+          "submission": "雇主完成 28 天 JobsIreland/EURES 招聘测试并向 DETE 申请 GEP 后，本人经 AVATS + VFS 递 D 签",
+          "diySupport": "advisory",
+          "advisoryNote": "GEP 一般就业许可强制要求爱尔兰雇主先完成 28 天本地及欧盟劳动力市场需求测试并获 DETE 批文，个人无法直接自助申请。"
         }
       ],
       "immigration": [
         {
-          "id": "sub_0",
-          "title": "Stamp 4 永居",
-          "fee": "300 EUR / 1,125 EUR (入籍)",
-          "desc": "【Stamp 4 永居】CSEP 满2年或 GEP 满5年转 Stamp 4；任意工作居留满5年即可申入籍，无需语言考试！",
-          "tips": "每年务必保留税单、银行账单与水电网账单凑满居住积分。",
+          "id": "stamp4-citizenship",
+          "title": "Stamp 4 永居 / 5年免语言入籍",
+          "fee": "300 EUR（IRP 续卡费）/ 1,125 EUR（入籍申请及证书费）",
+          "processing": "Stamp 4 续签约 2–6 周 / 入籍审核约 12–19 个月",
+          "submission": "爱尔兰移民局 (ISD) 在线门户提交 Stamp 4 或入籍申请",
+          "diySupport": "diy",
+          "desc": "持 CSEP 关键技能工签合法工作满 21–24 个月即可免工签换发自由工作/创业的 Stamp 4 居留；持 GEP 普通工签满 5 年也可转 Stamp 4。任意合法工作居留满 5 年（1825 天）可直接在线申办入籍爱尔兰，无需任何英语考试，且公民同时享有英国与欧盟自由定居权！",
+          "tips": "爱尔兰入籍实行“每年 150 分居住证明积分制”，每年务必保留税务局 Employment Detail Summary、银行月结单及水电网账单凑满分数。",
           "steps": [
             {
-              "title": "转 Stamp 4 并住满5年 (1825天)",
-              "detail": "整理每年150分地址证明。"
+              "title": "换发 Stamp 4 并累计 5 年合法居住",
+              "detail": "整理过去 5 年每年达到 150 分的地址账单、税单与出入境记录。"
             },
             {
-              "title": "ISD 在线递交入籍申请",
-              "detail": "上传税单与居住佐证。"
+              "title": "ISD 官网全程在线提交入籍申请",
+              "detail": "上传护照全页扫描件、历年 IRP 卡与税务局 EDS 税单并缴费等待批复。"
             }
           ],
           "checklist": [
-            "护照与历年 IRP 卡",
-            "税务局 EDS 税单",
-            "每年地址与银行账单",
-            "出生与无犯罪公证"
-          ]
-        },
-        {
-          "id": "sub_1",
-          "title": "5年免语言入籍",
-          "fee": "300 EUR / 1,125 EUR (入籍)",
-          "desc": "【5年免语言入籍】CSEP 满2年或 GEP 满5年转 Stamp 4；任意工作居留满5年即可申入籍，无需语言考试！",
-          "tips": "每年务必保留税单、银行账单与水电网账单凑满居住积分。",
-          "steps": [
-            {
-              "title": "转 Stamp 4 并住满5年 (1825天)",
-              "detail": "整理每年150分地址证明。"
-            },
-            {
-              "title": "ISD 在线递交入籍申请",
-              "detail": "上传税单与居住佐证。"
-            }
-          ],
-          "checklist": [
-            "护照与历年 IRP 卡",
-            "税务局 EDS 税单",
-            "每年地址与银行账单",
-            "出生与无犯罪公证"
+            "历年有效护照全本扫描件与所有 IRP 居留卡",
+            "爱尔兰税务局 (Revenue) 历年 EDS 完税摘要",
+            "每年达到 150 分的地址账单与银行流水证明",
+            "海牙认证出生公证及无犯罪记录宣誓声明"
           ]
         }
       ],
@@ -1030,46 +902,38 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "近6个月流水",
             "英文在职与营业执照",
             "机酒订单与保险"
-          ]
+          ],
+          "processing": "约 15–20 个工作日",
+          "submission": "AVATS 在线填表后赴 VFS 爱尔兰签证中心递交录指纹（持有效英签且首入英国可走 BIVS）",
+          "diySupport": "diy"
         }
       ],
       "other": [
         {
-          "id": "sub_0",
-          "title": "CSEP 配偶团聚",
-          "fee": "60 EUR",
-          "desc": "【CSEP 配偶团聚】CSEP 关键技能工签配偶可同步递交团聚 D 签并直接合法全职工作。",
-          "tips": "结婚证须办海牙认证。",
+          "id": "family-visit-business",
+          "title": "CSEP 配偶团聚 / 探亲商务",
+          "fee": "60 EUR（单次）/ 100 EUR（多次）+ VFS 服务费",
+          "processing": "约 4–12 周（探亲商务约 15–20 工作日）",
+          "submission": "AVATS 在线填表后赴 VFS 爱尔兰签证中心递交（附海牙认证或邀请函）",
+          "diySupport": "advisory",
+          "advisoryNote": "爱尔兰配偶团聚与探亲商务签均须先提供在爱配偶/邀请方的 IRP 卡、雇主合同或正式邀请函及海牙认证亲属关系证明，无法无邀请直接申请。",
+          "desc": "CSEP 关键技能工签持有人的配偶与未成年子女可同步递交团聚 Join Family D 签，抵爱注册后直接获得 Stamp 1G 合法全职工作权！短期探亲与商务访问走 Short Stay C 签。",
+          "tips": "中国结婚证与出生证公证件务必办理外交部海牙认证 (Apostille)，并由在爱担保人提供租房合同与工资单。",
           "steps": [
             {
-              "title": "办理海牙认证关系证明",
-              "detail": "AVATS 填表送交 VFS。"
+              "title": "办理海牙认证关系证明或准备邀请函",
+              "detail": "团聚备齐海牙认证结婚/出生证及主申 CSEP 许可；探亲商务备好邀请函与住址证明。"
+            },
+            {
+              "title": "AVATS 在线填表并送交 VFS 签证中心",
+              "detail": "打印摘要页连同全套翻译件送签，等待使馆审核批复。"
             }
           ],
           "checklist": [
-            "护照与 AVATS 表",
-            "邀请人 IRP 卡/合同",
-            "海牙认证结婚证/出生证",
-            "资金证明"
-          ]
-        },
-        {
-          "id": "sub_1",
-          "title": "探亲商务",
-          "fee": "60 EUR",
-          "desc": "【探亲商务】CSEP 关键技能工签配偶可同步递交团聚 D 签并直接合法全职工作。",
-          "tips": "结婚证须办海牙认证。",
-          "steps": [
-            {
-              "title": "办理海牙认证关系证明",
-              "detail": "AVATS 填表送交 VFS。"
-            }
-          ],
-          "checklist": [
-            "护照与 AVATS 表",
-            "邀请人 IRP 卡/合同",
-            "海牙认证结婚证/出生证",
-            "资金证明"
+            "有效护照、AVATS 摘要页与亲笔签名声明",
+            "在爱担保人 IRP 卡、CSEP 许可或邀请函",
+            "外交部海牙认证结婚证/出生证公证件",
+            "担保人及申请人银行资金流水与在职/住宿证明"
           ]
         }
       ]
@@ -1100,7 +964,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
     "links": [
       {
         "title": "意大利外交部官方签证指南",
-        "url": "https://vistoperitalia.esteri.it/home/en",
+        "url": "https://vistoperitalia.esteri.it/",
         "desc": "官方签证/入境申请与政策查询入口"
       },
       {
@@ -1140,7 +1004,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 意大利外交部官方签证指南 或当地使领馆递交留学签证申请。"
+              "detail": "先在 Universitaly 官方平台完成预注册（或走马可波罗/图兰朵计划），再备齐材料赴意大利签证中心递交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -1153,7 +1017,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "Universitaly 预注册 + 使领馆审理约 2–4 周",
+          "submission": "先在 Universitaly 完成预注册（或走马可波罗/图兰朵计划），再赴意大利签证中心递交学签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得意大利正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -1174,7 +1042,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 VFS Global 意大利签证中心 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向意大利驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -1187,7 +1055,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向意大利劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得意大利当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -1200,7 +1072,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 VFS 意大利签证中心 查询最新永居条例。"
+              "detail": "访问意大利官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -1217,7 +1089,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向意大利当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在意大利连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -1251,31 +1127,41 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "5–15 工作日",
+          "submission": "VFS Global 意大利签证中心",
+          "diySupport": "diy"
         }
       ],
       "other": [
         {
           "id": "main",
-          "title": "意大利 商务考察 / 探亲访友 / 特殊通道",
-          "fee": "90 EUR + 服务费",
-          "desc": "涵盖赴意大利参加展会商务洽谈、探望当地亲友，以及部分国家推出的数字游民/长期旅居或过境便利通道。",
-          "tips": "商务访问须由当地合作企业出具正式抬头纸邀请函；探亲须附邀请人当地合法居留证件复印件。",
+          "title": "意大利数字游民签证 (Digital Nomad / Remote Worker)",
+          "fee": "116 EUR（D 类长期签证费）+ VFS 服务费",
+          "processing": "约 15–30 个工作日（最高法定审理期 90 天）",
+          "submission": "备齐年收入、高技能资历、医保与住房证明后预约意大利驻华使领馆/VFS 递交 D 签",
+          "diySupport": "diy",
+          "desc": "意大利正式实施数字游民与远程工作者 D 类签证，无需意大利雇主申请配额 (Nulla Osta) 即可直接面向高技能远程人士开放：要求年收入达意大利免医保缴费线三倍（约 28,000 EUR/年以上）、拥有至少 6 个月远程工作经验、本科学历或对应专业资历，及在意大利的合规住处。",
+          "tips": "所有中文学历与工作证明须按领区要求办理海牙认证 (Apostille) 与意大利语翻译；入境后 8 个工作日内须向当地警局申请 Permesso di Soggiorno 居留卡。",
           "steps": [
             {
-              "title": "准备邀请方或过境佐证材料",
-              "detail": "商务备好邀请函与派遣函；探亲备好亲属关系证明。"
+              "title": "核对高技能资历与 28,000+ EUR 年收入",
+              "detail": "备妥本科学历（或 3–5 年高技能专业经验证明）、至少 6 个月远程工作合同及收入税单流水。"
             },
             {
-              "title": "核对免签或网申通道提交",
-              "detail": "参考 意大利外交部官方签证指南 官方清单完成填报。"
+              "title": "办理意大利合规租房合同与全年医疗保险",
+              "detail": "确保租赁合同已在意大利税务局登记，医疗保险覆盖整个停留期。"
+            },
+            {
+              "title": "预约意大利驻华使领馆/VFS 递交 D 签",
+              "detail": "提交境外远程雇主出具的无犯罪/合规声明及全套翻译认证件等待贴签。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "当地邀请函及邀请方身份/营业执照复印件",
-            "中方公司派遣函（商务）或亲属关系证明（探亲）",
-            "往返机票及住宿证明"
+            "有效护照与意大利长期 D 类签证申请表",
+            "年收入达标流水/税单及 6 个月以上远程工作合同",
+            "海牙认证的高等学历或高技能行业资历证明",
+            "意大利登记租赁合同及全年私人医疗保险单"
           ]
         }
       ]
@@ -1346,7 +1232,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 西班牙外交部签证官网 或当地使领馆递交留学签证申请。"
+              "detail": "按西班牙驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -1359,7 +1245,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭西班牙教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得西班牙正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -1380,7 +1270,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 BLS Spain 签证中心 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向西班牙驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -1393,7 +1283,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向西班牙劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得西班牙当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -1406,7 +1300,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 BLS 西班牙签证中心 查询最新永居条例。"
+              "detail": "访问西班牙官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -1423,7 +1317,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向西班牙当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在西班牙连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -1457,31 +1355,46 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "10–15 工作日",
+          "submission": "BLS Spain 签证中心",
+          "diySupport": "diy"
         }
       ],
       "other": [
         {
           "id": "main",
-          "title": "西班牙 商务考察 / 探亲访友 / 特殊通道",
-          "fee": "90 EUR（短签）/ 80 EUR（长签）",
-          "desc": "涵盖赴西班牙参加展会商务洽谈、探望当地亲友，以及部分国家推出的数字游民/长期旅居或过境便利通道。",
-          "tips": "商务访问须由当地合作企业出具正式抬头纸邀请函；探亲须附邀请人当地合法居留证件复印件。",
+          "title": "西班牙数字游民签证 (Telework) / 非盈利居留",
+          "fee": "约 80 EUR（使领馆 D 签）+ BLS 服务费",
+          "processing": "使领馆约 10–30 天 / 西班牙境内 UGE 约 20 个工作日",
+          "submission": "向 BLS Spain / 西班牙驻华使领馆提交数字游民或非盈利长居申请（亦可在西班牙境内直申 UGE 3年居留）",
+          "diySupport": "diy",
+          "desc": "西班牙数字游民签证（创业法案 Telework）面向为境外公司远程工作或自由职业的高技能/本科人士，月收入门槛约为西班牙最低工资 SMI 的 200%，允许携带配偶子女且连续居住满 5 年可转西班牙永居；另有不工作仅凭存款/被动收入的非盈利居留 (NLV)。",
+          "tips": "境外自由职业或受雇公司须已运营满 1 年且本人合作/受雇满 3 个月以上，并出具允许在西班牙远程办公的书面授权及社保衔接或私人全险证明。",
           "steps": [
             {
-              "title": "准备邀请方或过境佐证材料",
-              "detail": "商务备好邀请函与派遣函；探亲备好亲属关系证明。"
+              "title": "申请 NIE 外国人识别号并核对收入门槛",
+              "detail": "向使领馆/BLS 申请 NIE，确认月收入达到 200% SMI 标准并整理近 3–6 个月银行流水。"
             },
             {
-              "title": "核对免签或网申通道提交",
-              "detail": "参考 西班牙外交部签证官网 官方清单完成填报。"
+              "title": "办理学历与无犯罪海牙认证及官方宣誓翻译",
+              "detail": "本科以上学历证明（或 3 年工作经验）及近 5 年居住地无犯罪公证均须海牙认证及西语宣誓翻译。"
+            },
+            {
+              "title": "提交雇主远程授权信与商业医疗保险",
+              "detail": "提供公司存续满 1 年证明、允许赴西远程办公函及无免赔额西班牙私人医疗保险。"
+            },
+            {
+              "title": "BLS/使领馆递交签证或境内直交 UGE",
+              "detail": "获批后贴发 1 年 D 签入境换卡（或在西班牙合法持申根签境内直交 UGE 批 3 年卡）。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "当地邀请函及邀请方身份/营业执照复印件",
-            "中方公司派遣函（商务）或亲属关系证明（探亲）",
-            "往返机票及住宿证明"
+            "有效护照、NIE 申请/编号及官方国别签证申请表",
+            "境外雇主远程工作授权函及公司存续满 1 年证明",
+            "近 3–6 个月达标工资/服务收入流水",
+            "海牙认证及西语宣誓翻译的无犯罪记录与学历公证",
+            "西班牙无免赔额私人商业医疗保险单"
           ]
         }
       ]
@@ -1552,7 +1465,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 葡萄牙外交部官方签证门户 或当地使领馆递交留学签证申请。"
+              "detail": "按葡萄牙驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -1565,7 +1478,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭葡萄牙教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得葡萄牙正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -1586,7 +1503,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 VFS Portugal 签证中心 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向葡萄牙驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -1599,7 +1516,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向葡萄牙劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得葡萄牙当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -1612,7 +1533,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 VFS 葡萄牙签证中心 查询最新永居条例。"
+              "detail": "访问葡萄牙官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -1629,7 +1550,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向葡萄牙当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在葡萄牙连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -1663,31 +1588,46 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15–30 天",
+          "submission": "VFS Portugal 签证中心",
+          "diySupport": "diy"
         }
       ],
       "other": [
         {
           "id": "main",
-          "title": "葡萄牙 商务考察 / 探亲访友 / 特殊通道",
-          "fee": "90 EUR + VFS服务费",
-          "desc": "涵盖赴葡萄牙参加展会商务洽谈、探望当地亲友，以及部分国家推出的数字游民/长期旅居或过境便利通道。",
-          "tips": "商务访问须由当地合作企业出具正式抬头纸邀请函；探亲须附邀请人当地合法居留证件复印件。",
+          "title": "葡萄牙 D7 被动收入签 / D8 数字游民长期居留签",
+          "fee": "90 EUR（D 类居留签）+ VFS 服务费 + 抵葡 AIMA 换卡费",
+          "processing": "约 30–60 天（VFS 受理转使馆审理）",
+          "submission": "备齐 NIF 税号、葡银行账户、收入证明与住宿合同后预约 VFS Portugal 递交 D7/D8 长居签",
+          "diySupport": "diy",
+          "desc": "D7 面向拥有稳定被动收入（退休金、房租、股息理财）的申请人；D8 数字游民签面向受雇于境外企业或自由职业的远程工作者（通常要求月均收入达葡萄牙最低工资的 4 倍以上）。合法持卡居住满 5 年且过葡语 A2 即可申永居或入籍！",
+          "tips": "递签前通常须先远程或委托开立葡萄牙 NIF 税号及本地银行账户（存入足额生活保障金），并提供至少 1 年期当地合规租房合同与海牙认证无犯罪记录。",
           "steps": [
             {
-              "title": "准备邀请方或过境佐证材料",
-              "detail": "商务备好邀请函与派遣函；探亲备好亲属关系证明。"
+              "title": "申领葡萄牙 NIF 税号并开立本地银行账户",
+              "detail": "线上或委托开立 NIF 并存入至少 12 个月葡萄牙最低工资基准生活保障金。"
             },
             {
-              "title": "核对免签或网申通道提交",
-              "detail": "参考 葡萄牙外交部官方签证门户 官方清单完成填报。"
+              "title": "准备被动收入或远程工作合同与流水",
+              "detail": "D8 须提供境外远程雇佣/自由职业合同及近 3 个月月入达标流水；D7 须提供稳定被动收入证明。"
+            },
+            {
+              "title": "办理海牙认证无犯罪并签约 1 年租房合同",
+              "detail": "国内无犯罪公证办妥外交部海牙认证，并在葡萄牙 Finanças 登记长期租赁合同。"
+            },
+            {
+              "title": "向 VFS Portugal 递交 D7/D8 并赴 AIMA 换卡",
+              "detail": "贴签入境后按预约时间前往葡萄牙移民局 AIMA 录指纹领取 2 年期居留卡。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "当地邀请函及邀请方身份/营业执照复印件",
-            "中方公司派遣函（商务）或亲属关系证明（探亲）",
-            "往返机票及住宿证明"
+            "有效护照及 D 类国别签证申请表",
+            "葡萄牙 NIF 税号及当地银行足额存款证明",
+            "远程工作合同与银行流水（D8）或被动收入证明（D7）",
+            "海牙认证无犯罪记录公证及葡萄牙 1 年期合规租房合同",
+            "覆盖赴葡首期的国际旅行及医疗保险单"
           ]
         }
       ]
@@ -1758,7 +1698,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 荷兰政府官方签证门户 或当地使领馆递交留学签证申请。"
+              "detail": "由荷兰高校代为向荷兰移民局 (IND) 申请 MVV 及居留许可批准后，本人预约驻华使领馆贴发入境 D 签。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -1771,40 +1711,47 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "学校代向 IND 申请 TEV 约 2–4 周",
+          "submission": "荷兰高校代为向 IND 申请 MVV/居留许可批准后，本人预约驻华使领馆贴发入境 D 签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得荷兰正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
         {
           "id": "main",
-          "title": "荷兰 工作签证 / 就业许可",
-          "fee": "视工作许可年限与雇主担保政策",
-          "desc": "赴荷兰合法工作通常采取“先雇主担保、后入境贴签”原则，需由当地合规企业向劳动或移民部门申领工作许可预批，再由本人办理入境工作签证。",
-          "tips": "切勿持旅游免签或旅游签证在当地非法打工，务必确保雇主已为你申请正规 Work Permit。",
+          "title": "荷兰 Orientation Year 寻职年工签 / KM 高技术移民",
+          "fee": "Orientation Year 约 243 EUR / KM 由认证雇主按 IND 规费缴纳",
+          "processing": "IND 审理约 2–4 周（认证雇主 KM 最快 2 周）",
+          "submission": "全球 Top 200 名校毕业生可在荷兰移民局 (IND) 官网自助申 Orientation Year / KM 由认证雇主在线提交",
+          "diySupport": "diy",
+          "desc": "全球 Top 200 高校（含多所中国顶尖高校）近 3 年内毕业的硕士/博士可无需雇主担保直接在 IND 官网申请 1 年期 Orientation Year (zoekjaar) 开放工作居留，自由在荷找工作或创业；已获认证雇主 Offer 者可直接走 KM 高技术移民 2 周极速批复。",
+          "tips": "Orientation Year 申请人须确保毕业院校在 QS/THE/ARWU 任一榜单前 200 名且达到对应英语或荷兰语要求，毕业证书须完成海牙认证及 Nuffic/IDW 评估（如适用）。",
           "steps": [
             {
-              "title": "获得当地合法雇主正式聘用合同",
-              "detail": "确认岗位符合当地薪资及外籍雇员配额要求。"
+              "title": "核对全球 Top 200 名校资格或取得 KM 认证雇主 Offer",
+              "detail": "访问 ind.nl 核对 Orientation Year 榜单院校与 3 年有效期限制，或确认雇主具有 IND 认证担保资质。"
             },
             {
-              "title": "雇主向劳动/移民部门申领工作许可",
-              "detail": "提供学历公证、无犯罪证明及过往履历。"
+              "title": "办理学历认证与海牙认证",
+              "detail": "准备毕业证、学位证海牙认证 (Apostille) 及雅思/托福或英语授课证明。"
             },
             {
-              "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 TLScontact / IND 移民局 提交贴签或电子签申请。"
+              "title": "通过 IND 官网在线提交 Orientation Year 申请",
+              "detail": "使用 DigiD 或在线表格直接向 IND 提交材料并缴费，获批 MVV 后赴使领馆/VFS 贴签入境。"
             },
             {
-              "title": "入境换领工作居留卡并登记税务",
-              "detail": "抵境后完成体检与社保税务注册。"
+              "title": "抵荷后市政厅登记并领取居留卡 (BRP)",
+              "detail": "入境后在 IND 窗口录指纹领卡，并在市政厅完成地址注册与 BSN 税号申领。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "当地雇主签署的正式雇佣合同与邀请函",
-            "当地官方签发的工作许可批准函 (Work Permit)",
-            "最高学历学位公证（及海牙认证）与个人英文简历",
-            "无犯罪记录证明公证及指定体检证明"
+            "有效护照及证件照",
+            "近 3 年内硕士/博士毕业证学位证（海牙认证）",
+            "英语成绩单（雅思 6.0+ 或英文授课证明）",
+            "高校全球排名前 200 佐证截图（Orientation Year）或认证雇主合同（KM）",
+            "无犯罪声明及医疗保险证明"
           ]
         }
       ],
@@ -1818,7 +1765,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 荷兰移民局 (IND) 查询最新永居条例。"
+              "detail": "访问荷兰官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -1835,7 +1782,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向荷兰当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在荷兰连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -1869,7 +1820,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天",
+          "submission": "TLScontact / IND 移民局",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -1886,7 +1840,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 荷兰政府官方签证门户 官方清单完成填报。"
+              "detail": "按荷兰驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -1894,7 +1848,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭荷兰邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得荷兰当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -1929,7 +1887,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
       },
       {
         "title": "瑞士联邦移民局 (SEM)",
-        "url": "https://www.sem.admin.ch/sem/en/home.html",
+        "url": "https://www.sem.admin.ch/",
         "desc": "官方移民局/使领馆/签证中心官网"
       }
     ],
@@ -1964,7 +1922,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 瑞士官方电子签证门户 或当地使领馆递交留学签证申请。"
+              "detail": "按瑞士驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -1977,7 +1935,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭瑞士教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得瑞士正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -1998,7 +1960,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 TLScontact 中智瑞签 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向瑞士驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -2011,7 +1973,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向瑞士劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得瑞士当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -2024,7 +1990,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 瑞士联邦移民局 (SEM) 查询最新永居条例。"
+              "detail": "访问瑞士官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -2041,7 +2007,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向瑞士当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在瑞士连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -2075,7 +2045,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "5–10 工作日",
+          "submission": "TLScontact 中智瑞签",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -2092,7 +2065,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 瑞士官方电子签证门户 官方清单完成填报。"
+              "detail": "按瑞士驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -2100,7 +2073,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭瑞士邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得瑞士当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -2129,14 +2106,14 @@ export const EUROPE_COUNTRIES: CountryData[] = [
     ],
     "links": [
       {
-        "title": "奥地利外交部入境与居留官网",
-        "url": "https://www.bmeia.gv.at/en/travel-stay/entrance-and-residence-in-austria/",
-        "desc": "官方签证/入境申请与政策查询入口"
+        "title": "奥地利红白红卡官方移民网",
+        "url": "https://www.migration.gv.at/",
+        "desc": "奥地利官方红白红卡、积分自测与工作移民入口"
       },
       {
-        "title": "奥地利红白红卡官方移民网",
-        "url": "https://www.migration.gv.at/en/",
-        "desc": "官方移民局/使领馆/签证中心官网"
+        "title": "奥地利外交部官网 (BMEIA)",
+        "url": "https://www.bmeia.gv.at/",
+        "desc": "奥地利官方签证、入境政策与驻外使领馆总入口"
       }
     ],
     "jobLinks": [
@@ -2170,7 +2147,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 奥地利外交部入境与居留官网 或当地使领馆递交留学签证申请。"
+              "detail": "按奥地利驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -2183,40 +2160,47 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭奥地利教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得奥地利正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
         {
           "id": "main",
-          "title": "奥地利 工作签证 / 就业许可",
-          "fee": "视工作许可年限与雇主担保政策",
-          "desc": "赴奥地利合法工作通常采取“先雇主担保、后入境贴签”原则，需由当地合规企业向劳动或移民部门申领工作许可预批，再由本人办理入境工作签证。",
-          "tips": "切勿持旅游免签或旅游签证在当地非法打工，务必确保雇主已为你申请正规 Work Permit。",
+          "title": "奥地利红白红卡 (Red-White-Red Card) / 6个月高学历求职签",
+          "fee": "约 160 EUR（居留卡申请及制卡费，以奥地利移民局官网为准）",
+          "processing": "AMS 积分评估与移民局审核约 4–8 周",
+          "submission": "高学历求职签 (Job Seeker Visa) 可向奥地利驻华使领馆/VFS 自助申请；获雇主聘用后递交红白红卡",
+          "diySupport": "diy",
+          "desc": "奥地利面向高素质紧缺人才实行打分制移民：特高素质人才（硕士/博士、专利/科研成果、高薪经历或年龄语言凑满 70 分）可在无奥地利工作 Offer 的情况下先自助申请 6 个月 Job Seeker 求职签证赴奥找工作，找到达标雇主后直接就地转领 2 年期红白红卡。",
+          "tips": "前往 migration.gv.at 使用官方积分计算器自测分数；所有国内学历、无犯罪与出生公证均须办理外交部海牙认证 (Apostille) 并配德文或英文官方翻译。",
           "steps": [
             {
-              "title": "获得当地合法雇主正式聘用合同",
-              "detail": "确认岗位符合当地薪资及外籍雇员配额要求。"
+              "title": "在 migration.gv.at 核算 70 分积分资格",
+              "detail": "按学历、专业工作年限、语言（德语/英语）、年龄及科研成果自测是否达到特高素质求职签 70 分标准。"
             },
             {
-              "title": "雇主向劳动/移民部门申领工作许可",
-              "detail": "提供学历公证、无犯罪证明及过往履历。"
+              "title": "准备海牙认证学历、工作与资金证明",
+              "detail": "办理毕业证、无犯罪及出生公证海牙认证，准备覆盖 6 个月在奥生活费的银行存款与住宿证明。"
             },
             {
-              "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 VFS Austria 签证中心 提交贴签或电子签申请。"
+              "title": "预约奥地利驻华使领馆/VFS 提交求职签",
+              "detail": "递交 Job Seeker Visa (Category D) 申请，获批后入境奥地利自由面试企业。"
             },
             {
-              "title": "入境换领工作居留卡并登记税务",
-              "detail": "抵境后完成体检与社保税务注册。"
+              "title": "获雇主 Offer 后就地申领红白红卡",
+              "detail": "拿到符合薪资标准的奥地利工作合同后向当地市政厅/移民局换领 Red-White-Red Card。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "当地雇主签署的正式雇佣合同与邀请函",
-            "当地官方签发的工作许可批准函 (Work Permit)",
-            "最高学历学位公证（及海牙认证）与个人英文简历",
-            "无犯罪记录证明公证及指定体检证明"
+            "有效护照及签名签证申请表",
+            "海牙认证的高等学历学位证及成绩单德/英文翻译",
+            "过往专业工作经验证明与个人简历",
+            "语言证书（德语/英语）及覆盖 6 个月生活的银行流水存款",
+            "奥地利申根/长期医疗保险及在奥住址预订单"
           ]
         }
       ],
@@ -2230,7 +2214,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 奥地利红白红卡官方移民网 查询最新永居条例。"
+              "detail": "访问奥地利官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -2247,7 +2231,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向奥地利当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在奥地利连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -2281,7 +2269,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "10–15 工作日",
+          "submission": "VFS Austria 签证中心",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -2298,7 +2289,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 奥地利外交部入境与居留官网 官方清单完成填报。"
+              "detail": "按奥地利驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -2306,7 +2297,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭奥地利邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得奥地利当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -2376,7 +2371,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 比利时移民局 (IBZ) 或当地使领馆递交留学签证申请。"
+              "detail": "按比利时驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -2389,7 +2384,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭比利时教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得比利时正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -2410,7 +2409,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 Visa-On-Web + TLScontact 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向比利时驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -2423,7 +2422,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向比利时劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得比利时当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -2436,7 +2439,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 TLScontact 比利时签证中心 查询最新永居条例。"
+              "detail": "访问比利时官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -2453,7 +2456,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向比利时当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在比利时连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -2487,7 +2494,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天",
+          "submission": "Visa-On-Web + TLScontact",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -2504,7 +2514,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 比利时移民局 (IBZ) 官方清单完成填报。"
+              "detail": "按比利时驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -2512,7 +2522,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭比利时邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得比利时当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -2582,7 +2596,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 瑞典移民局 (Migrationsverket) 或当地使领馆递交留学签证申请。"
+              "detail": "凭瑞典高校录取信与学费缴费凭证登录瑞典移民局官网 (migrationsverket.se) 在线填报学生居留许可，随后赴使领馆或 VFS 录指纹。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -2595,7 +2609,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "Migrationsverket 审理约 1–3 个月",
+          "submission": "凭瑞典大学录取与学费缴费收据在瑞典移民局官网 (migrationsverket.se) 在线填报，后赴使领馆/VFS 录指纹",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得瑞典正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -2616,7 +2634,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 Migrationsverket / VFS 提交贴签或电子签申请。"
+              "detail": "由瑞典雇主在移民局官网发起工作许可申请后，本人在系统邮件链接内补全材料并预约 VFS 采集指纹与照片。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -2629,7 +2647,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "Migrationsverket 审理约 1–3 个月",
+          "submission": "雇主在瑞典移民局官网发起工作许可申请后，本人在邮件链接填报并赴 VFS 录指纹",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得瑞典当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -2642,7 +2664,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 VFS 瑞典签证中心 查询最新永居条例。"
+              "detail": "访问瑞典官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -2659,7 +2681,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向瑞典当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在瑞典连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -2693,7 +2719,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天(短签) / 1–3 月(长签)",
+          "submission": "Migrationsverket / VFS",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -2710,7 +2739,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 瑞典移民局 (Migrationsverket) 官方清单完成填报。"
+              "detail": "按瑞典驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -2718,7 +2747,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭瑞典邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得瑞典当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -2788,7 +2821,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 挪威移民局 (UDI) 官网 或当地使领馆递交留学签证申请。"
+              "detail": "凭挪威院校录取通知书登录挪威移民局 udi.no 在线填表并缴费，随后预约 VFS 签证中心递交护照原件并录指纹。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -2801,7 +2834,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "UDI 审理约 4–8 周",
+          "submission": "凭录取信登录挪威移民局 udi.no 在线填表缴费后赴 VFS 递交护照录指纹",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得挪威正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -2822,7 +2859,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 UDI 挪威移民局 + VFS 提交贴签或电子签申请。"
+              "detail": "取得挪威雇主正式聘用合同后登录 udi.no 注册并在线提交工作居留申请，随后预约 VFS 递交护照与指纹。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -2835,7 +2872,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "UDI 审理约 4–8 周",
+          "submission": "拿到挪威雇主 Offer 后在 udi.no 注册在线提交，后赴 VFS 递交护照录指纹",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得挪威当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -2848,7 +2889,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 VFS 挪威签证中心 查询最新永居条例。"
+              "detail": "访问挪威官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -2865,7 +2906,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向挪威当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在挪威连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -2899,7 +2944,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天",
+          "submission": "UDI 挪威移民局 + VFS",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -2916,7 +2964,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 挪威移民局 (UDI) 官网 官方清单完成填报。"
+              "detail": "按挪威驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -2924,7 +2972,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭挪威邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得挪威当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -2994,7 +3046,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 丹麦移民局官方门户 (Ny i Danmark) 或当地使领馆递交留学签证申请。"
+              "detail": "由学校在系统发起 ST1 申请编号后，本人登录丹麦移民局官网 (nyidanmark.dk) 完成网申并赴 VFS 签证中心录入生物信息。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -3007,7 +3059,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "SIRI 审理约 1–2 个月",
+          "submission": "学校发起 ST1 网申编号后本人登录 nyidanmark.dk 完成提交并赴 VFS 录指纹",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得丹麦正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -3028,7 +3084,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 ApplyVisa / SIRI + VFS 提交贴签或电子签申请。"
+              "detail": "由丹麦雇主先行发起 AR1 表格后，本人登录 nyidanmark.dk 完成工作居留网申并预约 VFS 签证中心录指纹。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -3041,7 +3097,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "SIRI 审理约 1 个月（Pay Limit 更快）",
+          "submission": "雇主发起 AR1 表格后本人在 nyidanmark.dk 完成网申并赴 VFS 录指纹",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得丹麦当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -3054,7 +3114,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 VFS 丹麦签证中心 查询最新永居条例。"
+              "detail": "访问丹麦官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -3071,7 +3131,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向丹麦当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在丹麦连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -3105,7 +3169,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天",
+          "submission": "ApplyVisa / SIRI + VFS",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -3122,7 +3189,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 丹麦移民局官方门户 (Ny i Danmark) 官方清单完成填报。"
+              "detail": "按丹麦驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -3130,7 +3197,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭丹麦邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得丹麦当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -3200,7 +3271,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 芬兰移民局 (Migri) 官网 或当地使领馆递交留学签证申请。"
+              "detail": "凭芬兰院校正式录取信登录 Enter Finland (enterfinland.fi) 在线提交学生居留许可，并预约 VFS 核验原件与录指纹。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -3213,7 +3284,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "Enter Finland 电子居留许可约 2–4 周",
+          "submission": "凭芬兰院校录取信登录 enterfinland.fi 在线提交学生居留许可并预约 VFS 核验原件与指纹",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得芬兰正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -3234,7 +3309,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 Enter Finland / VFS 提交贴签或电子签申请。"
+              "detail": "待芬兰雇主在系统补充雇佣条款后，本人登录 enterfinland.fi 在线提交工作居留许可申请并赴 VFS 核验原件。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -3247,7 +3322,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "Enter Finland 审理约 2–6 周（专家卡约 2 周）",
+          "submission": "雇主提交雇佣条款后本人在 enterfinland.fi 在线申领工作居留许可并赴 VFS 核验",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得芬兰当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -3260,7 +3339,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 Enter Finland 在线申请系统 查询最新永居条例。"
+              "detail": "访问芬兰官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -3277,7 +3356,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向芬兰当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在芬兰连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -3311,7 +3394,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天(短签) / 2–4 周(D签)",
+          "submission": "Enter Finland / VFS",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -3328,7 +3414,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 芬兰移民局 (Migri) 官网 官方清单完成填报。"
+              "detail": "按芬兰驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -3336,7 +3422,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭芬兰邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得芬兰当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -3406,7 +3496,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 希腊外交部签证指南 或当地使领馆递交留学签证申请。"
+              "detail": "按希腊驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -3419,7 +3509,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭希腊教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得希腊正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -3440,7 +3534,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 GVCW 希腊签证中心 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向希腊驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -3453,7 +3547,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向希腊劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得希腊当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -3466,7 +3564,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 GVCW 中国希腊签证中心 查询最新永居条例。"
+              "detail": "访问希腊官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -3483,7 +3581,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向希腊当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在希腊连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -3517,31 +3619,42 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "10–15 工作日",
+          "submission": "GVCW 希腊签证中心",
+          "diySupport": "diy"
         }
       ],
       "other": [
         {
           "id": "main",
-          "title": "希腊 商务考察 / 探亲访友 / 特殊通道",
-          "fee": "90 EUR + 服务费",
-          "desc": "涵盖赴希腊参加展会商务洽谈、探望当地亲友，以及部分国家推出的数字游民/长期旅居或过境便利通道。",
-          "tips": "商务访问须由当地合作企业出具正式抬头纸邀请函；探亲须附邀请人当地合法居留证件复印件。",
+          "title": "希腊数字游民签证 (Digital Nomad Visa) / 黄金居留",
+          "fee": "75 EUR（D 类国别签）+ 150 EUR（入境后居留卡申请费）",
+          "processing": "约 10–30 个工作日",
+          "submission": "凭每月 3,500 EUR 以上税后远程收入证明直接向希腊驻华使领馆/签证中心递交数字游民 D 签",
+          "diySupport": "diy",
+          "desc": "希腊向非欧盟远程雇员及自由职业者开放 1 年期数字游民 D 签（可境内续办 2 年期数字游民居留卡），要求证明每月拥有至少 3,500 EUR 税后稳定境外收入（携带配偶/子女分别提高 20%/15%）；另有购房投资黄金居留通道。",
+          "tips": "申请材料中的无犯罪记录与亲属关系公证须办理外交部海牙认证并经指定英文或希腊文翻译。",
           "steps": [
             {
-              "title": "准备邀请方或过境佐证材料",
-              "detail": "商务备好邀请函与派遣函；探亲备好亲属关系证明。"
+              "title": "核对 3,500 EUR/月税后境外收入门槛",
+              "detail": "备齐境外雇主远程工作声明/合同、公司营业执照及近 6 个月工资/业务入账流水。"
             },
             {
-              "title": "核对免签或网申通道提交",
-              "detail": "参考 希腊外交部签证指南 官方清单完成填报。"
+              "title": "办理无犯罪及体检健康声明认证",
+              "detail": "准备海牙认证的无犯罪记录、医疗保险及希腊住址租赁证明。"
+            },
+            {
+              "title": "向希腊驻华使领馆提交数字游民 D 签",
+              "detail": "预约递交原件审核并缴费 75 EUR，获批 D 签入境后可申请换发居留卡。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "当地邀请函及邀请方身份/营业执照复印件",
-            "中方公司派遣函（商务）或亲属关系证明（探亲）",
-            "往返机票及住宿证明"
+            "有效护照及 D 类长期签证申请表",
+            "税后月入 ≥ 3,500 EUR 的合同与近 6 个月银行流水",
+            "境外雇主出具的允许在希腊远程工作证明函",
+            "海牙认证无犯罪公证及希腊租房/住宿合同",
+            "覆盖赴希期间的商业医疗保险单"
           ]
         }
       ]
@@ -3612,7 +3725,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 波兰外交部 e-Konsulat 系统 或当地使领馆递交留学签证申请。"
+              "detail": "按波兰驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -3625,7 +3738,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭波兰教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得波兰正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -3646,7 +3763,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 e-Konsulat / VFS Poland 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向波兰驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -3659,7 +3776,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向波兰劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得波兰当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -3672,7 +3793,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 VFS 波兰签证中心 查询最新永居条例。"
+              "detail": "访问波兰官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -3689,7 +3810,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向波兰当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在波兰连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -3723,7 +3848,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天",
+          "submission": "e-Konsulat / VFS Poland",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -3740,7 +3868,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 波兰外交部 e-Konsulat 系统 官方清单完成填报。"
+              "detail": "按波兰驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -3748,7 +3876,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭波兰邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得波兰当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -3818,7 +3950,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 捷克外交部外国人签证官网 或当地使领馆递交留学签证申请。"
+              "detail": "按捷克驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -3831,7 +3963,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭捷克教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得捷克正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -3852,7 +3988,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 VFS Czech Republic 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向捷克驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -3865,7 +4001,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向捷克劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得捷克当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -3878,7 +4018,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 VFS 捷克签证中心 查询最新永居条例。"
+              "detail": "访问捷克官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -3895,7 +4035,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向捷克当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在捷克连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -3929,7 +4073,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天",
+          "submission": "VFS Czech Republic",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -3946,7 +4093,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 捷克外交部外国人签证官网 官方清单完成填报。"
+              "detail": "按捷克驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -3954,7 +4101,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭捷克邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得捷克当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -4024,7 +4175,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 匈牙利领事服务官网 或当地使领馆递交留学签证申请。"
+              "detail": "按匈牙利驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -4037,7 +4188,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭匈牙利教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得匈牙利正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -4058,7 +4213,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 VFS Hungary / 使领馆 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向匈牙利驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -4071,7 +4226,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向匈牙利劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得匈牙利当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -4084,7 +4243,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 VFS 匈牙利签证中心 查询最新永居条例。"
+              "detail": "访问匈牙利官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -4101,7 +4260,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向匈牙利当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在匈牙利连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -4135,31 +4298,41 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天",
+          "submission": "VFS Hungary / 使领馆",
+          "diySupport": "diy"
         }
       ],
       "other": [
         {
           "id": "main",
-          "title": "匈牙利 商务考察 / 探亲访友 / 特殊通道",
-          "fee": "90 EUR + VFS服务费",
-          "desc": "涵盖赴匈牙利参加展会商务洽谈、探望当地亲友，以及部分国家推出的数字游民/长期旅居或过境便利通道。",
-          "tips": "商务访问须由当地合作企业出具正式抬头纸邀请函；探亲须附邀请人当地合法居留证件复印件。",
+          "title": "匈牙利数字游民白卡 (White Card) / 访客居留",
+          "fee": "110 EUR（使领馆 D 类居留申请费）",
+          "processing": "约 21–30 天",
+          "submission": "向匈牙利驻华使领馆或 VFS 签证中心提交白卡 D 签申请（抵匈后赴 NDGAP 领卡）",
+          "diySupport": "diy",
+          "desc": "匈牙利白卡 (White Card / Fehér Kártya) 是针对非欧盟单身远程工作者的 1 年期居留许可（可续 1 年），要求过去 6 个月及在匈期间月均净收入不低于 3,000 EUR，且不得在匈牙利本地企业受雇或持股。",
+          "tips": "白卡仅限单身个人申请（不可携配偶子女随行），且须在抵达匈牙利前办妥可覆盖当地的商业医疗保险与合法租房合同。",
           "steps": [
             {
-              "title": "准备邀请方或过境佐证材料",
-              "detail": "商务备好邀请函与派遣函；探亲备好亲属关系证明。"
+              "title": "准备近 6 个月 ≥ 3,000 EUR/月收入与雇佣证明",
+              "detail": "备好境外雇佣/远程合同、工资单与银行近 6 个月流水，以及匈牙利长期租房证明。"
             },
             {
-              "title": "核对免签或网申通道提交",
-              "detail": "参考 匈牙利领事服务官网 官方清单完成填报。"
+              "title": "预约匈牙利驻华使领馆或 VFS 递交 D 签",
+              "detail": "提交完整英文/匈语申请表、商业医疗保险与资产证明并录指纹。"
+            },
+            {
+              "title": "获批入境 D 签后抵布达佩斯领取白卡",
+              "detail": "入境后 30 天内持贴签护照前往移民局 NDGAP 换领实体 White Card。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "当地邀请函及邀请方身份/营业执照复印件",
-            "中方公司派遣函（商务）或亲属关系证明（探亲）",
-            "往返机票及住宿证明"
+            "有效护照与 White Card 专用申请表",
+            "近 6 个月月净入 ≥ 3,000 EUR 银行流水与境外工作合同",
+            "匈牙利合法租房合同及房东授权入住证明",
+            "覆盖整个居留期的全额私人医疗保险单"
           ]
         }
       ]
@@ -4175,12 +4348,12 @@ export const EUROPE_COUNTRIES: CountryData[] = [
       105.32,
       61.52
     ],
-    "badge": "统一电子签 e-Visa",
+    "badge": "30天免签 / 30天停留 e-Visa",
     "tierColor": "#4A7B82",
     "labelPriority": false,
-    "processing": "4 个自然日",
-    "submission": "evisa.kdmid.ru 全在线网申",
-    "summary": "中国公民可在 evisa.kdmid.ru 自行上传护照与照片申请统一电子签，无需邀请函与酒店担保，4天必出签，可停留16天！",
+    "processing": "免签即时 / 统一电子签 4 个自然日",
+    "submission": "双边免签入境 / evisa.kdmid.ru 全在线网申",
+    "summary": "中俄实行双边 30 天免签安排；同时支持在 evisa.kdmid.ru 全在线自助申请有效期 120 天、单次停留最长 30 天的俄罗斯统一电子签（4 个自然日出签，无需酒店担保与邀请函）。",
     "pitfalls": [
       "【核对护照有效期与空白页】出发前确保中国护照剩余有效期在 6 个月以上且至少有 2 页空白签证页，否则航司会直接拒绝办理登机。",
       "【警惕高价山寨代填/代办网站】所有电子签或入境卡（如 e-Visa / eTA / MDAC）务必认准 .gov 或官方域名入口，切勿在搜索引擎广告位支付高额服务费。",
@@ -4191,12 +4364,12 @@ export const EUROPE_COUNTRIES: CountryData[] = [
       {
         "title": "俄罗斯外交部统一电子签官网",
         "url": "https://evisa.kdmid.ru/",
-        "desc": "官方签证/入境申请与政策查询入口"
+        "desc": "120天有效期 / 最长停留30天统一电子签在线申办系统"
       },
       {
-        "title": "俄罗斯电子签说明与口岸",
+        "title": "俄罗斯电子签说明与口岸清单",
         "url": "https://electronic-visa.kdmid.ru/index_en.html",
-        "desc": "官方移民局/使领馆/签证中心官网"
+        "desc": "官方政策指南与适用口岸清单"
       }
     ],
     "jobLinks": [
@@ -4230,7 +4403,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 俄罗斯外交部统一电子签官网 或当地使领馆递交留学签证申请。"
+              "detail": "凭俄罗斯高校办理的官方留学邀请函、艾滋病检疫证明及公证件赴驻华使领馆或俄罗斯签证中心递交留学贴签。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -4243,7 +4416,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "高校邀请函 4–6 周 + 使领馆贴签 5–10 工作日",
+          "submission": "凭俄罗斯高校办理的官方留学邀请函赴使领馆或俄罗斯签证中心递交留学贴签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得俄罗斯正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -4264,7 +4441,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 evisa.kdmid.ru 全在线网申 提交贴签或电子签申请。"
+              "detail": "凭俄方雇主通过俄罗斯内务部 (MVD) 办理的官方工作邀请函及体检证明，赴驻华使领馆或签证中心递交工作贴签。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -4277,7 +4454,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "雇主工作许可与官方邀请函 1–3 个月 + 贴签 5–10 工作日",
+          "submission": "凭俄方雇主通过内务部 (MVD) 办理的官方工作邀请函赴使领馆或签证中心递交工作签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得俄罗斯当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -4290,7 +4471,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 俄罗斯电子签说明与口岸 查询最新永居条例。"
+              "detail": "访问俄罗斯官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -4307,65 +4488,76 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向俄罗斯当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在俄罗斯连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
         {
           "id": "main",
-          "title": "俄罗斯 短期旅游/访客通道（统一电子签 e-Visa）",
-          "fee": "约 52 USD",
-          "desc": "中国公民可在 evisa.kdmid.ru 自行上传护照与照片申请统一电子签，无需邀请函与酒店担保，4天必出签，可停留16天！",
-          "tips": "出发前务必核对护照剩余有效期（通常要求6个月以上）及至少2页空白签证页，并保留往返机票与酒店预订单。",
+          "title": "俄罗斯 短期旅游/访客通道（双边 30 天免签 / 30 天停留统一电子签）",
+          "fee": "约 52 USD（统一电子签）/ 双边免签通道免费",
+          "processing": "双边免签即时入境 / 统一电子签 4 个自然日出签",
+          "submission": "符合双边 30 天免签通道直接入境 / 登录 https://evisa.kdmid.ru/ 全在线网申统一电子签",
+          "diySupport": "diy",
+          "desc": "中国公民可依据中俄双边 30 天免签安排免签赴俄旅游停留 30 天；个人自由行或适用电子签口岸旅客亦可在 https://evisa.kdmid.ru/ 自助申请俄罗斯统一电子签（自签发日起 120 天有效期、入境后最长停留 30 天，4 个自然日出签且无需酒店担保或邀请函）。",
+          "tips": "行前务必核对自身出发口岸与行程是否适用双边 30 天免签安排或需提前网申 e-Visa；无论免签或持统一电子签，均强制要求购买覆盖俄罗斯全境的有效境外医疗保险，且酒店需在入住后办理落地登记。",
           "steps": [
             {
-              "title": "确认入境方式与官方入口",
-              "detail": "访问 俄罗斯外交部统一电子签官网 核对最新免签/电子签/预约要求。"
+              "title": "确认双边 30 天免签或统一电子签适用口岸",
+              "detail": "访问 https://evisa.kdmid.ru/ 及口岸清单核对最新双边免签执行细节与适用口岸。"
             },
             {
-              "title": "准备基础身份与行程材料",
-              "detail": "备齐有效护照、电子照片、行程单、酒店及往返机票预订单（贴签国另附流水与在职证明）。"
+              "title": "在线填报统一电子签并支付约 52 USD（免签通道除外）",
+              "detail": "在 evisa.kdmid.ru 上传护照首页与白底照，最快在出发前 4 天提交，4 个自然日邮件下发 PDF。"
             },
             {
-              "title": "在线提交或前往签证中心递交",
-              "detail": "通过 evisa.kdmid.ru 全在线网申 提交申请并缴费（免签国直接填报入境卡）。"
+              "title": "购买覆盖俄罗斯境内的医疗保险并备好行程单",
+              "detail": "确保保单明确覆盖俄罗斯联邦全境及整个预计停留期。"
             },
             {
-              "title": "获取批文或直接持护照入境",
-              "detail": "打印电子签/确认函随身携带乘机。"
+              "title": "打印电子签或持双边免签凭证直飞入境",
+              "detail": "120 天有效期内入境，单次最多停留 30 天，抵俄后按规定办理住址登记。"
             }
           ],
           "checklist": [
-            "有效期内中国因私护照（有效期6个月以上）",
-            "往返/离境机票预订单",
-            "全程酒店预订单（英文版）",
-            "官方在线申请表打印件与白底证件照",
-            "境外旅行医疗保险单（建议购买）"
+            "有效期内中国因私护照（剩余有效期 6 个月以上）",
+            "统一电子签 PDF 打印件（evisa.kdmid.ru）或双边免签凭证",
+            "覆盖俄罗斯全境的境外医疗保险单（保额建议 ≥ 30,000 EUR 等值）",
+            "往返机票与全程酒店预订单",
+            "符合标准的白底电子证件照（申请 e-Visa 使用）"
           ]
         }
       ],
       "other": [
         {
           "id": "main",
-          "title": "俄罗斯 商务考察 / 探亲访友 / 特殊通道",
-          "fee": "约 52 USD",
-          "desc": "涵盖赴俄罗斯参加展会商务洽谈、探望当地亲友，以及部分国家推出的数字游民/长期旅居或过境便利通道。",
-          "tips": "商务访问须由当地合作企业出具正式抬头纸邀请函；探亲须附邀请人当地合法居留证件复印件。",
+          "title": "俄罗斯 商务考察 / 探亲访友 / 长期专项贴签",
+          "fee": "约 52 USD（统一电子签）/ 免签通道免费 / 使馆贴签约 360–960 RMB 起",
+          "processing": "免签即时 / e-Visa 4 个自然日 / 使馆贴签 5–10 个工作日",
+          "submission": "30 天内短期商务参展可走双边免签或 evisa.kdmid.ru；多次或超 30 天须凭俄方正式邀请函赴俄罗斯签证中心递交",
+          "diySupport": "advisory",
+          "advisoryNote": "多次往返商务、探亲或超 30 天居留须先由俄罗斯邀请企业或亲属向俄内务部 (MVD) 申领官方正式邀请函，再向驻华使领馆或签证中心申请贴签。",
+          "desc": "30 天以内的短期商务洽谈与人道访问可适用双边 30 天免签安排或 120 天有效/30 天停留的统一电子签；多次往返商务、技术安装及超 30 天探亲须凭俄方官方邀请函赴签证中心办纸质贴签。",
+          "tips": "赴俄长期或多次商务注意核查邀请函的 TELEX 编号或纸质原件要求，并提前购买覆盖俄罗斯境内的医疗保险。",
           "steps": [
             {
-              "title": "准备邀请方或过境佐证材料",
-              "detail": "商务备好邀请函与派遣函；探亲备好亲属关系证明。"
+              "title": "确认行程天数及是否需要官方邀请函",
+              "detail": "30 天内短期访问核对免签或统一 e-Visa；超 30 天或多次须请俄方申办 MVD 官方邀请函。"
             },
             {
-              "title": "核对免签或网申通道提交",
-              "detail": "参考 俄罗斯外交部统一电子签官网 官方清单完成填报。"
+              "title": "在线提交 e-Visa 或预约签证中心贴签",
+              "detail": "凭邀请函在 visa.kdmid.ru 填表后前往俄罗斯签证中心递交护照。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "当地邀请函及邀请方身份/营业执照复印件",
-            "中方公司派遣函（商务）或亲属关系证明（探亲）",
-            "往返机票及住宿证明"
+            "有效护照（有效期 6 个月以上且有空白页）",
+            "俄方官方邀请函或商务访问说明（贴签适用）",
+            "覆盖俄罗斯全境的医疗保险单",
+            "往返机票及住宿预订单"
           ]
         }
       ]
@@ -4436,7 +4628,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 塞尔维亚官方外国人门户 或当地使领馆递交留学签证申请。"
+              "detail": "按塞尔维亚驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -4449,7 +4641,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭塞尔维亚教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得塞尔维亚正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -4470,7 +4666,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签直飞 / Welcome to Serbia 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向塞尔维亚驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -4483,7 +4679,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向塞尔维亚劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得塞尔维亚当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -4496,7 +4696,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 塞尔维亚外交部官网 查询最新永居条例。"
+              "detail": "访问塞尔维亚官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -4513,7 +4713,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向塞尔维亚当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在塞尔维亚连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -4547,7 +4751,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时入境",
+          "submission": "免签直飞 / Welcome to Serbia",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -4564,7 +4771,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 塞尔维亚官方外国人门户 官方清单完成填报。"
+              "detail": "按塞尔维亚驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -4572,7 +4779,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭塞尔维亚邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得塞尔维亚当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -4642,7 +4853,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 冰岛移民局官网 (UTL) 或当地使领馆递交留学签证申请。"
+              "detail": "按冰岛驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -4655,7 +4866,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭冰岛教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得冰岛正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -4676,7 +4891,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 VFS 冰岛签证中心 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向冰岛驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -4689,7 +4904,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向冰岛劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得冰岛当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -4702,7 +4921,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 VFS 冰岛签证中心 查询最新永居条例。"
+              "detail": "访问冰岛官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -4719,7 +4938,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向冰岛当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在冰岛连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -4753,7 +4976,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天",
+          "submission": "VFS 冰岛签证中心",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -4770,7 +4996,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 冰岛移民局官网 (UTL) 官方清单完成填报。"
+              "detail": "按冰岛驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -4778,7 +5004,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭冰岛邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得冰岛当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -4843,7 +5073,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 卢森堡政府移民官方指南 或当地使领馆递交留学签证申请。"
+              "detail": "按卢森堡驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -4856,7 +5086,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭卢森堡教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得卢森堡正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -4877,7 +5111,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 VFS / 卢森堡驻华使领馆 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向卢森堡驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -4890,7 +5124,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向卢森堡劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得卢森堡当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -4903,7 +5141,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 卢森堡政府移民官方指南 查询最新永居条例。"
+              "detail": "访问卢森堡官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -4920,7 +5158,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向卢森堡当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在卢森堡连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -4954,7 +5196,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天",
+          "submission": "VFS / 卢森堡驻华使领馆",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -4971,7 +5216,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 卢森堡政府移民官方指南 官方清单完成填报。"
+              "detail": "按卢森堡驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -4979,7 +5224,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭卢森堡邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得卢森堡当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -5049,7 +5298,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 克罗地亚内政部外国人居留网 或当地使领馆递交留学签证申请。"
+              "detail": "按克罗地亚驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -5062,7 +5311,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭克罗地亚教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得克罗地亚正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -5083,7 +5336,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 VFS 克罗地亚签证中心 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向克罗地亚驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -5096,7 +5349,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向克罗地亚劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得克罗地亚当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -5109,7 +5366,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 VFS 克罗地亚中心 查询最新永居条例。"
+              "detail": "访问克罗地亚官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -5126,7 +5383,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向克罗地亚当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在克罗地亚连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -5160,31 +5421,42 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天",
+          "submission": "VFS 克罗地亚签证中心",
+          "diySupport": "diy"
         }
       ],
       "other": [
         {
           "id": "main",
-          "title": "克罗地亚 商务考察 / 探亲访友 / 特殊通道",
-          "fee": "90 EUR + VFS服务费",
-          "desc": "涵盖赴克罗地亚参加展会商务洽谈、探望当地亲友，以及部分国家推出的数字游民/长期旅居或过境便利通道。",
-          "tips": "商务访问须由当地合作企业出具正式抬头纸邀请函；探亲须附邀请人当地合法居留证件复印件。",
+          "title": "克罗地亚 1 年期数字游民临时居留许可 (Digital Nomad Stay)",
+          "fee": "约 46.45 EUR（在线居留审批）+ 制卡费（如需另办入境 D 签另计）",
+          "processing": "约 20–40 天",
+          "submission": "可通过克罗地亚内政部专属门户 (digitalnomadscroatia.mup.hr) 全线上自助提交，获批后再办入境 D 签",
+          "diySupport": "diy",
+          "desc": "克罗地亚对非欧盟远程工作者及自由职业者提供最长 1 年（可延长或续期）的数字游民临时居留许可，且在克罗地亚境内免征境外远程收入个人所得税！支持全英文官网在线上传材料预审。",
+          "tips": "须满足月收入不低于当地法定基准（约 2,870–3,295 EUR/月或等值存款证明）并提交海牙认证的无犯罪记录公证。",
           "steps": [
             {
-              "title": "准备邀请方或过境佐证材料",
-              "detail": "商务备好邀请函与派遣函；探亲备好亲属关系证明。"
+              "title": "准备海牙认证无犯罪及远程收入证明",
+              "detail": "办理无犯罪公证海牙认证 (Apostille)，整理境外远程工作合同及足额存款/月入流水。"
             },
             {
-              "title": "核对免签或网申通道提交",
-              "detail": "参考 克罗地亚内政部外国人居留网 官方清单完成填报。"
+              "title": "在线提交 Digital Nomad 门户申请",
+              "detail": "登录 digitalnomadscroatia.mup.hr 上传护照、保险、住址预订单与收入文件等待 MUP 批复。"
+            },
+            {
+              "title": "凭批文赴 VFS/使馆贴入境 D 签并抵克领卡",
+              "detail": "收到居留批准函后办理入境签，抵境 3 天内到警局登记地址并领取居留卡。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "当地邀请函及邀请方身份/营业执照复印件",
-            "中方公司派遣函（商务）或亲属关系证明（探亲）",
-            "往返机票及住宿证明"
+            "有效护照及个人近照",
+            "境外远程雇主合同/自由职业业务证明",
+            "近 6 个月月入达标流水或 12 个月足额银行存款证明",
+            "海牙认证的无犯罪记录公证书",
+            "覆盖全年的私人医疗保险及克罗地亚住宿预订证明"
           ]
         }
       ]
@@ -5250,7 +5522,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 保加利亚外交部签证官网 或当地使领馆递交留学签证申请。"
+              "detail": "按保加利亚驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -5263,7 +5535,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭保加利亚教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得保加利亚正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -5284,7 +5560,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 保加利亚驻华使领馆 / VFS 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向保加利亚驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -5297,7 +5573,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向保加利亚劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得保加利亚当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -5310,7 +5590,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 保加利亚外交部签证官网 查询最新永居条例。"
+              "detail": "访问保加利亚官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -5327,13 +5607,17 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向保加利亚当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在保加利亚连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
         {
           "id": "main",
-          "title": "保加利亚 短期旅游/访客通道（申根签（空中/海路已入申根））",
+          "title": "保加利亚 短期旅游/访客通道（申根签·空中与海路已入申根）",
           "fee": "90 EUR",
           "desc": "已加入申根区，持有效多次申根签可畅行；本地生活成本在欧盟内极具性价比。",
           "tips": "出发前务必核对护照剩余有效期（通常要求6个月以上）及至少2页空白签证页，并保留往返机票与酒店预订单。",
@@ -5361,7 +5645,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天",
+          "submission": "保加利亚驻华使领馆 / VFS",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -5378,7 +5665,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 保加利亚外交部签证官网 官方清单完成填报。"
+              "detail": "按保加利亚驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -5386,7 +5673,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭保加利亚邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得保加利亚当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -5451,7 +5742,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 罗马尼亚外交部 eVisa 官网 或当地使领馆递交留学签证申请。"
+              "detail": "按罗马尼亚驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -5464,7 +5755,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭罗马尼亚教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得罗马尼亚正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -5485,7 +5780,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 evisa.mae.ro 官方在线填表 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向罗马尼亚驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -5498,7 +5793,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向罗马尼亚劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得罗马尼亚当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -5511,7 +5810,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 罗马尼亚外交部 eVisa 官网 查询最新永居条例。"
+              "detail": "访问罗马尼亚官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -5528,7 +5827,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向罗马尼亚当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在罗马尼亚连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -5562,7 +5865,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "10–15 工作日",
+          "submission": "evisa.mae.ro 官方在线填表",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -5579,7 +5885,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 罗马尼亚外交部 eVisa 官网 官方清单完成填报。"
+              "detail": "按罗马尼亚驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -5587,7 +5893,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭罗马尼亚邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得罗马尼亚当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -5652,7 +5962,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 斯洛伐克官方电子签证表 或当地使领馆递交留学签证申请。"
+              "detail": "按斯洛伐克驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -5665,7 +5975,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭斯洛伐克教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得斯洛伐克正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -5686,7 +6000,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 ezov.mzv.sk + 使领馆 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向斯洛伐克驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -5699,7 +6013,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向斯洛伐克劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得斯洛伐克当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -5712,7 +6030,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 斯洛伐克官方电子签证表 查询最新永居条例。"
+              "detail": "访问斯洛伐克官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -5729,7 +6047,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向斯洛伐克当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在斯洛伐克连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -5763,7 +6085,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天",
+          "submission": "ezov.mzv.sk + 使领馆",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -5780,7 +6105,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 斯洛伐克官方电子签证表 官方清单完成填报。"
+              "detail": "按斯洛伐克驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -5788,7 +6113,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭斯洛伐克邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得斯洛伐克当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -5853,7 +6182,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 斯洛文尼亚政府入境居留网 或当地使领馆递交留学签证申请。"
+              "detail": "按斯洛文尼亚驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -5866,7 +6195,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭斯洛文尼亚教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得斯洛文尼亚正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -5887,7 +6220,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 VFS / 斯洛文尼亚使馆 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向斯洛文尼亚驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -5900,7 +6233,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向斯洛文尼亚劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得斯洛文尼亚当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -5913,7 +6250,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 斯洛文尼亚政府入境居留网 查询最新永居条例。"
+              "detail": "访问斯洛文尼亚官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -5930,7 +6267,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向斯洛文尼亚当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在斯洛文尼亚连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -5964,7 +6305,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天",
+          "submission": "VFS / 斯洛文尼亚使馆",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -5981,7 +6325,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 斯洛文尼亚政府入境居留网 官方清单完成填报。"
+              "detail": "按斯洛文尼亚驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -5989,7 +6333,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭斯洛文尼亚邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得斯洛文尼亚当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -6054,7 +6402,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 爱沙尼亚警察与边防局 (PPA) 或当地使领馆递交留学签证申请。"
+              "detail": "按爱沙尼亚驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -6067,7 +6415,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭爱沙尼亚教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得爱沙尼亚正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -6088,7 +6440,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 爱沙尼亚官方系统 / VFS 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向爱沙尼亚驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -6101,7 +6453,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向爱沙尼亚劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得爱沙尼亚当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -6114,7 +6470,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 爱沙尼亚警察与边防局 (PPA) 查询最新永居条例。"
+              "detail": "访问爱沙尼亚官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -6131,7 +6487,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向爱沙尼亚当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在爱沙尼亚连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -6165,31 +6525,41 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天",
+          "submission": "爱沙尼亚官方系统 / VFS",
+          "diySupport": "diy"
         }
       ],
       "other": [
         {
           "id": "main",
-          "title": "爱沙尼亚 商务考察 / 探亲访友 / 特殊通道",
-          "fee": "90 EUR",
-          "desc": "涵盖赴爱沙尼亚参加展会商务洽谈、探望当地亲友，以及部分国家推出的数字游民/长期旅居或过境便利通道。",
-          "tips": "商务访问须由当地合作企业出具正式抬头纸邀请函；探亲须附邀请人当地合法居留证件复印件。",
+          "title": "数字游民签证 (Digital Nomad Visa) / 电子居民 e-Residency",
+          "fee": "100 EUR（长期 D 签） / e-Residency 另计约 120–150 EUR",
+          "processing": "约 15–30 天",
+          "submission": "在爱沙尼亚外交部官网在线填表后预约驻华使领馆提交数字游民材料（e-Residency 全线上申请）",
+          "diySupport": "diy",
+          "desc": "爱沙尼亚首创 1 年期数字游民签证 (DNV) 允许境外远程雇员、海外企业主或自由职业者在爱沙尼亚合法旅居并远程办公 1 年（要求税前月收入不低于 4,500 EUR 基准）；另可通过 e-Residency 线上获批数字身份并在欧盟远程注册管理公司。",
+          "tips": "注意 e-Residency 数字居民卡本身不具备入境或居住权，不可替代旅游或数字游民签证入境；申请 DNV 须如实提交近 6 个月远程收入流水与雇主远程证明。",
           "steps": [
             {
-              "title": "准备邀请方或过境佐证材料",
-              "detail": "商务备好邀请函与派遣函；探亲备好亲属关系证明。"
+              "title": "确认数字游民月收入与远程雇佣资格",
+              "detail": "整理过去 6 个月月入达标（约 4,500 EUR 税前基准）流水及境外劳动合同/公司注册证明。"
             },
             {
-              "title": "核对免签或网申通道提交",
-              "detail": "参考 爱沙尼亚警察与边防局 (PPA) 官方清单完成填报。"
+              "title": "在线填写爱沙尼亚长期 D 签申请表",
+              "detail": "在 eelviisataotlus.vm.ee 填写个人及远程工作信息并下载打印申请表。"
+            },
+            {
+              "title": "预约爱沙尼亚使领馆或受理代表处递签",
+              "detail": "携带护照、合同、流水、保险与住宿证明录指纹缴费，约 15–30 天获批。"
             }
           ],
           "checklist": [
-            "有效护照",
-            "当地邀请函及邀请方身份/营业执照复印件",
-            "中方公司派遣函（商务）或亲属关系证明（探亲）",
-            "往返机票及住宿证明"
+            "有效护照及在线填妥打印的 D 类签证申请表",
+            "近 6 个月银行流水及境外雇主远程办公授权/自由职业合同",
+            "覆盖整个停留期的 30,000 EUR 以上医疗保险",
+            "在爱住宿证明及个人简历说明信"
           ]
         }
       ]
@@ -6255,7 +6625,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 拉脱维亚公民与移民局 (OCMA) 或当地使领馆递交留学签证申请。"
+              "detail": "按拉脱维亚驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -6268,7 +6638,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–6 周（长期 D 类学生签证审理）",
+          "submission": "凭拉脱维亚教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得拉脱维亚正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -6289,7 +6663,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 VFS 拉脱维亚中心 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向拉脱维亚驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -6302,7 +6676,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向拉脱维亚劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得拉脱维亚当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -6315,7 +6693,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 拉脱维亚公民与移民局 (OCMA) 查询最新永居条例。"
+              "detail": "访问拉脱维亚官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -6332,7 +6710,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向拉脱维亚当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在拉脱维亚连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -6366,7 +6748,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天",
+          "submission": "VFS 拉脱维亚中心",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -6383,7 +6768,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 拉脱维亚公民与移民局 (OCMA) 官方清单完成填报。"
+              "detail": "按拉脱维亚驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -6391,7 +6776,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭拉脱维亚邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得拉脱维亚当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -6456,7 +6845,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 立陶宛 MIGRIS 官方电子移民系统 或当地使领馆递交留学签证申请。"
+              "detail": "凭立陶宛高校出具的中介编号 (Mediation Letter) 登录立陶宛 MIGRIS 系统在线提交申请，并赴指定受理中心录指纹。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -6469,7 +6858,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "MIGRIS 审理约 1–2 个月",
+          "submission": "凭学校中介编号 (mediation letter) 在立陶宛 MIGRIS 系统在线提交并赴 VFS/外部中心录指纹",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得立陶宛正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -6490,7 +6883,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 MIGRIS 官方移民系统 提交贴签或电子签申请。"
+              "detail": "凭立陶宛雇主出具的中介编号 (Mediation Letter) 登录 MIGRIS 移民系统在线提交工作居留并预约录指纹。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -6503,7 +6896,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "MIGRIS 审理约 1–2 个月",
+          "submission": "雇主出具中介编号后本人在 MIGRIS 系统在线提交工作居留并预约录指纹",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得立陶宛当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -6516,7 +6913,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 立陶宛 MIGRIS 官方电子移民系统 查询最新永居条例。"
+              "detail": "访问立陶宛官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -6533,7 +6930,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向立陶宛当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在立陶宛连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -6567,7 +6968,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "15 天",
+          "submission": "MIGRIS 官方移民系统",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -6584,7 +6988,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 立陶宛 MIGRIS 官方电子移民系统 官方清单完成填报。"
+              "detail": "按立陶宛驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -6592,7 +6996,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭立陶宛邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得立陶宛当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -6621,9 +7029,14 @@ export const EUROPE_COUNTRIES: CountryData[] = [
     ],
     "links": [
       {
-        "title": "塞浦路斯移民局官网",
-        "url": "https://www.moi.gov.cy/moi/crmd/crmd.nsf/index_en/index_en",
-        "desc": "官方签证/入境申请与政策查询入口"
+        "title": "塞浦路斯移民局官网 (MIP)",
+        "url": "https://www.mip.gov.cy/",
+        "desc": "塞浦路斯内政部移民事务官方门户"
+      },
+      {
+        "title": "塞浦路斯政府官方服务门户",
+        "url": "https://www.gov.cy/",
+        "desc": "塞浦路斯政府签证、居留与公共服务总入口"
       }
     ],
     "jobLinks": [
@@ -6657,7 +7070,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 塞浦路斯移民局官网 或当地使领馆递交留学签证申请。"
+              "detail": "按塞浦路斯驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -6670,7 +7083,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭塞浦路斯教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得塞浦路斯正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -6691,7 +7108,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 VFS 塞浦路斯中心 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向塞浦路斯驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -6704,7 +7121,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向塞浦路斯劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得塞浦路斯当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -6717,7 +7138,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 塞浦路斯移民局官网 查询最新永居条例。"
+              "detail": "访问塞浦路斯官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -6734,7 +7155,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向塞浦路斯当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在塞浦路斯连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -6768,7 +7193,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "5–10 工作日",
+          "submission": "VFS 塞浦路斯中心",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -6785,7 +7213,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 塞浦路斯移民局官网 官方清单完成填报。"
+              "detail": "按塞浦路斯驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -6793,7 +7221,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭塞浦路斯邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得塞浦路斯当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -6858,7 +7290,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 波黑外国人事务局官网 或当地使领馆递交留学签证申请。"
+              "detail": "按波黑驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -6871,7 +7303,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭波黑教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得波黑正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -6892,7 +7328,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签直飞（每180天累计90天） 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向波黑驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -6905,7 +7341,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向波黑劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得波黑当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -6918,7 +7358,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 波黑外国人事务局官网 查询最新永居条例。"
+              "detail": "访问波黑官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -6935,7 +7375,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向波黑当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在波黑连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -6969,7 +7413,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时入境",
+          "submission": "免签直飞（每180天累计90天）",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -6986,7 +7433,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 波黑外国人事务局官网 官方清单完成填报。"
+              "detail": "按波黑驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -6994,7 +7441,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭波黑邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得波黑当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -7059,7 +7510,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 阿尔巴尼亚官方电子签与免签网 或当地使领馆递交留学签证申请。"
+              "detail": "按阿尔巴尼亚驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -7072,7 +7523,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭阿尔巴尼亚教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得阿尔巴尼亚正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -7093,7 +7548,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签直飞（停留90天） 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向阿尔巴尼亚驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -7106,7 +7561,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向阿尔巴尼亚劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得阿尔巴尼亚当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -7119,7 +7578,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 阿尔巴尼亚官方电子签与免签网 查询最新永居条例。"
+              "detail": "访问阿尔巴尼亚官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -7136,7 +7595,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向阿尔巴尼亚当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在阿尔巴尼亚连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -7170,7 +7633,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时入境",
+          "submission": "免签直飞（停留90天）",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -7187,7 +7653,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 阿尔巴尼亚官方电子签与免签网 官方清单完成填报。"
+              "detail": "按阿尔巴尼亚驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -7195,7 +7661,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭阿尔巴尼亚邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得阿尔巴尼亚当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -7260,7 +7730,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 黑山外交部官网 或当地使领馆递交留学签证申请。"
+              "detail": "按黑山驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -7273,7 +7743,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭黑山教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得黑山正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -7294,7 +7768,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 持发达国家签免签 / 领馆 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向黑山驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -7307,7 +7781,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向黑山劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得黑山当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -7320,7 +7798,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 黑山外交部官网 查询最新永居条例。"
+              "detail": "访问黑山官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -7337,7 +7815,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向黑山当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在黑山连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -7371,7 +7853,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "5–10 工作日",
+          "submission": "持发达国家签免签 / 领馆",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -7388,7 +7873,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 黑山外交部官网 官方清单完成填报。"
+              "detail": "按黑山驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -7396,7 +7881,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭黑山邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得黑山当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -7461,7 +7950,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 北马其顿外交部官网 或当地使领馆递交留学签证申请。"
+              "detail": "按北马其顿驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -7474,7 +7963,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭北马其顿教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得北马其顿正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -7495,7 +7988,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 持有效申根/美签免签 / 领馆 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向北马其顿驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -7508,7 +8001,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向北马其顿劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得北马其顿当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -7521,7 +8018,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 北马其顿外交部官网 查询最新永居条例。"
+              "detail": "访问北马其顿官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -7538,7 +8035,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向北马其顿当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在北马其顿连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -7572,7 +8073,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "近6个月银行流水、在职证明及申根/旅行医疗保险"
-          ]
+          ],
+          "processing": "5–10 工作日",
+          "submission": "持有效申根/美签免签 / 领馆",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -7589,7 +8093,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 北马其顿外交部官网 官方清单完成填报。"
+              "detail": "按北马其顿驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -7597,7 +8101,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭北马其顿邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得北马其顿当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -7662,7 +8170,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 摩尔多瓦官方电子签门户 或当地使领馆递交留学签证申请。"
+              "detail": "按摩尔多瓦驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -7675,7 +8183,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭摩尔多瓦教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得摩尔多瓦正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -7696,7 +8208,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 evisa.gov.md 官方网申 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向摩尔多瓦驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -7709,7 +8221,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向摩尔多瓦劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得摩尔多瓦当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -7722,7 +8238,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 摩尔多瓦官方电子签门户 查询最新永居条例。"
+              "detail": "访问摩尔多瓦官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -7739,7 +8255,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向摩尔多瓦当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在摩尔多瓦连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -7773,7 +8293,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "5–10 工作日",
+          "submission": "evisa.gov.md 官方网申",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -7790,7 +8313,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 摩尔多瓦官方电子签门户 官方清单完成填报。"
+              "detail": "按摩尔多瓦驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -7798,7 +8321,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭摩尔多瓦邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得摩尔多瓦当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -7863,7 +8390,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 白俄罗斯外交部签证官网 或当地使领馆递交留学签证申请。"
+              "detail": "按白俄罗斯驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -7876,7 +8403,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭白俄罗斯教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得白俄罗斯正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -7897,7 +8428,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 免签入境（每次30天） 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向白俄罗斯驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -7910,7 +8441,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向白俄罗斯劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得白俄罗斯当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -7923,7 +8458,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 白俄罗斯外交部签证官网 查询最新永居条例。"
+              "detail": "访问白俄罗斯官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -7940,7 +8475,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向白俄罗斯当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在白俄罗斯连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -7974,7 +8513,10 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "电子入境卡/健康声明回执（如官网要求）",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "免签即时入境",
+          "submission": "免签入境（每次30天）",
+          "diySupport": "diy"
         }
       ],
       "other": [
@@ -7991,7 +8533,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 白俄罗斯外交部签证官网 官方清单完成填报。"
+              "detail": "按白俄罗斯驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -7999,7 +8541,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭白俄罗斯邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得白俄罗斯当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
@@ -8064,7 +8610,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "准备资金担保并递交学生签",
-              "detail": "通过 乌克兰外交部官方 e-Visa 或当地使领馆递交留学签证申请。"
+              "detail": "按乌克兰驻华使领馆/签证中心或官方留学门户要求提交学生签证申请。"
             },
             {
               "title": "入境注册并办理当地居留卡",
@@ -8077,7 +8623,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "覆盖首年学费与生活费的银行存款证明",
             "最高学历证书、成绩单公证（及海牙认证）",
             "无犯罪记录证明公证及境外学生医疗保险"
-          ]
+          ],
+          "processing": "约 3–8 周（凭录取信递交学生签审理）",
+          "submission": "凭乌克兰教育部认可院校正式录取通知书 (Offer) 向驻华使领馆/签证中心或官方学生门户递交",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先取得乌克兰正规院校正式录取通知书 (Offer) 及符合要求的学费生活费担保，无法无录取直接个人自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "work": [
@@ -8098,7 +8648,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "凭工作许可批文申请入境工作签",
-              "detail": "通过 evisa.mfa.gov.ua 官网 提交贴签或电子签申请。"
+              "detail": "凭官方工作许可批准函向乌克兰驻华使领馆或签证中心递交入境工作签证。"
             },
             {
               "title": "入境换领工作居留卡并登记税务",
@@ -8111,7 +8661,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地官方签发的工作许可批准函 (Work Permit)",
             "最高学历学位公证（及海牙认证）与个人英文简历",
             "无犯罪记录证明公证及指定体检证明"
-          ]
+          ],
+          "processing": "工作许可预批 3–8 周 + 使领馆/移民局贴签 2–4 周",
+          "submission": "雇主先向乌克兰劳动/移民部门申领工作许可批文，获批后本人向驻华使领馆或签证中心递交工签",
+          "diySupport": "advisory",
+          "advisoryNote": "该通道须先获得乌克兰当地合规雇主正式聘用合同，并由雇主向当地劳动或移民部门申领工作许可批文 (Work Permit)，无法无雇主担保个人直接自助网申；本页提供通用材料与原则指引。"
         }
       ],
       "immigration": [
@@ -8124,7 +8678,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
           "steps": [
             {
               "title": "核对当地永居法定居住年限与语言要求",
-              "detail": "访问 乌克兰外交部官方 e-Visa 查询最新永居条例。"
+              "detail": "访问乌克兰官方移民/内政部门网站核对最新永居居住年限、离境限制及语言考核规定。"
             },
             {
               "title": "累积连续合法工作/居留与纳税证明",
@@ -8141,7 +8695,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "稳定的收入或存款资产证明",
             "当地合法居住地址证明（租房合同或房产证）",
             "无犯罪记录证明及当地语言测试证书（如要求）"
-          ]
+          ],
+          "processing": "通常需连续合法居留纳税 3–5 年后递交，审理约 3–12 个月",
+          "submission": "满足法定居住与语言/纳税年限后向乌克兰当地移民局或内政部门递交永居 (PR) 申请",
+          "diySupport": "advisory",
+          "advisoryNote": "永久居留通常须先持合法工作、家庭团聚或合规格长期居留许可在乌克兰连续居住并稳定纳税满法定年限（多为 5 年），无法从海外直接一步自助网申；本页提供长期路径规划指引。"
         }
       ],
       "tourism": [
@@ -8175,7 +8733,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "全程酒店预订单（英文版）",
             "官方在线申请表打印件与白底证件照",
             "境外旅行医疗保险单（建议购买）"
-          ]
+          ],
+          "processing": "3–9 工作日",
+          "submission": "evisa.mfa.gov.ua 官网",
+          "diySupport": "advisory",
+          "advisoryNote": "受当前地区安全局势影响，电子签开放状态、口岸通行条件及入境邀请核验可能动态调整，出行前务必向乌克兰驻华使馆确认最新公告并评估安全风险。"
         }
       ],
       "other": [
@@ -8192,7 +8754,7 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             },
             {
               "title": "核对免签或网申通道提交",
-              "detail": "参考 乌克兰外交部官方 e-Visa 官方清单完成填报。"
+              "detail": "按乌克兰驻华使领馆或官方签证中心对应商务/探亲清单提交材料，并随身携带邀请方凭证。"
             }
           ],
           "checklist": [
@@ -8200,7 +8762,11 @@ export const EUROPE_COUNTRIES: CountryData[] = [
             "当地邀请函及邀请方身份/营业执照复印件",
             "中方公司派遣函（商务）或亲属关系证明（探亲）",
             "往返机票及住宿证明"
-          ]
+          ],
+          "processing": "短期访问约 5–15 个工作日（免签国即时入境，视具体通道而定）",
+          "submission": "凭乌克兰邀请函或亲属关系证明按对应签证中心或免签口岸规则办理",
+          "diySupport": "advisory",
+          "advisoryNote": "商务考察、探亲访友或长期团聚通常须先取得乌克兰当地邀请方出具的正式邀请函、公司派遣函或亲属关系证明，无法无邀请单纯按常规旅游自由行替代；本页提供通用材料与原则指引。"
         }
       ]
     }
