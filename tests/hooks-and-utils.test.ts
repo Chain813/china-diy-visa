@@ -10,90 +10,103 @@ import {
 } from '../src/hooks/useChecklist';
 
 describe('getFormDownloadLink', () => {
-  const sampleCountry = {
-    links: [
-      {
-        title: '官网签证中心',
-        url: 'https://example.gov/visa-forms',
-        desc: 'Official portal',
-      },
-    ],
-  };
+  const baseLinks = [
+    {
+      title: '官网签证中心',
+      url: 'https://example.gov/visa-forms',
+      desc: 'Official portal',
+    },
+  ];
+  const makeCountry = (code: string, links = baseLinks) => ({ code, links });
 
-  it('matches all specific official form rules case-insensitively and prioritizes them over generic keywords', () => {
-    expect(getFormDownloadLink('DS-160 在线申请确认页', sampleCountry)).toEqual({
+  it('matches all specific official form rules only for their owning country and prioritizes them over generic keywords', () => {
+    expect(getFormDownloadLink('DS-160 在线申请确认页', makeCountry('USA'))).toEqual({
       label: '官网填报/下载 ↗',
       url: 'https://ceac.state.gov/genniv/',
     });
-    expect(getFormDownloadLink('ds-260 移民申请表', sampleCountry)).toEqual({
+    expect(getFormDownloadLink('ds-260 移民申请表', makeCountry('USA'))).toEqual({
       label: '官网填报/下载 ↗',
       url: 'https://ceac.state.gov/genniv/',
     });
-    expect(getFormDownloadLink('INZ 1027 补充申请表', sampleCountry)).toEqual({
+    expect(getFormDownloadLink('INZ 1027 补充申请表', makeCountry('NZL'))).toEqual({
       label: '官网下载表格 ↗',
       url: 'https://www.immigration.govt.nz/visas/',
     });
-    expect(getFormDownloadLink('inz 1025 表格', sampleCountry)).toEqual({
+    expect(getFormDownloadLink('inz 1025 表格', makeCountry('NZL'))).toEqual({
       label: '官网下载表格 ↗',
       url: 'https://www.immigration.govt.nz/visas/',
     });
-    expect(getFormDownloadLink('德国 VIDEX 在线填表', sampleCountry)).toEqual({
+    expect(getFormDownloadLink('德国 VIDEX 在线填表', makeCountry('DEU'))).toEqual({
       label: '官网在线填表 ↗',
       url: 'https://digital.diplo.de/',
     });
-    expect(getFormDownloadLink('新加坡 SGAC 电子入境卡', sampleCountry)).toEqual({
+    expect(getFormDownloadLink('新加坡 SGAC 电子入境卡', makeCountry('SGP'))).toEqual({
       label: '官方免费填报 ↗',
       url: 'https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration',
     });
-    expect(getFormDownloadLink('填写 MDAC 入境卡', sampleCountry)).toEqual({
+    expect(getFormDownloadLink('填写 MDAC 入境卡', makeCountry('MYS'))).toEqual({
       label: '官方免费填报 ↗',
       url: 'https://imigresen-online.imi.gov.my/mdac/main',
     });
-    expect(getFormDownloadLink('爱尔兰 AVATS 在线申请', sampleCountry)).toEqual({
+    expect(getFormDownloadLink('爱尔兰 AVATS 在线申请', makeCountry('IRL'))).toEqual({
       label: '官网在线填表 ↗',
       url: 'https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/application-forms/',
     });
-    expect(getFormDownloadLink('France-Visas 申请表与回执', sampleCountry)).toEqual({
+    expect(getFormDownloadLink('France-Visas 申请表与回执', makeCountry('FRA'))).toEqual({
       label: '官网填表下载 ↗',
       url: 'https://france-visas.gouv.fr/chine',
     });
-    expect(getFormDownloadLink('GOV.UK 在线申请确认页', sampleCountry)).toEqual({
+    expect(getFormDownloadLink('GOV.UK 在线申请确认页', makeCountry('GBR'))).toEqual({
       label: '官网下载/填报 ↗',
       url: 'https://www.gov.uk/apply-to-come-to-the-uk',
     });
   });
 
-  it('falls back to the primary country link for generic form keywords', () => {
+  it('does not trigger country-specific links for unrelated countries', () => {
+    expect(getFormDownloadLink('DS-160 确认页', makeCountry('JPN'))).toBeNull();
+    expect(getFormDownloadLink('SGAC 电子回执', makeCountry('MYS'))).toBeNull();
+    expect(getFormDownloadLink('VIDEX 填表指引', makeCountry('FRA'))).toBeNull();
+  });
+
+  it('falls back to the primary country link strictly for fillable generic form keywords', () => {
     const genericItems = [
       '签证申请表',
       '个人陈述申请书',
       '家庭成员补充表',
-      '背景调查表',
-      '材料清单',
-      '预约确认页',
-      '信息摘要表',
+      '留学调查表与户口本复印件',
       '官方表格填写',
-      'Document Checklist',
-      '电子缴费回执',
-      '工作许可批文',
     ];
 
     for (const text of genericItems) {
-      expect(getFormDownloadLink(text, sampleCountry)).toEqual({
+      expect(getFormDownloadLink(text, makeCountry('JPN'))).toEqual({
         label: '前往官网下载 ↗',
         url: 'https://example.gov/visa-forms',
       });
     }
   });
 
-  it('returns null when no keyword matches or when country has no primary link', () => {
-    expect(getFormDownloadLink('有效期6个月以上的护照原件', sampleCountry)).toBeNull();
-    expect(getFormDownloadLink('近6个月银行流水', sampleCountry)).toBeNull();
-    expect(getFormDownloadLink('签证申请表', { links: [] })).toBeNull();
+  it('does not misclassify receipts, checklists, or approval permits as downloadable forms', () => {
+    const nonFormItems = [
+      '有效期6个月以上的护照原件',
+      '近6个月银行流水',
+      '当地官方签发的工作许可批准函 (Work Permit)',
+      '标准入学许可书',
+      '指定医院体检回执',
+      '电子入境卡/健康声明回执',
+      '5年出入境清单与雇主支持信',
+      '材料清单',
+    ];
+
+    for (const text of nonFormItems) {
+      expect(getFormDownloadLink(text, makeCountry('AUS'))).toBeNull();
+    }
+
+    expect(getFormDownloadLink('签证申请表', makeCountry('JPN', []))).toBeNull();
     expect(
-      getFormDownloadLink('签证申请表', {
-        links: [{ title: 'Empty', url: '', desc: '' }],
-      })
+      getFormDownloadLink(
+        '签证申请表',
+        makeCountry('JPN', [{ title: 'Empty', url: '', desc: '' }])
+      )
     ).toBeNull();
   });
 });
