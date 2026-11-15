@@ -14,8 +14,8 @@ interface LinkCardSectionProps {
 
 function LinkCardSection({ heading, badge, listId, items }: LinkCardSectionProps) {
   return (
-    <section aria-label={heading} className="hairline-card p-5">
-      <div className="flex items-center justify-between gap-2 mb-3 pb-2.5 border-b border-[var(--border-soft)]">
+    <section aria-label={heading} className="hairline-card rounded-lg p-5">
+      <div className="flex items-center justify-between gap-2 mb-3.5 pb-2.5 border-b border-[var(--border-soft)]">
         <h3 className="text-sm font-bold text-[var(--text-main)]">{heading}</h3>
         <span className="editorial-subtitle text-[10px] font-semibold text-[var(--teal)] shrink-0">
           {badge}
@@ -29,7 +29,7 @@ function LinkCardSection({ heading, badge, listId, items }: LinkCardSectionProps
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="block p-3 rounded border border-[var(--border)] bg-[var(--bg-soft)] hover:border-[var(--teal)] transition-colors group"
+            className="block p-3 rounded-md border border-[var(--border)] bg-[var(--bg-soft)] hover:border-[var(--teal)] hover:bg-[var(--bg-card)] transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--teal)]"
           >
             <div className="flex items-center justify-between gap-2 mb-1">
               <span className="text-xs sm:text-sm font-bold text-[var(--text-main)] group-hover:text-[var(--teal)] transition-colors">

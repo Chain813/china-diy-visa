@@ -7,9 +7,9 @@ export function PitfallsCard({ pitfalls }: PitfallsCardProps) {
   return (
     <section
       aria-label="常见踩坑与风险提示"
-      className="hairline-card p-5 border-l-4 border-l-[var(--accent-red)]"
+      className="hairline-card rounded-lg p-5 border-l-4 border-l-[var(--accent-red)]"
     >
-      <div className="flex items-center justify-between gap-2 mb-3">
+      <div className="flex items-center justify-between gap-2 mb-3.5 pb-2.5 border-b border-[var(--border-soft)]">
         <h3 className="text-sm font-bold text-[var(--text-main)]">
           常见踩坑与必须避免的雷区 / PITFALLS &amp; WHAT TO AVOID
         </h3>
@@ -22,7 +22,7 @@ export function PitfallsCard({ pitfalls }: PitfallsCardProps) {
         {pitfalls.map((pitfall, idx) => (
           <li
             key={idx}
-            className="flex items-start gap-2.5 text-xs sm:text-sm text-[var(--text-main)] leading-relaxed"
+            className="flex items-start gap-2.5 p-2.5 rounded-md border border-[var(--border-soft)] bg-[var(--bg-soft)] text-xs sm:text-sm text-[var(--text-main)] leading-relaxed"
           >
             <span className="text-[var(--accent-red)] font-bold shrink-0 mt-0.5" aria-hidden="true">
               ✕

@@ -11,10 +11,12 @@
   --bg-footer: rgba(236, 234, 228, 0.6);
   --bg-glass: rgba(255, 255, 255, 0.9);
   --bg-tooltip: rgba(255, 255, 255, 0.97);
+  --atlas-dot: rgba(31, 35, 40, 0.08);
   --border: #DDD9D0;
   --border-soft: #ECEAE4;
   --accent-red: #C82D32;
   --teal: #4A7B82;
+  --teal-text: #345E64;
   --sage: #789882;
   --ochre: #C2AD7E;
   --terracotta: #B97D63;
@@ -34,10 +36,12 @@ html[data-theme="dark"] {
   --bg-footer: rgba(34, 40, 47, 0.6);
   --bg-glass: rgba(26, 31, 36, 0.92);
   --bg-tooltip: rgba(26, 31, 36, 0.96);
+  --atlas-dot: rgba(236, 239, 244, 0.08);
   --border: #2E3640;
   --border-soft: #262D35;
   --accent-red: #E0484D;
   --teal: #5A9AA3;
+  --teal-text: #6CB3BD;
   --sage: #88AD92;
   --ochre: #D4BE8C;
   --terracotta: #CC8F75;
@@ -89,6 +93,28 @@ html[data-theme="dark"] {
     border: 1px solid var(--border);
   }
 
+  .atlas-dot-grid {
+    background-image: radial-gradient(var(--atlas-dot) 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+
+  .timeline-track {
+    position: relative;
+  }
+
+  .timeline-node {
+    position: relative;
+  }
+
+  .timeline-connector {
+    background-color: var(--border);
+    transition: background-color 0.2s ease;
+  }
+
+  .timeline-node:hover .timeline-connector {
+    background-color: var(--teal);
+  }
+
   .step-badge {
     background-color: #1F2328;
     color: #FFFFFF;
@@ -124,6 +150,8 @@ html[data-theme="dark"] {
     border: 1px solid var(--border);
     background: var(--bg-card);
     color: var(--text-main);
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .cat-pill:hover {
@@ -153,7 +181,21 @@ html[data-theme="dark"] {
     border-color: #ECEFF4;
   }
 
-  .globe-tooltip {
+  .focus-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .map-tooltip {
     position: absolute;
     pointer-events: none;
     background: var(--bg-tooltip);
@@ -169,7 +211,7 @@ html[data-theme="dark"] {
     max-width: 240px;
   }
 
-  html[data-theme="dark"] .globe-tooltip {
+  html[data-theme="dark"] .map-tooltip {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
   }
 
@@ -182,6 +224,7 @@ html[data-theme="dark"] {
     padding: 10px 16px;
     font-size: 13px;
     border-left: 4px solid var(--accent-red);
+    box-shadow: 0 8px 24px rgba(31, 35, 40, 0.16);
     z-index: 100;
     opacity: 0;
     transform: translateY(10px);
@@ -190,11 +233,12 @@ html[data-theme="dark"] {
   }
 
   html[data-theme="dark"] .toast-banner {
-    background: #22282F;
-    color: #ECEFF4;
+    background: var(--text-main);
+    color: #121518;
     border-top: 1px solid var(--border);
     border-right: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
   }
 
   .toast-banner.show {
@@ -203,19 +247,20 @@ html[data-theme="dark"] {
   }
 }
 
-#globe-stage {
+#map-stage {
   position: relative;
   width: 100%;
   height: calc(100vh - 140px);
-  min-height: 480px;
-  max-height: 760px;
+  height: calc(100dvh - 140px);
+  min-height: 460px;
+  max-height: 780px;
   cursor: grab;
   user-select: none;
   touch-action: none;
   overflow: hidden;
 }
 
-#globe-stage:active {
+#map-stage:active {
   cursor: grabbing;
 }
 

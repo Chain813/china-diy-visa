@@ -1,19 +1,24 @@
 import * as topojson from 'topojson-client';
 import type { Feature, GeoJsonProperties, Geometry, MultiLineString } from 'geojson';
 import type { GeometryCollection, Topology } from 'topojson-specification';
-import { findCountryById } from '../data';
-import type { CountryData } from '../types/visa';
+import { findSummaryById } from '../data';
+import type { CountrySummary } from '../types/visa';
 
-export interface WorldCountryFeature extends Feature<Geometry, GeoJsonProperties> {
+export interface AtlasFeature extends Feature<Geometry, GeoJsonProperties> {
   id?: string | number;
-  _cid: string;
-  _countryData?: CountryData;
+  /** 3-digit zero-padded ISO 3166-1 numeric code, or empty string when invalid/missing. */
+  cid: string;
+  country: CountrySummary | undefined;
+}
+
+export interface CountryFeature extends AtlasFeature {
+  country: CountrySummary;
 }
 
 export interface WorldAtlasData {
-  worldFeatures: WorldCountryFeature[];
-  diyFeatures: WorldCountryFeature[];
-  countryBordersMesh: MultiLineString;
+  features: AtlasFeature[];
+  countryFeatures: CountryFeature[];
+  bordersMesh: MultiLineString;
 }
 
 type WorldTopology = Topology<{
@@ -40,7 +45,13 @@ function isWorldTopology(value: unknown): value is WorldTopology {
   return true;
 }
 
-function normalizeFeatureId(rawId: string | number | undefined | null): string {
+/** Type guard narrowing an enriched atlas feature to an indexed country feature. */
+export function isCountryFeature(feature: AtlasFeature): feature is CountryFeature {
+  return feature.country !== undefined;
+}
+
+/** Normalize a numeric or numeric-string TopoJSON feature id into a 3-digit zero-padded string. */
+export function normalizeFeatureId(rawId: string | number | undefined | null): string {
   if (typeof rawId === 'number') {
     if (!Number.isInteger(rawId) || rawId < 0) return '';
     return String(rawId).padStart(3, '0');
@@ -54,7 +65,7 @@ function normalizeFeatureId(rawId: string | number | undefined | null): string {
 }
 
 async function fetchWorldAtlas(): Promise<WorldAtlasData> {
-  const res = await fetch('/world-110m.json');
+  const res = await fetch('/world-50m.json');
   if (!res.ok) {
     throw new Error(`Failed to load world atlas: ${res.status}`);
   }
@@ -65,31 +76,31 @@ async function fetchWorldAtlas(): Promise<WorldAtlasData> {
   }
 
   const featureCollection = topojson.feature(world, world.objects.countries);
-  const countryBordersMesh = topojson.mesh(world, world.objects.countries);
-  const diyFeatures: WorldCountryFeature[] = [];
+  const bordersMesh = topojson.mesh(world, world.objects.countries);
+  const countryFeatures: CountryFeature[] = [];
 
-  const worldFeatures: WorldCountryFeature[] = featureCollection.features.map((f) => {
-    const cid = normalizeFeatureId(f.id);
-    const match = cid ? findCountryById(cid) : undefined;
-    const enriched: WorldCountryFeature = {
-      ...f,
-      _cid: cid,
-      _countryData: match,
+  const features: AtlasFeature[] = featureCollection.features.map((feature) => {
+    const cid = normalizeFeatureId(feature.id);
+    const country = cid ? findSummaryById(cid) : undefined;
+    const enriched: AtlasFeature = {
+      ...feature,
+      cid,
+      country,
     };
-    if (match) {
-      diyFeatures.push(enriched);
+    if (isCountryFeature(enriched)) {
+      countryFeatures.push(enriched);
     }
     return enriched;
   });
 
   return {
-    worldFeatures,
-    diyFeatures,
-    countryBordersMesh,
+    features,
+    countryFeatures,
+    bordersMesh,
   };
 }
 
-/** Load and cache the local 110m world TopoJSON dataset; clears cache on failure for retries. */
+/** Load and cache the local 50m world TopoJSON dataset; clears cache on failure for retries. */
 export function loadWorldAtlas(): Promise<WorldAtlasData> {
   if (!cachedAtlasPromise) {
     const promise = fetchWorldAtlas().catch((err) => {

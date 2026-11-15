@@ -1,11 +1,17 @@
+/** Editorial footer with 102-country map scope, official disclaimer, MIT/CC BY 4.0 license note, and author link. */
 export function Footer() {
   return (
     <footer className="border-t border-[var(--border)] bg-[var(--bg-footer)] py-4 px-3.5 sm:px-8 text-[11px] text-[var(--text-sub)]">
-      <div className="max-w-[1440px] mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-        <p>
-          资料来源：各国移民局、外交部及官方指定签证中心公开指引（2026年11月核对）。政策与费率请以各使领馆官网实时公布为准。
-        </p>
-        <div className="flex items-center gap-2 shrink-0 font-mono-num">
+      <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-2.5 lg:gap-4">
+        <div className="space-y-0.5 leading-relaxed">
+          <p className="font-medium text-[var(--text-main)]">
+            102 国平铺世界地图 &amp; 通道分层指南 · 各国移民局、外交部及官方指定签证中心公开指引（2026年11月核对），政策与费率请以官网实时公布为准。
+          </p>
+          <p>
+            开源协议：代码基于 MIT 许可，102 国签证指南数据集基于 CC BY 4.0 许可（RouteKing 整理）。
+          </p>
+        </div>
+        <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 shrink-0 font-mono-num">
           <span>CHINA DIY VISA PORTAL · 102 DESTINATIONS</span>
           <span aria-hidden="true">|</span>
           <a

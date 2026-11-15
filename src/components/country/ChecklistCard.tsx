@@ -24,6 +24,8 @@ function copyWithTextareaFallback(text: string): boolean {
     return false;
   }
 
+  const previousFocus =
+    document.activeElement instanceof HTMLElement ? document.activeElement : null;
   const textarea = document.createElement('textarea');
   textarea.value = text;
   textarea.setAttribute('readonly', '');
@@ -43,6 +45,7 @@ function copyWithTextareaFallback(text: string): boolean {
     return false;
   } finally {
     textarea.remove();
+    previousFocus?.focus({ preventScroll: true });
   }
 }
 
@@ -59,9 +62,9 @@ export function ChecklistCard({
   onNotify,
 }: ChecklistCardProps) {
   const items = subVisa.checklist;
-  const checkedCount = getCheckedCount(country.id, activeTab, subVisa.id, items.length);
-  const rawPct = items.length > 0 ? Math.round((checkedCount / items.length) * 100) : 0;
-  const pct = Math.min(100, Math.max(0, rawPct));
+  const rawCheckedCount = getCheckedCount(country.id, activeTab, subVisa.id, items.length);
+  const checkedCount = Math.max(0, Math.min(rawCheckedCount, items.length));
+  const pct = items.length > 0 ? Math.round((checkedCount / items.length) * 100) : 0;
 
   const handleCopy = async () => {
     const formatted = formatChecklistText(country.nameZh, categoryLabel, subVisa);
@@ -82,7 +85,7 @@ export function ChecklistCard({
   return (
     <aside
       aria-label="所需材料核对清单"
-      className="lg:col-span-5 hairline-card p-5 lg:sticky lg:top-6"
+      className="lg:col-span-5 hairline-card rounded-lg p-5 lg:sticky lg:top-6"
     >
       <div className="flex items-start justify-between gap-2 mb-3">
         <div>
@@ -91,12 +94,28 @@ export function ChecklistCard({
             INTERACTIVE DOCUMENT CHECKLIST
           </div>
         </div>
-        <span
-          id="checklist-progress-text"
-          className="font-mono-num text-xs font-bold text-[var(--teal)] shrink-0"
+        <div
+          aria-live="polite"
+          aria-atomic="true"
+          className="flex items-center gap-2 shrink-0"
         >
-          {`${checkedCount} / ${items.length}`}
-        </span>
+          <span
+            id="checklist-progress-text"
+            className="font-mono-num text-xs font-bold text-[var(--text-sub)]"
+          >
+            {`${checkedCount} / ${items.length}`}
+          </span>
+          <span
+            id="checklist-progress-pct"
+            className={`font-mono-num text-[11px] font-bold px-2 py-0.5 rounded border transition-colors ${
+              pct === 100
+                ? 'bg-[var(--ocean)] border-[var(--teal)] text-[var(--text-main)]'
+                : 'bg-[var(--bg-muted)] border-[var(--border)] text-[var(--teal)]'
+            }`}
+          >
+            {`${pct}%`}
+          </span>
+        </div>
       </div>
 
       <div className="w-full h-1.5 bg-[var(--bg-muted)] rounded-full overflow-hidden mb-4">
@@ -107,6 +126,7 @@ export function ChecklistCard({
           aria-valuemin={0}
           aria-valuemax={items.length}
           aria-valuenow={checkedCount}
+          aria-valuetext={`${pct}%`}
           className="h-full bg-[var(--teal)] transition-all duration-300"
           style={{ width: `${pct}%` }}
         />
@@ -121,7 +141,7 @@ export function ChecklistCard({
           return (
             <li
               key={itemKey}
-              className="flex items-start justify-between gap-2 p-2.5 rounded border border-[var(--border-soft)] bg-[var(--bg-soft)] hover:border-[var(--border)] transition-colors"
+              className="flex items-start justify-between gap-2 p-2.5 rounded-md border border-[var(--border-soft)] bg-[var(--bg-soft)] hover:border-[var(--border)] transition-colors"
             >
               <label className="check-item flex items-start gap-2.5 cursor-pointer flex-1 min-w-0 text-xs sm:text-sm text-[var(--text-main)] leading-snug select-none">
                 <input
@@ -153,7 +173,7 @@ export function ChecklistCard({
           id="copy-checklist-btn"
           type="button"
           onClick={handleCopy}
-          className="copy-btn-primary flex-1 px-3 py-2 text-xs font-semibold rounded transition-colors"
+          className="copy-btn-primary flex-1 px-3 py-2 text-xs font-semibold rounded-md transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--teal)]"
         >
           复制材料清单
         </button>
@@ -161,7 +181,7 @@ export function ChecklistCard({
           id="reset-checklist-btn"
           type="button"
           onClick={onResetChecklist}
-          className="px-3 py-2 text-xs font-medium border border-[var(--border)] bg-[var(--bg-card)] hover:border-[var(--accent-red)] hover:text-[var(--accent-red)] text-[var(--text-sub)] rounded transition-colors shrink-0"
+          className="px-3 py-2 text-xs font-medium border border-[var(--border)] bg-[var(--bg-card)] hover:border-[var(--accent-red)] hover:text-[var(--accent-red)] text-[var(--text-sub)] rounded-md transition-colors shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--teal)]"
         >
           重置勾选
         </button>
