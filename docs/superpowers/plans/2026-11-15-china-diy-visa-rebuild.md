@@ -13,7 +13,7 @@
 ## File Structure Map
 
 ```text
-e:\AI-based-project\game/
+china-diy-visa/
 ├── .gitignore
 ├── index.html
 ├── package.json
@@ -862,7 +862,7 @@ export const PATHWAY_IDS: PathwayCategoryId[] = [
 
 - [ ] **Step 3: Write deterministic data extraction script `scripts/extract-visa-data.mjs` and generate the 4 standardized region files (`src/data/regions/*.ts`)**
 
-The extraction script reads `C:/Users/23902/.gemini/antigravity/brain/0022fea6-24f8-43ec-b0ab-0ca982e152cd/scratch/site.html`, evaluates `FLAGSHIP_COUNTRIES`, `EXTRA_COUNTRY_SPECS`, `buildExpandedCountry`, `SUB_VISAS_DATA`, `COUNTRY_PITFALLS`, `JOB_PORTALS_BY_CODE`, expands every country into unified `CountryData` (only splitting flagship titles on `' / '` with spaces around slash, excluding `Subclass 189 / 190 / 491 技术移民`, while preserving all `SUB_VISAS_DATA` entries and keeping expanded generic templates unsplit), partitions into `asia-pacific.ts`, `europe.ts`, `americas.ts`, and `middle-east-africa.ts`, and generates formatted TypeScript files importing `CountryData` from `'../../types/visa'`.
+The extraction script reads the captured source HTML snapshot (`site.html`), evaluates `FLAGSHIP_COUNTRIES`, `EXTRA_COUNTRY_SPECS`, `buildExpandedCountry`, `SUB_VISAS_DATA`, `COUNTRY_PITFALLS`, `JOB_PORTALS_BY_CODE`, expands every country into unified `CountryData` (only splitting flagship titles on `' / '` with spaces around slash, excluding `Subclass 189 / 190 / 491 技术移民`, while preserving all `SUB_VISAS_DATA` entries and keeping expanded generic templates unsplit), partitions into `asia-pacific.ts`, `europe.ts`, `americas.ts`, and `middle-east-africa.ts`, and generates formatted TypeScript files importing `CountryData` from `'../../types/visa'`.
 After generating and verifying, delete `scripts/extract-visa-data.mjs` (or keep if useful — since the spec doesn't list a scratch extraction script in final repo, clean up temporary script after generation if not needed, or keep `src/data/regions/*.ts` clean).
 
 - [ ] **Step 4: Create `src/data/index.ts` and run `npm test`**

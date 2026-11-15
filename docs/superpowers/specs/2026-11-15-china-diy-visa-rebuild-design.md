@@ -36,7 +36,7 @@
 ## 3. 目录结构设计
 
 ```text
-e:\AI-based-project\game/
+china-diy-visa/
 ├── public/
 │   └── world-110m.json                 # 本地化的 TopoJSON 全球矢量地图数据
 ├── src/
