@@ -13,6 +13,7 @@ import { MAX_RESULTS, SearchDropdown } from './SearchDropdown';
 export interface HeaderProps {
   activeCategory: CategoryId;
   onSelectCategory: (cat: CategoryId) => void;
+  onGoHome?: () => void;
   searchQuery: string;
   onSearchChange: (q: string) => void;
   onClearSearch: () => void;
@@ -72,6 +73,7 @@ function CategoryPills({
 export function Header({
   activeCategory,
   onSelectCategory,
+  onGoHome,
   searchQuery,
   onSearchChange,
   onClearSearch,
@@ -228,16 +230,34 @@ export function Header({
     }
   };
 
+  const brandContent = (
+    <>
+      <span
+        className="w-1 h-5 sm:h-6 bg-[var(--accent-red)] shrink-0"
+        aria-hidden="true"
+      />
+      <span>中国公民 DIY 出国签证指南</span>
+    </>
+  );
+
   return (
     <header className="border-b border-[var(--border)] bg-[var(--bg-header)] backdrop-blur-sm relative z-40">
       <div className="max-w-[1440px] mx-auto px-3.5 sm:px-8 py-3 flex flex-wrap items-center justify-between gap-2.5 sm:gap-3">
         <div className="flex items-center gap-2.5 shrink-0">
-          <span
-            className="w-1 h-5 sm:h-6 bg-[var(--accent-red)] shrink-0"
-            aria-hidden="true"
-          />
-          <h1 className="text-base sm:text-lg font-bold tracking-tight text-[var(--text-main)] leading-tight">
-            中国公民 DIY 出国签证指南
+          <h1 className="m-0 text-base sm:text-lg font-bold tracking-tight text-[var(--text-main)] leading-tight flex items-center gap-2.5">
+            {typeof onGoHome === 'function' ? (
+              <button
+                id="brand-home-btn"
+                type="button"
+                onClick={onGoHome}
+                title="返回全球签证地图首页"
+                className="flex items-center gap-2.5 text-left rounded-sm hover:opacity-85 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--teal)]"
+              >
+                {brandContent}
+              </button>
+            ) : (
+              brandContent
+            )}
           </h1>
         </div>
 

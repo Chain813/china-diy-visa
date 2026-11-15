@@ -1,6 +1,6 @@
 # 中国公民 DIY 出国签证指南 (`china-diy-visa`)
 
-面向中国大陆普通护照持有者的 DIY 出国签证全流程参考指南，覆盖全球 **102 个国家与地区**、**五大签证通道（留学 / 工作 / 移民 / 旅游 / 探亲与商务其他）**，内置基于 D3 Orthographic 投影的 3D 交互式地球、国家详情与子签证分支、避坑提醒、官方直达入口及可持久化材料核对清单。
+面向中国大陆普通护照持有者的 DIY 出国签证全流程参考指南，覆盖全球 **102 个国家与地区**、**五大签证通道（留学 / 工作 / 移民 / 旅游 / 探亲与商务其他）**，内置基于 `d3.geoNaturalEarth1()` + `d3.zoom()` 的平铺交互式 50m 世界地图与可折叠国家目录工作台，支持 DIY 可行性严格分层、子签证动态办理周期与递交方式、时间线流程、避坑提醒、官方直达入口及可持久化材料核对清单。
 
 > 在线站点参考：[china-diy-visa.routeking.workers.dev](https://china-diy-visa.routeking.workers.dev/)
 
@@ -8,27 +8,27 @@
 
 ## 核心特性
 
-- **3D 交互式矢量地球**：
-  - 使用本地内置的 TopoJSON 世界地图（[`public/world-110m.json`](public/world-110m.json)，源自 `world-atlas`），无外部地图 CDN 运行时依赖。
-  - HiDPI Canvas 渲染，支持自动旋转开关、鼠标拖拽与移动端单指旋转、滚轮与双指捏合缩放（`0.75x` – `6.0x`）、六大区域快捷聚焦、悬浮信息卡及 `460ms` 3D 飞入动画。
-- **102 国全量静态展开数据层**：
-  - 按四大地理片区拆分在 [`src/data/regions/`](src/data/regions/) 下（亚太、欧洲、美洲、中东与非洲），统一基于 TypeScript 强类型 [`CountryData`](src/types/visa.ts) 结构。
-  - 支持同一签证通道下的多子签证分支切换（如日本工签、德国蓝卡/机会卡、澳洲技术移民、韩国五年多次等）。
+- **平铺 50m 交互式世界地图与可折叠国家目录**：
+  - 使用本地内置的高精度 50m TopoJSON 世界地图（[`public/world-50m.json`](public/world-50m.json)，含 241 个几何多边形，完整补全新加坡、毛里求斯与巴林轮廓），无外部地图 CDN 运行时依赖。
+  - HiDPI Canvas 渲染，支持 `1.0x` – `8.0x` 滚轮/双指/按钮平滑缩放与边界受控拖拽平移、六大区域快捷聚焦、微距点击飞入动画、三大 DIY 状态着色（标准 DIY 可申 / 仅原则提示 / 筛选置灰），以及桌面端侧栏与移动端可折叠的四大地理区域国家目录工作台（支持键盘浏览与底图加载异常兜底）。
+- **首屏索引 + 按大洲懒加载数据架构**：
+  - 首屏仅加载轻量 [`COUNTRY_DIRECTORY`](src/data/directory.ts)，按亚太、欧洲、美洲、中东与非洲四个独立片区动态 `import()` 懒加载详情数据（[`src/data/regions/`](src/data/regions/)），将首屏主包控制在 `500 kB` 以内。
+  - 区分 **标准可 DIY (`'diy'`)** 与 **原则与材料指引 (`'advisory'`)** 通道，并在 [`SubVisaItem`](src/types/visa.ts) 下沉子签证级办理周期、递交方式与指引说明，彻底消除跨通道信息错配与伪拆卡。
 - **材料核对清单与明暗双主题**：
-  - 材料勾选状态与深浅主题偏好自动持久化到 `localStorage`（兼容键名 `china_diy_visa_checklist_v1`、`china_diy_visa_theme_v1`），支持进度条统计、一键复制纯文本清单（含 `textarea` 降级）与重置当前子签证进度。
+  - 材料勾选状态与深浅主题偏好自动持久化到 `localStorage`（兼容键名 `china_diy_visa_checklist_v1`、`china_diy_visa_theme_v1`），支持完成百分比与进度条统计、作用域精准匹配的官方申请表下载入口、一键复制纯文本清单（含 `textarea` 降级）与重置当前子签证进度；黑夜模式适配高对比度反转 Toast 提示与自适应 Bento 卡片。
 - **独立 SPA URL 路由与动态标题**：
-  - 支持首页分类筛选 `/?cat=work`、国家详情直达与分享 `/country/JPN?tab=work&sub=gijinkoku`（国家代码大小写不敏感），动态更新 `document.title`，无效路径自动回退并给出 Toast 提示。
+  - 支持首页分类筛选 `/?cat=work`、国家详情直达与分享 `/country/JPN?tab=work&sub=gijinkoku`（国家代码大小写不敏感），动态更新 `document.title`，返回地图首页时自动清理旧搜索词并提示，内置 `RouteErrorBoundary` 与无效路径回退保护。
 - **可访问性（A11y）**：
-  - 全局搜索框具备 `combobox` / `listbox` / `option` ARIA 语义；国家详情页标签页支持完整 WAI-ARIA Tabs 键盘方向键切换（`ArrowLeft` / `ArrowRight` / `Home` / `End`）。
+  - 全局搜索框具备 WAI-ARIA `combobox` / `listbox` / `option` 完整键盘上下键选人与 `Tab` 失焦收起；国家详情页标签页支持键盘方向键切换（`ArrowLeft` / `ArrowRight` / `Home` / `End`）与进度/状态实时无障碍播报。
 
 ---
 
 ## 技术栈
 
-- **框架与路由**：React 19、TypeScript、React Router v7
+- **框架与路由**：React 19、TypeScript、React Router v7 (`React.lazy` + `Suspense`)
 - **构建与样式**：Vite 6、Tailwind CSS v3 + CSS Variables
-- **地图与几何**：D3 (`d3-geo` / `d3-selection` / `d3-drag` / `d3-timer` / `d3-transition` / `d3-interpolate`)、`topojson-client`、`world-atlas`
-- **测试体系**：Vitest + `@testing-library/react` + `jsdom`（覆盖全量数据完整性、Hooks、布局、3D 地球交互、国家详情与路由状态同步）
+- **地图与几何**：D3 (`d3-geo` / `d3-zoom` / `d3-selection` / `d3-transition`)、`topojson-client`、`world-atlas` (`50m`)
+- **测试体系**：Vitest + `@testing-library/react` + `jsdom`（覆盖 102 国数据分层与懒加载、Hooks/工具、布局与键盘检索、平铺 50m 地图与目录交互、国家详情 Bento 与路由并发状态同步）
 - **部署目标**：Cloudflare Workers Static Assets（配置见 [`wrangler.jsonc`](wrangler.jsonc)）
 
 ---
@@ -38,26 +38,27 @@
 ```text
 china-diy-visa/
 ├── public/
-│   └── world-110m.json                 # 本地内置 110m 世界地图 TopoJSON
+│   └── world-50m.json                 # 本地内置 50m 世界地图 TopoJSON（241 个多边形）
 ├── src/
-│   ├── types/visa.ts                   # 核心数据结构与类型定义
+│   ├── types/visa.ts                   # 核心数据结构与 CountrySummary / SubVisaItem 类型定义
 │   ├── data/
 │   │   ├── categories.ts               # 签证分类与明暗主题配色
-│   │   ├── index.ts                    # 检索、按 code/id 查找与分类校验
-│   │   └── regions/                    # 102 国分片数据（asia-pacific / europe / americas / middle-east-africa）
+│   │   ├── directory.ts                # 102 国首屏轻量索引（坐标、徽章、DIY 分类与检索语料）
+│   │   ├── index.ts                    # 轻量筛选与按大洲动态 import() 懒加载器
+│   │   └── regions/                    # 102 国详情分片数据（asia-pacific / europe / americas / middle-east-africa）
 │   ├── hooks/
 │   │   ├── useTheme.ts                 # 明暗主题切换与 localStorage 同步
 │   │   └── useChecklist.ts             # 材料清单勾选状态管理与格式化文本导出
 │   ├── utils/
-│   │   ├── formLinks.ts                # 常见官方申请表与声明表直达匹配
-│   │   └── worldAtlas.ts               # TopoJSON 解析、校验与缓存加载
+│   │   ├── formLinks.ts                # 按国家 code 严格限定作用域的官方申请表匹配
+│   │   └── worldAtlas.ts               # 50m TopoJSON 解析、校验与缓存加载
 │   ├── components/
 │   │   ├── layout/                     # Header、SearchDropdown、Footer、Toast
-│   │   ├── globe/                      # GlobeView、GlobeCanvas、globeRenderer、globeHitTest、GlobeOverlays
-│   │   └── country/                    # CountryDetailView 与详情信息卡片组件
-│   ├── App.tsx                         # SPA 路由与页面转场状态协调
+│   │   ├── map/                        # WorldMapView、MapCanvas、mapRenderer、mapHitTest、MapOverlays、CountryDirectory
+│   │   └── country/                    # CountryDetailView 与详情 Bento 卡片组件
+│   ├── App.tsx                         # SPA 路由、懒加载兜底、ErrorBoundary 与转场状态协调
 │   ├── main.tsx                        # 应用入口（BrowserRouter）
-│   └── index.css                       # 主题 CSS 变量与动画样式
+│   └── index.css                       # 主题 CSS 变量、100dvh 舞台、时间线与动画样式
 ├── tests/                              # Vitest 单元与集成测试套件
 ├── index.html                          # 页面模板（非阻塞 Google Fonts + 内联 SVG 图标）
 ├── wrangler.jsonc                      # Cloudflare Workers Static Assets 配置

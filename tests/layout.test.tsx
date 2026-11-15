@@ -435,6 +435,29 @@ describe('Header', () => {
     expect(screen.queryByRole('button', { name: '国家目录' })).toBeNull();
   });
 
+  it('renders #brand-home-btn inside the h1 landmark when onGoHome is provided and omits it when undefined', async () => {
+    const user = userEvent.setup();
+    const onGoHome = vi.fn();
+
+    const { container, rerender } = render(
+      <Header {...makeHeaderProps({ onGoHome })} />
+    );
+
+    const heading = screen.getByRole('heading', { level: 1, name: '中国公民 DIY 出国签证指南' });
+    const brandBtn = container.querySelector('#brand-home-btn');
+    expect(brandBtn).toBeInTheDocument();
+    expect(brandBtn?.tagName).toBe('BUTTON');
+    expect(brandBtn).toHaveAttribute('type', 'button');
+    expect(heading).toContainElement(brandBtn as HTMLElement);
+
+    await user.click(brandBtn!);
+    expect(onGoHome).toHaveBeenCalledTimes(1);
+
+    rerender(<Header {...makeHeaderProps({ onGoHome: undefined })} />);
+    expect(container.querySelector('#brand-home-btn')).toBeNull();
+    expect(screen.getByRole('heading', { level: 1, name: '中国公民 DIY 出国签证指南' })).toBeInTheDocument();
+  });
+
   it('manages combobox ARIA attributes, search input, clear button, inside/outside clicks, Escape, and CountrySummary selection', async () => {
     const user = userEvent.setup();
     const onSearchChange = vi.fn();
