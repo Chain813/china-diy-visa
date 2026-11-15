@@ -3,6 +3,7 @@ import type { Feature, GeoJsonProperties, Geometry, MultiLineString } from 'geoj
 import type { GeometryCollection, Topology } from 'topojson-specification';
 import { findSummaryById } from '../data';
 import type { CountrySummary } from '../types/visa';
+import { resolvePublicAssetUrl } from './basePath';
 
 export interface AtlasFeature extends Feature<Geometry, GeoJsonProperties> {
   id?: string | number;
@@ -65,7 +66,7 @@ export function normalizeFeatureId(rawId: string | number | undefined | null): s
 }
 
 async function fetchWorldAtlas(): Promise<WorldAtlasData> {
-  const res = await fetch('/world-50m.json');
+  const res = await fetch(resolvePublicAssetUrl('world-50m.json', import.meta.env.BASE_URL));
   if (!res.ok) {
     throw new Error(`Failed to load world atlas: ${res.status}`);
   }

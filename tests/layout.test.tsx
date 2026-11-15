@@ -790,9 +790,11 @@ describe('Toast, CSS theme tokens, and index.html metadata', () => {
     expect(css).toMatch(/\.focus-btn\s*\{[^}]*white-space:\s*nowrap;/s);
   });
 
-  it('updates index.html meta description for flat interactive world map & collapsible directory', () => {
+  it('updates index.html meta description for flat interactive world map & collapsible directory without external Google Fonts', () => {
     const html = readFileSync(resolve(process.cwd(), 'index.html'), 'utf8');
     expect(html).toContain('平铺交互式世界地图浏览与可折叠国家目录');
     expect(html).not.toContain('3D 交互式地球浏览');
+    expect(html).not.toContain('fonts.googleapis.com');
+    expect(html).not.toContain('fonts.gstatic.com');
   });
 });

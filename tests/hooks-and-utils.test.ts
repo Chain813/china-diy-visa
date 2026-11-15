@@ -1,6 +1,7 @@
 import { act, renderHook } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { getFormDownloadLink } from '../src/utils/formLinks';
+import { resolvePublicAssetUrl, resolveRouterBasename } from '../src/utils/basePath';
 import { THEME_STORAGE_KEY, useTheme } from '../src/hooks/useTheme';
 import {
   CHECKLIST_STORAGE_KEY,
@@ -338,5 +339,23 @@ describe('useChecklist & checklist utilities', () => {
       });
     }).not.toThrow();
     expect(result.current.isItemChecked('554:work:whv:0')).toBe(true);
+  });
+});
+
+describe('basePath utilities', () => {
+  it('resolves React Router basename cleanly for root and subpath deployments', () => {
+    expect(resolveRouterBasename(undefined)).toBeUndefined();
+    expect(resolveRouterBasename('')).toBeUndefined();
+    expect(resolveRouterBasename('/')).toBeUndefined();
+    expect(resolveRouterBasename('/visa/')).toBe('/visa');
+    expect(resolveRouterBasename('/visa')).toBe('/visa');
+    expect(resolveRouterBasename('visa/')).toBe('/visa');
+  });
+
+  it('resolves public static asset URLs cleanly for root and subpath deployments', () => {
+    expect(resolvePublicAssetUrl('world-50m.json', '/')).toBe('/world-50m.json');
+    expect(resolvePublicAssetUrl('/world-50m.json', undefined)).toBe('/world-50m.json');
+    expect(resolvePublicAssetUrl('world-50m.json', '/visa/')).toBe('/visa/world-50m.json');
+    expect(resolvePublicAssetUrl('/world-50m.json', '/visa')).toBe('/visa/world-50m.json');
   });
 });

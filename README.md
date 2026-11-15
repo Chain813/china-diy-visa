@@ -8,7 +8,7 @@
 
 面向中国大陆普通护照持有者的 DIY 出国签证全流程参考指南，覆盖全球 **102 个国家与地区**、**五大签证通道（留学 / 工作 / 移民 / 旅游 / 探亲与商务其他）**，内置基于 `d3.geoNaturalEarth1()` + `d3.zoom()` 的平铺交互式 50m 世界地图与可折叠国家目录工作台，支持 DIY 可行性严格分层、子签证动态办理周期与递交方式、时间线流程、避坑提醒、官方直达入口及可持久化材料核对清单。
 
-> 在线站点参考：[china-diy-visa.routeking.workers.dev](https://china-diy-visa.routeking.workers.dev/)
+> 在线体验（中国大陆直连）：[www.jiyan.ink/visa/](https://www.jiyan.ink/visa/) ｜ 参考站点：[china-diy-visa.routeking.workers.dev](https://china-diy-visa.routeking.workers.dev/)
 
 <p align="center">
   <img src="docs/screenshots/01-desktop-map-light.png" alt="日间模式 50m 平铺世界地图与 102 国国家目录工作台" width="100%" />
@@ -71,6 +71,9 @@
 
 ```text
 china-diy-visa/
+├── deploy/
+│   └── nginx/
+│       └── visa.conf                   # Nginx 子路径（/visa/）独立托管配置片段
 ├── docs/
 │   └── screenshots/                    # README 实机高清演示截图
 ├── public/
@@ -86,6 +89,7 @@ china-diy-visa/
 │   │   ├── useTheme.ts                 # 明暗主题切换与 localStorage 同步
 │   │   └── useChecklist.ts             # 材料清单勾选状态管理与格式化文本导出
 │   ├── utils/
+│   │   ├── basePath.ts                 # 基于 import.meta.env.BASE_URL 的路由 basename 与静态资源路径解析
 │   │   ├── formLinks.ts                # 按国家 code 严格限定作用域的官方申请表匹配
 │   │   └── worldAtlas.ts               # 50m TopoJSON 解析、校验与缓存加载
 │   ├── components/
@@ -96,7 +100,7 @@ china-diy-visa/
 │   ├── main.tsx                        # 应用入口（BrowserRouter）
 │   └── index.css                       # 主题 CSS 变量、100dvh 舞台、时间线与动画样式
 ├── tests/                              # Vitest 单元与集成测试套件
-├── index.html                          # 页面模板（非阻塞 Google Fonts + 内联 SVG 图标）
+├── index.html                          # 页面模板（无外部字体 CDN 请求 + 内联 SVG 图标）
 ├── wrangler.jsonc                      # Cloudflare Workers Static Assets 配置
 ├── package.json
 ├── tailwind.config.js
@@ -123,18 +127,34 @@ npm run typecheck
 # 4. 运行全部自动化测试
 npm test
 
-# 5. 构建生产环境产物（输出至 dist/）
+# 5. 构建根路径 / 生产产物（输出至 dist/）
 npm run build
 
-# 6. 本地预览生产环境产物
+# 6. 构建子路径 /visa/ 生产产物（适用于 Nginx 子路径直连部署）
+npm run build:visa
+
+# 7. 本地预览生产环境产物
 npm run preview
 ```
 
 ---
 
-## 部署到 Cloudflare Workers
+## 部署说明
 
-项目已配置 [`wrangler.jsonc`](wrangler.jsonc)（启用 `not_found_handling: "single-page-application"` 以支持 `/country/:code` 刷新直达）：
+### 方式一：自有服务器 / Nginx 子路径部署（支持中国大陆直连）
+
+项目已移除外部 Google Fonts 请求，所有路由与 `world-50m.json` 均支持通过 `import.meta.env.BASE_URL` 适配子路径（当前实机线上站点：`https://www.jiyan.ink/visa/`）：
+
+```bash
+# 构建 --base=/visa/ 产物
+npm run build:visa
+```
+
+搭配 [`deploy/nginx/visa.conf`](deploy/nginx/visa.conf) 将静态产物挂载至 `/var/www/china-diy-visa/visa/`，即可在不影响宿主主站的情况下实现 `/visa/` SPA 路由直达与长期静态缓存。
+
+### 方式二：部署到 Cloudflare Workers
+
+项目同时保留 [`wrangler.jsonc`](wrangler.jsonc)（启用 `not_found_handling: "single-page-application"` 以支持 `/country/:code` 刷新直达）：
 
 ```bash
 npm run build

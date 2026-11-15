@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:visa": "tsc -b && vite build --base=/visa/",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
