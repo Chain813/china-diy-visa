@@ -1,8 +1,42 @@
 # 中国公民 DIY 出国签证指南 (`china-diy-visa`)
 
+![React 19](https://img.shields.io/badge/React-19-149ECA?style=flat-square&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Vite 6](https://img.shields.io/badge/Vite-6-646CFF?style=flat-square&logo=vite&logoColor=white)
+![License: MIT](https://img.shields.io/badge/Code_License-MIT-green?style=flat-square)
+![Data License: CC BY 4.0](https://img.shields.io/badge/Data_License-CC_BY_4.0-orange?style=flat-square)
+
 面向中国大陆普通护照持有者的 DIY 出国签证全流程参考指南，覆盖全球 **102 个国家与地区**、**五大签证通道（留学 / 工作 / 移民 / 旅游 / 探亲与商务其他）**，内置基于 `d3.geoNaturalEarth1()` + `d3.zoom()` 的平铺交互式 50m 世界地图与可折叠国家目录工作台，支持 DIY 可行性严格分层、子签证动态办理周期与递交方式、时间线流程、避坑提醒、官方直达入口及可持久化材料核对清单。
 
 > 在线站点参考：[china-diy-visa.routeking.workers.dev](https://china-diy-visa.routeking.workers.dev/)
+
+<p align="center">
+  <img src="docs/screenshots/01-desktop-map-light.png" alt="日间模式 50m 平铺世界地图与 102 国国家目录工作台" width="100%" />
+</p>
+
+---
+
+## 界面预览（Screenshots）
+
+### 桌面端：黑夜筛选 & 分层详情工作台
+
+| 黑夜模式 · 「工作」DIY 严格筛选 + 欧洲 3.0x 聚焦 | 德国机会卡（Chancenkarte）· 标准 DIY 与材料进度 |
+| :---: | :---: |
+| <img src="docs/screenshots/02-desktop-dark-work-europe.png" alt="黑夜模式工作筛选 7/102 国" width="100%" /> | <img src="docs/screenshots/03-desktop-detail-deu-work-light.png" alt="德国机会卡详情与 60% 材料清单进度" width="100%" /> |
+
+### 分层严谨性展示：区分「标准 DIY」与「仅作原则指引」
+
+> 拒绝“所有渠道都能纯自助”的虚假宣传——如日本工签需雇主前置申领《在留资格认定证明书 (COE)》，系统会明确标橙提示 `非标准 DIY · 原则与材料指引`。
+
+<p align="center">
+  <img src="docs/screenshots/05-desktop-dark-jpn-advisory-toast.png" alt="日本工签黑夜模式 · 非标准 DIY 提示与高对比度复制成功 Toast" width="92%" />
+</p>
+
+### 移动端竖屏自适应（Zero Horizontal Overflow）
+
+| 移动端地图首屏（完整露出大洲快捷栏） | 移动端国家详情 Bento（2026 调价动态展示） |
+| :---: | :---: |
+| <img src="docs/screenshots/07-mobile-map-portrait.png" alt="390x844 竖屏地图首屏" width="280" /> | <img src="docs/screenshots/09-mobile-detail-aus-portrait.png" alt="390x844 竖屏澳大利亚详情页" width="280" /> |
 
 ---
 
@@ -37,8 +71,10 @@
 
 ```text
 china-diy-visa/
+├── docs/
+│   └── screenshots/                    # README 实机高清演示截图
 ├── public/
-│   └── world-50m.json                 # 本地内置 50m 世界地图 TopoJSON（241 个多边形）
+│   └── world-50m.json                  # 本地内置 50m 世界地图 TopoJSON（241 个多边形）
 ├── src/
 │   ├── types/visa.ts                   # 核心数据结构与 CountrySummary / SubVisaItem 类型定义
 │   ├── data/
