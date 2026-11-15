@@ -719,7 +719,7 @@ describe('Header', () => {
 });
 
 describe('Footer', () => {
-  it('renders 102-country flat-map copy, MIT/CC BY 4.0 note, portal metadata, and @routeking_ link', () => {
+  it('renders 102-country flat-map copy, MIT/CC BY 4.0 note, portal metadata, and GitHub repo link without personal author credit', () => {
     render(<Footer />);
 
     expect(
@@ -727,16 +727,18 @@ describe('Footer', () => {
     ).toBeInTheDocument();
     expect(screen.getByText(/MIT/)).toBeInTheDocument();
     expect(screen.getByText(/CC BY 4\.0/)).toBeInTheDocument();
+    expect(screen.queryByText(/RouteKing/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/@routeking_/i)).not.toBeInTheDocument();
     expect(screen.getByText('CHINA DIY VISA PORTAL · 102 DESTINATIONS')).toBeInTheDocument();
 
-    const xLink = document.getElementById('footer-x-link') as HTMLAnchorElement;
-    expect(xLink).toBeInTheDocument();
-    expect(xLink).toHaveAttribute('href', 'https://x.com/routeking_');
-    expect(xLink).toHaveAttribute('target', '_blank');
-    expect(xLink).toHaveAttribute('rel', 'noopener noreferrer');
-    expect(xLink).toHaveTextContent('@routeking_');
+    const ghLink = document.getElementById('footer-github-link') as HTMLAnchorElement;
+    expect(ghLink).toBeInTheDocument();
+    expect(ghLink).toHaveAttribute('href', 'https://github.com/Chain813/china-diy-visa');
+    expect(ghLink).toHaveAttribute('target', '_blank');
+    expect(ghLink).toHaveAttribute('rel', 'noopener noreferrer');
+    expect(ghLink).toHaveTextContent('Chain813/china-diy-visa');
 
-    const svg = xLink.querySelector('svg');
+    const svg = ghLink.querySelector('svg');
     expect(svg).not.toBeNull();
     expect(svg).toHaveAttribute('aria-hidden', 'true');
   });
