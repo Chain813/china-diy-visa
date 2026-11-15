@@ -250,14 +250,29 @@ html[data-theme="dark"] {
 #map-stage {
   position: relative;
   width: 100%;
-  height: calc(100vh - 140px);
-  height: calc(100dvh - 140px);
-  min-height: 460px;
+  height: calc(100vh - 188px);
+  height: calc(100dvh - 188px);
+  min-height: 400px;
   max-height: 780px;
   cursor: grab;
   user-select: none;
   touch-action: none;
   overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  #map-stage {
+    height: calc(100vh - 160px);
+    height: calc(100dvh - 160px);
+    min-height: 460px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #map-stage {
+    height: calc(100vh - 140px);
+    height: calc(100dvh - 140px);
+  }
 }
 
 #map-stage:active {

@@ -51,7 +51,7 @@ export function CountryDetailView({
     <section
       id="country-detail-view"
       aria-label={`${country.nameZh}签证详情`}
-      className="max-w-[1440px] mx-auto px-3.5 sm:px-8 py-6 animate-view-enter"
+      className="w-full min-w-0 max-w-[1440px] mx-auto px-3.5 sm:px-8 py-6 animate-view-enter"
     >
       <CountryHeader
         country={country}
@@ -73,7 +73,7 @@ export function CountryDetailView({
           tabIndex={0}
           className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start animate-tab-swap"
         >
-          <div className="lg:col-span-7 space-y-6">
+          <div className="lg:col-span-7 space-y-6 min-w-0">
             <PathwayOverviewCard
               category={activeCategoryMeta}
               subVisa={selectedSubVisa}

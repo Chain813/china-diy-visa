@@ -67,7 +67,7 @@ const MAP_SUSPENSE_FALLBACK = (
     aria-live="polite"
     aria-label="正在加载世界签证交互地图"
     style={{ cursor: 'default' }}
-    className="relative flex-1 flex w-full overflow-hidden"
+    className="relative flex items-stretch w-full overflow-hidden"
   >
     <div className="atlas-dot-grid relative flex-1 flex items-center justify-center px-6 text-center">
       <span className="px-3.5 py-2 rounded-xl bg-[var(--bg-glass)] backdrop-blur-md border border-[var(--border)] text-xs text-[var(--text-sub)] shadow-sm">
@@ -829,9 +829,9 @@ export function App() {
         onToggleTheme={toggleTheme}
       />
 
-      <main className="flex-1 flex flex-col">
+      <main className="flex-1 flex flex-col min-w-0">
         <div
-          className={`w-full flex-1 flex flex-col${
+          className={`w-full min-w-0 flex-1 flex flex-col${
             isViewExiting ? ' animate-view-exit pointer-events-none' : ''
           }`}
         >

@@ -115,7 +115,7 @@ export function CountryHeader({
         </span>
       </div>
 
-      <div className="hairline-card rounded-lg p-5 sm:p-6">
+      <div className="hairline-card rounded-lg p-4 sm:p-6 min-w-0">
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
           <div className="min-w-0 flex-1">
             <div className="flex flex-wrap items-center gap-2.5 mb-2">
@@ -135,27 +135,27 @@ export function CountryHeader({
             </div>
             <p
               id="detail-country-summary"
-              className="text-sm text-[var(--text-sub)] leading-relaxed"
+              className="text-sm text-[var(--text-sub)] leading-relaxed break-words"
             >
               {country.summary}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 lg:w-[440px] shrink-0">
-            <div className="muted-panel p-3 rounded-md">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 lg:w-[440px] shrink-0 min-w-0">
+            <div className="muted-panel p-3 rounded-md min-w-0">
               <div className="text-[11px] text-[var(--text-sub)] mb-1">办理周期</div>
               <div
                 id="detail-processing"
-                className="text-xs sm:text-sm font-semibold text-[var(--text-main)] leading-snug"
+                className="text-xs sm:text-sm font-semibold text-[var(--text-main)] leading-snug break-words"
               >
                 {processingText}
               </div>
             </div>
-            <div className="muted-panel p-3 rounded-md">
+            <div className="muted-panel p-3 rounded-md min-w-0">
               <div className="text-[11px] text-[var(--text-sub)] mb-1">办理方式</div>
               <div
                 id="detail-submission"
-                className="text-xs sm:text-sm font-semibold text-[var(--text-main)] leading-snug"
+                className="text-xs sm:text-sm font-semibold text-[var(--text-main)] leading-snug break-words"
               >
                 {submissionText}
               </div>
@@ -167,7 +167,7 @@ export function CountryHeader({
           id="detail-category-tabs"
           role="tablist"
           aria-label="签证类别切换"
-          className="flex items-center gap-2 mt-5 pt-4 border-t border-[var(--border-soft)] overflow-x-auto pb-1 sm:overflow-visible sm:flex-wrap sm:pb-0"
+          className="flex flex-wrap items-center gap-2 mt-5 pt-4 border-t border-[var(--border-soft)]"
         >
           {PATHWAY_CATEGORIES.map((cat, idx) => {
             const isActive = cat.id === activeTab;

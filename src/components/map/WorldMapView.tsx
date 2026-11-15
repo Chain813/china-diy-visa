@@ -63,10 +63,10 @@ export const WorldMapView = forwardRef<WorldMapViewHandle, WorldMapViewProps>(
       <section
         id="map-stage"
         aria-label="世界签证交互地图"
-        className="animate-view-enter relative flex-1 flex w-full overflow-hidden"
+        className="animate-view-enter relative flex items-stretch w-full overflow-hidden"
       >
         {/* Main Interactive Map Pane */}
-        <div className="atlas-dot-grid relative flex-1 min-w-0 h-full overflow-hidden">
+        <div className="atlas-dot-grid relative flex-1 self-stretch min-w-0 h-full overflow-hidden">
           <MapCanvas
             ref={canvasRef}
             filteredCountries={filteredCountries}

@@ -85,7 +85,7 @@ export function ChecklistCard({
   return (
     <aside
       aria-label="所需材料核对清单"
-      className="lg:col-span-5 hairline-card rounded-lg p-5 lg:sticky lg:top-6"
+      className="lg:col-span-5 min-w-0 hairline-card rounded-lg p-5 lg:sticky lg:top-6"
     >
       <div className="flex items-start justify-between gap-2 mb-3">
         <div>
