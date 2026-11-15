@@ -1,0 +1,37 @@
+China DIY Visa Portal (china-diy-visa)
+Copyright (c) 2026 RouteKing
+
+Author: RouteKing (https://x.com/routeking_)
+Official Site: https://china-diy-visa.routeking.workers.dev/
+Source Repository: https://github.com/Chain813/china-diy-visa
+
+================================================================================
+ATTRIBUTION & DUAL-LICENSING NOTICE
+================================================================================
+
+1. Software Source Code (MIT License)
+   Applies to all application code, UI components, hooks, utilities, routing,
+   styling, tests, and build configuration (everything excluding `src/data/**`
+   and `docs/**`). See `LICENSE` for full MIT License terms.
+
+2. Curated Visa Guides & Dataset (CC BY 4.0)
+   Applies to all country visa pathway data, step-by-step instructions,
+   pitfall warnings, checklists, and documentation under `src/data/**` and
+   `docs/**`. Licensed under Creative Commons Attribution 4.0 International
+   (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+   See `LICENSE-DATA` for details.
+
+3. Required Source Attribution
+   Any public deployment, fork, derivative project, dataset reuse, or content
+   republication using this project MUST retain visible attribution to:
+   - Author: RouteKing
+   - Repository: https://github.com/Chain813/china-diy-visa
+   - Live Portal: https://china-diy-visa.routeking.workers.dev/
+   and indicate if changes were made.
+
+================================================================================
+THIRD-PARTY MAP DATA
+================================================================================
+
+`public/world-110m.json` is redistributed from `world-atlas` (`countries-110m.json`),
+derived from Natural Earth public domain map data.

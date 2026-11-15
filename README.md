@@ -112,6 +112,34 @@ npx wrangler deploy
 
 ---
 
-## 开源协议
+## 开源协议与使用署名规范（Licensing & Attribution）
 
-基于 [MIT License](LICENSE) 开源。
+本项目采用**代码与内容双许可**模式，具体范围如下：
+
+| 范围 | 目录 / 文件 | 适用协议 | 核心要求 |
+| :--- | :--- | :--- | :--- |
+| **应用程序源代码** | `src/` 下除 `src/data/` 外的全部代码、样式、测试与构建配置 | [MIT License](LICENSE) | 保留原作者版权声明与 MIT 许可声明 |
+| **102 国签证数据与攻略文案** | [`src/data/`](src/data/)、[`docs/`](docs/) | [CC BY 4.0（署名 4.0 国际）](LICENSE-DATA)（[协议全文](https://creativecommons.org/licenses/by/4.0/)） | 使用、转载、二次整理或公开展示**必须注明来源并说明是否修改** |
+| **完整声明文件** | [`NOTICE`](NOTICE) | — | 分发或二次部署时须保留 [`NOTICE`](NOTICE) 归属说明 |
+
+### 注明来源（Attribution）要求
+
+无论是基于本项目源码进行**公开网站部署 / 二次开发**，还是引用、转载、封装本项目中的 **102 国签证通道步骤、避坑提醒或材料清单数据**，均须在显眼位置（如网页页脚、项目 README、文章末尾或致谢说明）注明以下来源信息（如做过改动，请一并标明）：
+
+- **原作者**：`RouteKing`
+- **开源仓库**：`https://github.com/Chain813/china-diy-visa`
+- **在线原站**：`https://china-diy-visa.routeking.workers.dev/`
+
+#### 可直接使用的署名示例
+
+**Markdown 格式：**
+```markdown
+数据与源码来源：[china-diy-visa](https://github.com/Chain813/china-diy-visa)（作者：RouteKing，原站：https://china-diy-visa.routeking.workers.dev/），内容基于 CC BY 4.0 协议、代码基于 MIT 协议使用。
+```
+
+**HTML 页脚格式：**
+```html
+<span>
+  来源：<a href="https://github.com/Chain813/china-diy-visa">china-diy-visa</a> by RouteKing（代码 MIT / 数据 CC BY 4.0）
+</span>
+```
